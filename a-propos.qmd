@@ -1,0 +1,55 @@
+---
+title: "[Initiation à la programmation en sciences sociales](https://admission.umontreal.ca/cours-et-horaires/cours/fas-1002/)"
+subtitle: FAS1002
+about:
+  id: hero-heading
+  template: trestles
+  image: "/assets/img/pexels-oussama-bergaoui-463684_sm.jpg"
+  # credit: |
+  #   "Photo par [Oussama Bergaoui sur Pexels](https://www.pexels.com/photo/figurine-of-human-skeleton-sitting-infront-of-computer-463684/)" 
+  links:
+    - icon: envelope-heart
+      text: courriel
+      href: mailto:samuelguay@umontreal.ca
+    - icon: github
+      text: GitHub
+      href: https://github.com/FAS1002
+    - icon: check2-square
+      text: Admission
+      href: https://admission.umontreal.ca/cours-et-horaires/cours/fas-1002/
+---
+
+### 
+
+::: {#hero-heading}
+## Quoi
+
+Le cours
+[FAS1002](https://admission.umontreal.ca/cours-et-horaires/cours/fas-1002/) est
+offert dans le cadre du [Microprogramme de 1er cycle en analyse des mégadonnées
+en sciences humaines et
+sociales](https://admission.umontreal.ca/programmes/microprogramme-de-1er-cycle-en-analyse-des-megadonnees-en-sciences-humaines-et-sociales/structure-du-programme/).
+Il s'agit d'une introduction à la programmation pour les néophytes en utilisant
+[**R**](https://www.r-project.org/)**,** un des langages les plus populaires en
+science des données.
+
+## Où
+
+Ce cours est offert par la [Faculté des arts et
+sciences](https://fas.umontreal.ca/) de l'[Université de
+Montréal](https://umontreal.ca).
+
+## Quand
+
+À chaque [trimestre
+d'automne](https://admission.umontreal.ca/cours-et-horaires/cours/fas-1002/)
+depuis 2021.
+
+## Chargé de cours
+
+Créé et enseigné par [Samuel Guay](https://samuelguay.ca), doctorant en
+[psychologie - option neuroscience
+cognitive](https://psy.umontreal.ca/programmes-cours/cycles-superieurs/doctorat-en-psychologie/).
+:::
+
+### Veuillez consulter le [plan de cours](/syllabus.html) pour obtenir plus de détails sur le contenu et les modalités d'enseignement. {.text-center}
