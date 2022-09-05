@@ -2,3 +2,40 @@
 .about-entity {
     align-self: center
 }
+
+.cal_grid_container {  display: grid;
+  grid-template-columns: auto auto 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 10px 1rem;
+  grid-auto-flow: row;
+  counter-reset: div;
+/*  grid-template-areas:
+  "date week week_content"
+  "date reading reading_content"
+  "date assessment assessment_content"; */
+}
+
+/* Easier to use nth-child approach than grid-area
+to repeat the same sequence for each week in the calendar */
+
+.cal_grid_container> :nth-child(7n + 1) {
+  grid-row: span 3;
+  font-weight: bold;
+
+}
+
+.cal_grid_container> :nth-child(7n + 2) {
+  font-weight: bold;
+}
+
+.cal_grid_container p {
+    margin-bottom: 0;
+}
+
+.cal_date, .cal_assessment, .cal_assessment_content {
+  border-bottom-width: 2px;
+  border-bottom-color: pink;
+  border-bottom-style: dotted;
+}
+
+

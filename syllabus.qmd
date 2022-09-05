@@ -1,0 +1,838 @@
+---
+title: "FAS1002 – Initiation à la programmation en sciences sociales"
+subtitle: "Plan de cours <br> Automne 2022"
+title-block-banner: true
+---
+
+**Chargé de cours:** Samuel Guay\
+**Horaire du cours:** Mardi, 16:00 - 18:59\
+**Local du cours:** En ligne ou au B-4240, Pavillon 3200 Jean-Brillant\
+**Bureau:** En ligne\
+**Disponibilité:** Prise de rendez-vous au
+[rencontre.samuelguay.ca](https://rencontre.samuelguay.ca)\
+**Courriel:** [samuel.guay\@umontreal.ca](mailto:samuel.guay@umontreal.ca)
+
+-------------------------------------------------------------------------------
+
+::: callout-warning
+[*En raison de l'incertitude liée à la situation sanitaire, la **présence
+physique au cours est optionnelle**, et ce, peu importe la décision et les
+recommandations du gouvernement et de l'Université. La planification du cours a
+été pensée de façon à ce que tout le monde soit à l'aise de participer peu
+importe le mode de communication employé. De plus, nous avons la chance d'avoir
+un sujet et des activités d'apprentissage qui ont été conçus, entre autres,
+pour le travail collaboratif à distance.*]{style="font-size:1.15em;"}
+:::
+
+## Introduction
+
+Ce cours est une introduction à la programmation en sciences sociales avec R,
+un langage de programmation et un environnement statistique les plus populaires
+dans le monde pour l'analyse de données. Principalement convoité pour ses
+fonctionnalités statistiques avancées, R s'avère autant utilisé en recherche
+qu'en industrie, ce qui confère un avantage concret à son apprentissage. À ce
+sujet, R se prête bien à l'apprentissage de la programmation en raison de:
+
+1.  sa nature [libre](https://fr.wikipedia.org/wiki/Logiciel_libre) et
+    gratuite;
+2.  sa polyvalence de fonctionnalités;
+3.  sa popularité et sa variété de domaines d'application;
+4.  la diversité de ressources et d'aide disponible gratuitement sur le Web;
+5.  sa vibrante communauté reconnue pour son inclusivité et son support
+    bienveillant.
+
+Ce cours offre un apprentissage axé sur l'acquisition de compétences pratiques
+et réelles qui sont devenues essentielles en science des données
+reproductibles. Dans la première partie du cours, les concepts et techniques de
+base en programmation informatique seront enseignés pour se familiariser avec
+l'environnement et développer ses compétences qui faciliteront la manipulation,
+et l'analyse des données avec R. La deuxième partie du cours couvre des
+fonctions et des procédures couramment utilisées dans R et les aspects de
+travail collaboratif. La troisième partie du cours propose un survol des
+différents dialectes ou styles de syntaxe en R, du principe de données bien
+rangées ou *Tidy data* et de nettoyage de données en découvrant les expressions
+régulières. Enfin, le dialecte du *Tidyverse* et d'autres packages facilitant
+la vie des analystes seront abordés avant de clore la session avec des trucs et
+astuces pour déboguer son code, l'importance de la reproductibilité et de la
+science ouverte.
+
+## Prérequis, objectifs et pédagogie
+
+::: panel-tabset
+## Prérequis
+
+Le cours ne nécessite aucune connaissance préalable en programmation ou
+statistique. Les étudiant·e·s de tous horizons sont les bienvenu·e·s. Ce cours
+d'initiation à la programmation se veut accessible pour tout individu désirant
+développer des connaissances en science des données.
+
+### Qui bénéficiera le plus du cours:
+
+(En ordre décroissant)
+
+-   L'individu qui n'a aucune notion de programmation ou du langage R;
+-   L'individu qui a appris de façon autodidacte et qui souhaite consolider ses
+    bases;
+-   L'individu qui connait R et qui souhaite apprendre les méthodes de travail
+    collaboratif.
+
+À noter que l'emphase est mise avant tout sur l'apprentissage des notions pour
+les néophytes en la matière, donc une personne ayant déjà des connaissances
+pourrait trouver que le cours n'avance pas assez vite. Ceci étant dit, le cours
+a été pensé afin d'offrir une flexibilité pour les individus plus rapides ou
+avancés qui leur permet d'approfondir des concepts liés au cours ou d'assister
+leurs collègues.
+
+Enfin, il importe de préciser que ce cours ne prétend pas rendre la personne
+qui complète le cours experte en programmation ou en analyse de données. Ce
+cours offre plutôt la possibilité d'apprendre et de mettre en pratique les
+bases de la programmation avec R dans un environnement structuré qui favorise
+l'autonomie de sa propre courbe d'apprentissage en fonction de ses intérêts.
+
+## Objectifs
+
+L'objectif principal du cours *FAS1002 - Initiation à la programmation en
+sciences sociales* est d'offrir une première exposition positive à la
+programmation et de développer une culture de l'informatique dans le but
+d'acquérir des compétences techniques et des compétences générales essentielles
+en science des données. Pour ce faire, une approche axée sur la pratique sera
+mise de l'avant afin de se familiariser avec plusieurs concepts et outils de
+base en informatique qui permettront une meilleure compréhension et utilisation
+de R et son univers en vue de l'application de méthodes statistiques avancées
+dans les cours suivants. Plus spécifiquement, les séances abordent différents
+aspects techniques qui permettront d'apprendre graduellement à développer du
+code afin d'analyser des données, produire des rapports interactifs et bien
+plus encore.
+
+Les compétences techniques qui seront apprises comprennent:
+
+-   Connaitre les types et les structures des données les plus communs;
+-   Manipuler et nettoyer des jeux de données;
+-   Conceptualiser et créer des boucles pour réaliser différents types
+    d'analyses;
+-   Utiliser des fonctions internes et créer des fonctions originales;
+-   Manipuler et transformer des chaines de caractères des bases de données;
+-   Construire des tableaux et des figures pour réaliser des analyses
+    statistiques simples;
+-   Connaître les différents packages du
+    [Tidyverse](https://www.tidyverse.org/);
+-   Maitriser [RStudio](https://www.rstudio.com/products/rstudio/), un
+    environnement de développement intégré (IDE) libre et gratuit;
+-   Être en mesure d'appliquer les bonnes pratiques reconnues en contexte de
+    partage de code et de travail collaboratif.
+
+L'individu complétant le cours avec assiduité sera également en mesure de
+transférer et d'appliquer ses connaissances dans d'autres environnements
+puisque des compétences générales seront acquises:
+
+-   Capacité à chercher de l'aide et à bien poser ses questions;
+-   Connaitre les concepts de base d'informatique et de programmation;
+-   Élaborer la structure de scripts à l'aide de pseudocode et décomposition;
+-   Capacité à résoudre des problèmes concrets à l'aide de la programmation;
+-   Savoir choisir les outils ou programmes optimaux pour manipuler et analyser
+    des données;
+-   Comprendre l'importance de la reproductibilité et de la science ouverte
+    dans le contexte de programmation et de données.
+
+## Pédagogie
+
+Ce cours est interactif et se déroule principalement, sans grande surprise, sur
+votre ordinateur! La meilleure façon d'apprendre des outils de programmation et
+d'analyse est de travailler directement avec des données et mettre du temps à
+essayer de construire des choses. Adoptant une méthode d'enseignement analogue
+à une classe inversée, la majorité de la théorie doit être lue ou vue avant les
+classes et le temps en classe sera consacré à la révision de concepts, à
+répondre aux questions et échanger, à des sessions de codage en direct et à
+avancer les travaux. Plusieurs modalités d'enseignement seront utilisées afin
+d'agrémenter l'apprentissage des concepts et techniques en vue de les appliquer
+pour résoudre des problèmes réels et concrets. Contrairement aux langages de
+programmation à usage général tels que Python, R a été spécialement conçu pour
+les statistiques. Nous apprendrons à faire des choses plus générales de
+programmation, mais l'utilité principale de R demeure l'analyse de données.
+Cependant, les compétences enseignées dans ce cours sont conçues pour être
+transférables à d'autres langages comme Python.
+
+Afin de maximiser les apprentissages, tout ce qui peut se faire avec R sera
+fait avec R, autant les notes de cours, les questionnaires, les devoirs que les
+travaux. Nous utiliserons également une [plateforme Web,
+Ed](https://edstem.org/), qui permettra d'agrémenter la pédagogie et le bon
+déroulement du cours. Le principal atout de la plateforme est qu'elle permet de
+poser des questions avec du code R et de le faire rouler, donc tout le monde
+peut commenter et suggérer des pistes de solutions.
+
+Une période d'installation et de débogage des différents logiciels est prévue à
+l'horaire lors de la première semaine puisqu'il y a souvent des erreurs. Les
+bogues sont nos amis, ils offrent des opportunités en or pour apprendre.
+L'enseignement dans ce cours consiste, avant tout, à soutenir l'apprentissage.
+:::
+
+## Ouvrages
+
+Toutes les lectures proposées dans le cadre du cours sont disponibles
+gratuitement et librement sur internet. Les trois ressources ci-dessous
+permettront d'acquérir des connaissances approfondies de la programmation, R et
+du Tidyverse. D'autres ressources complémentant les ouvrages principaux seront
+partagés tout au long de la session et elles seront ajoutées au calendrier du
+cours.
+
+::: panel-tabset
+## Programmer avec R
+
+L'ouvrage principal sur lequel la première partie du cours est basée est
+[Programmer avec R](https://vigou3.gitlab.io/programmer-avec-r) par [Vincent
+Goulet (2022)](https://gitlab.com/vigou3/programmer-avec-r)
+
+Selon l'auteur:
+
+> [*Programmer avec R*](https://vigou3.gitlab.io/programmer-avec-r) est un
+> ouvrage d'initiation à la programmation informatique basé sur le langage R.
+> Les fonctionnalités statistiques de R n'y sont pas abordées. On se concentre
+> plutôt sur l'apprentissage du langage de programmation sous-jacent.
+>
+> L'ouvrage repose sur une philosophie d'apprentissage du langage R par
+> l'exposition à un maximum de code et par la pratique de la programmation.
+> C'est pourquoi les chapitres sont rédigés de manière synthétique et qu'ils
+> comportent peu d'exemples au fil du texte.
+>
+> En revanche, le lecteur est appelé à lire et à exécuter le code informatique
+> se trouvant dans les sections d'exemples à la fin de chacun des chapitres. Ce
+> code et les commentaires qui l'accompagnent reviennent sur l'essentiel des
+> concepts du chapitre et les complémentent souvent.
+>
+> Question de développer, chez le lecteur, une culture de l'informatique et une
+> connaissance des outils de développement informatique essentiels,
+> [*Programmer avec R*](https://vigou3.gitlab.io/programmer-avec-r)traite
+> également de l'histoire des langages de programmation; des principes de base
+> des systèmes d'exploitation et des systèmes de gestion de fichiers; des
+> bonnes pratiques en matière de travail collaboratif; des outils d'analyse et
+> de contrôle de texte `grep`, `sed` et `awk`.
+
+## R for Data Science
+
+::: grid
+::: {.g-col-12 .g-col-md-9}
+Écrit en partie par [Hadley Wickham](https://hadley.nz/), l'un des principaux
+développeurs du [Tidyverse](https://www.tidyverse.org/), [R for Data
+Science](https://r4ds.had.co.nz/) est souvent cité comme étant LA porte
+d'entrée à l'analyse de données avec R et le Tidyverse. Il s'agit d'un des deux
+ouvrages essentiels pour la deuxième partie du cours.
+
+Extrait tiré sur [tidyverse.org/learn](https://www.tidyverse.org/learn/):
+
+> The best place to start learning the tidyverse is R for Data Science (R4DS
+> for short), an O'Reilly book written by Hadley Wickham and Garrett Grolemund.
+> It's designed to take you from knowing nothing about R or the tidyverse to
+> having all the basic tools of data science at your fingertips.
+:::
+
+::: {.g-col-12 .g-col-md-3 .order-md-first .d-flex .align-items-center}
+![](assets/img/R4DS_cover.png){.mb-0
+fig-alt="Couverture du livre R for Data Science" fig-align="center"}
+:::
+:::
+
+## Tidyverse Skills for Data Science
+
+::: grid
+::: {.g-col-12 .g-col-md-9}
+Développé par les membres du [Johns Hopkins Data Science
+Lab](https://jhudatascience.org/), [Tidyverse Skills for Data
+Science](https://jhudatascience.org/tidyversecourse/) regroupe toutes les
+informations nécessaires afin de compléter la spécialisation qui porte le même
+sur sur Coursera, [Tidyverse Skills for Data Science in R
+Specialization](https://www.coursera.org/specializations/tidyverse-data-science-r).
+Il s'agit donc d'une ressource très complète de grande qualité.
+
+Il s'agit de la deuxième ressources essentielles pour la deuxième partie du
+cours.
+:::
+
+::: {.g-col-12 .g-col-md-3 .order-md-first .d-flex .align-items-center}
+![](https://jhudatascience.org/images/tidyverse.png){.mb-0
+fig-alt="Logo du Tidyverse Skills for Data Science" fig-align="center"}
+:::
+:::
+:::
+
+## Évaluations
+
+En plus des lectures et de la théorie enseignée, il y a plusieurs méthodes
+d'évaluation servant à mesurer la progression des apprentissages tout au long
+du semestre. Aucun examen en classe n'est prévu, seulement des travaux de
+différentes ampleurs. Les évaluations servent avant tout d'aide pour compléter
+et appliquer avec assiduité la matière vue dans le cours.
+
+Sur un total de **100 points**:
+
+::: panel-tabset
+## **Participation - 10%**
+
+-   10 points sont alloués pour la participation observée autant sur les
+    plateformes que dans les séances en direct. J'estime qu'être engagé·e dans
+    le cadre du cours ne signifie pas nécessairement de prendre la parole lors
+    des séances synchrones. Vous pouvez faire preuve de participation par le
+    biais d'entraide avec vos collègues lors des sessions de codage, à réagir
+    aux commentaires des autres, tenter de répondre aux questions ou suggérer
+    des améliorations sur le code des autres, etc.
+
+## **Exercices - 30%**
+
+-   30 points sont alloués pour **12 mini-exercices** et 6 modules avec quiz
+    dispersés tout au long de la session qui doivent être complétés avant le
+    début du cours. Ces activités doivent être complétées avec un score de 100
+    % pour obtenir tous les points, mais elles peuvent être reprises à
+    l'infini. Le principal objectif est de motiver l'étudiant·e à compléter le
+    contenu à temps et mettre en évidence les concepts essentiels à apprendre.
+
+## **Travail de mi-session - 25%**
+
+-   25 points sont alloués pour le travail de mi-session qui évaluera les
+    compétences enseignées jusqu'à la semaine de lecture. Des instructions
+    détaillées sur ce qui est attendu dans le travail seront fournies lors des
+    premières semaines du semestre. Ce travail mettra à l'épreuve concepts de
+    bases en programmation, gestion de version de contrôle et collaboration.
+    -   Date limite pour la remise: [25 octobre 2022 - 23:59 - AOE (Anywhere On
+        Earth)](https://time.is/2359_25_Oct_2022_in_Anywhere_on_Earth/Montreal).
+
+## **Travail final - 35%**
+
+-   35 points sont alloués pour le travail final qui prendra la forme d'un vrai
+    rapport de recherche complet et automatisé développé en collaboration. Tous
+    les concepts abordés dans le cours devront être approfondis et utilisés
+    lors de son élaboration.
+    -   Date limite pour la remise: [18 décembre 2022 - 23:59 - AOE (Anywhere
+        On
+        Earth)](https://time.is/2359_18_Dec_2022_in_Anywhere_on_Earth/Montreal).
+:::
+
+## Calendrier
+
+::: cal_grid_container
+::: cal_date
+6 septembre
+:::
+
+::: cal_week
+Semaine 1
+:::
+
+::: cal_week_content
+**Présentation du plan de cours; Installation de R, RStudio et Git.**\
+Toutes les lectures vous seront indiquées et partagées sur
+[Ed](https://edstem.org/us/courses/6933/discussion/574747), [la plateforme de
+discussions](https://edstem.org/us/courses/6933/discussion/574747), et sur le
+[site web du cours](https://fas1002.github.io/).
+:::
+
+::: cal_reading
+Lectures
+:::
+
+::: cal_reading_content
+Plan de cours; Chapitre 1 de Programmer avec R
+:::
+
+::: cal_assessment
+Évaluations
+:::
+
+::: cal_assessment_content
+Module 1 à compléter avant le cours
+:::
+
+<!-- Week 2 -->
+
+::: cal_date
+13 septembre
+:::
+
+::: cal_week
+Semaine 2
+:::
+
+::: cal_week_content
+**Éléments d'informatique pour la programmation et l'algorithmique**
+:::
+
+::: cal_reading
+Lectures
+:::
+
+::: cal_reading_content
+**Chapitres 1** et **2** de Programmer avec R et [**Lawlor et al.
+(2022)**](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010372)
+:::
+
+::: cal_assessment
+Évaluations
+:::
+
+::: cal_assessment_content
+**Swirl 1 + 2 + 3** et **Module 2** à compléter avant le cours
+:::
+
+<!-- Week 3 -->
+
+::: cal_date
+20 septembre
+:::
+
+::: cal_week
+Semaine 3
+:::
+
+::: cal_week_content
+**Présentation de R; Documentation et aide**
+:::
+
+::: cal_reading
+Lectures
+:::
+
+::: cal_reading_content
+**Chapitre 3 de Programmer avec R**
+:::
+
+::: cal_assessment
+Évaluations
+:::
+
+::: cal_assessment_content
+**Swirl 4 + 5** à compléter avant le cours
+:::
+
+<!-- Week 4 -->
+
+::: cal_date
+27 septembre
+:::
+
+::: cal_week
+Semaine 4
+:::
+
+::: cal_week_content
+**Bases de la programmation et R**
+:::
+
+::: cal_reading
+Lectures
+:::
+
+::: cal_reading_content
+**Chapitre 4 de Programmer avec R**
+:::
+
+::: cal_assessment
+Évaluations
+:::
+
+::: cal_assessment_content
+**Swirl 6 + 7 + 8 et Module 3** à compléter avant le cours
+:::
+
+<!-- Week 5 -->
+
+::: cal_date
+4 octobre
+:::
+
+::: cal_week
+Semaine 5
+:::
+
+::: cal_week_content
+**Structure et manipulation des données**
+:::
+
+::: cal_reading
+Lectures
+:::
+
+::: cal_reading_content
+**Chapitre 5 de Programmer avec R**
+:::
+
+::: cal_assessment
+Évaluations
+:::
+
+::: cal_assessment_content
+**Swirl 9 + 10 + 11** à compléter avant le cours
+:::
+
+<!-- Week 6 -->
+
+::: cal_date
+11 octobre
+:::
+
+::: cal_week
+Semaine 6
+:::
+
+::: cal_week_content
+**Bonnes pratiques de programmation et de débogage; Gestion de versions et
+collaboration**
+:::
+
+::: cal_reading
+Lectures
+:::
+
+::: cal_reading_content
+**Chapitres 6 et 8 de Programmer avec R**
+:::
+
+::: cal_assessment
+Évaluations
+:::
+
+::: cal_assessment_content
+**Swirl 12 et Module 4** à compléter avant le cours
+:::
+
+<!-- Week 7 -->
+
+::: cal_date
+18 octobre
+:::
+
+::: cal_week
+Semaine 7
+:::
+
+::: cal_week_content
+**Algorithmes et boucles**
+:::
+
+::: cal_reading
+Lectures
+:::
+
+::: cal_reading_content
+**Chapitre 7 de Programmer avec R et chapitres 6** (p. 165-174, 181-183 et
+192-197); **7** (p. 201--204) et **9** (p. 227--232) **de [Essential
+Algorithms](https://onlinelibrary.wiley.com/doi/epub/10.1002/9781119575955)**
+:::
+
+::: cal_assessment
+Évaluations
+:::
+
+::: cal_assessment_content
+\-
+:::
+
+<!-- Week 6 -->
+
+::: cal_date
+25 octobre
+:::
+
+::: cal_week
+\-
+:::
+
+::: cal_week_content
+**Pas de cours** - Semaine de travaux et d'étude
+:::
+
+::: cal_reading
+Lectures
+:::
+
+::: cal_reading_content
+\-
+:::
+
+::: cal_assessment
+Évaluations
+:::
+
+::: cal_assessment_content
+Date limite pour la remise du travail de mi-session: [25 octobre 2022 - 23:59 -
+AOE (Anywhere On
+Earth)](https://time.is/2359_25_Oct_2022_in_Anywhere_on_Earth/Montreal)
+:::
+
+<!-- Week 8 -->
+
+::: cal_date
+1 novembre
+:::
+
+::: cal_week
+Semaine 8
+:::
+
+::: cal_week_content
+**Utilisation de bibliothèques et de packages; Principes de Tidy data et de
+nettoyage de jeux de données**
+:::
+
+::: cal_reading
+Lectures
+:::
+
+::: cal_reading_content
+**Chapitre 11** de **Programmer avec R** et [**Introduction to the
+Tidyverse**](https://jhudatascience.org/tidyversecourse/intro.html)
+:::
+
+::: cal_assessment
+Évaluations
+:::
+
+::: cal_assessment_content
+**Module 5** à compléter avant le cours
+:::
+
+<!-- Week 6 -->
+
+::: cal_date
+8 novembre
+:::
+
+::: cal_week
+Semaine 9
+:::
+
+::: cal_week_content
+Tidyverse I
+:::
+
+::: cal_reading
+Lectures
+:::
+
+::: cal_reading_content
+Section [**Explore**](https://r4ds.had.co.nz/explore-intro.html) de [R for Data
+Science](https://r4ds.had.co.nz) et [**Importing Data in the
+Tidyverse**](https://jhudatascience.org/tidyversecourse/get-data.html) de
+[Tidyverse Skills for Data
+Science](https://jhudatascience.org/tidyversecourse/)
+:::
+
+::: cal_assessment
+Évaluations
+:::
+
+::: cal_assessment_content
+\-
+:::
+
+<!-- Week 10 -->
+
+::: cal_date
+15 novembre
+:::
+
+::: cal_week
+Semaine 10
+:::
+
+::: cal_week_content
+Tidyverse II
+:::
+
+::: cal_reading
+Lectures
+:::
+
+::: cal_reading_content
+Sections [**Wrangle**](https://r4ds.had.co.nz/wrangle-intro.html) +
+[**Program**](https://r4ds.had.co.nz/program-intro.html) de [R for Data
+Science](https://r4ds.had.co.nz) et [**Wrangling Data in the
+Tidyverse**](https://jhudatascience.org/tidyversecourse/wrangle-data.html) de
+[Tidyverse Skills for Data
+Science](https://jhudatascience.org/tidyversecourse/)
+:::
+
+::: cal_assessment
+Évaluations
+:::
+
+::: cal_assessment_content
+**Module 6** à compléter avant le cours
+:::
+
+<!-- Week 11 -->
+
+::: cal_date
+22 novembre
+:::
+
+::: cal_week
+Semaine 11
+:::
+
+::: cal_week_content
+Tidyverse III et autres packages utilises
+:::
+
+::: cal_reading
+Lectures
+:::
+
+::: cal_reading_content
+Section [**Model**](https://r4ds.had.co.nz/model-intro.html) de [R for Data
+Science](https://r4ds.had.co.nz) **et [Modeling Data in the
+Tidyverse](https://jhudatascience.org/tidyversecourse/model.html)** de
+[Tidyverse Skills for Data
+Science](https://jhudatascience.org/tidyversecourse/)
+:::
+
+::: cal_assessment
+Évaluations
+:::
+
+::: cal_assessment_content
+\-
+:::
+
+<!-- Week 12 -->
+
+::: cal_date
+29 novembre
+:::
+
+::: cal_week
+Semaine 12
+:::
+
+::: cal_week_content
+**Reproductibilité, science ouverte et programmation**
+:::
+
+::: cal_reading
+Lectures
+:::
+
+::: cal_reading_content
+À déterminer
+:::
+
+::: cal_assessment
+Évaluations
+:::
+
+::: cal_assessment_content
+\-
+:::
+
+<!-- Week 13 -->
+
+::: cal_date
+6 décembre
+:::
+
+::: cal_week
+Semaine 13
+:::
+
+::: cal_week_content
+**La semaine manquante - Méli-mélo de trucs et astuces qu'on n'enseigne
+jamais** (mais qu'on devrait peut-être enseigner)
+:::
+
+::: cal_reading
+Lectures
+:::
+
+::: cal_reading_content
+\-
+:::
+
+::: cal_assessment
+Évaluations
+:::
+
+::: cal_assessment_content
+Date limite pour la remise du travail final: [18 décembre 2022 - 23:59 - AOE
+(Anywhere On
+Earth)](https://time.is/2359_18_Dec_2022_in_Anywhere_on_Earth/Montreal).
+:::
+:::
+
+## Rappel de règlements pédagogiques
+
+Veuillez prendre note que le trimestre se termine le 23 décembre 2022 (incluant
+la période des examens). Aucune demande d'examen différé ne sera acceptée sans
+motif valable. Nous entendons par motif valable, un motif indépendant de la
+volonté de l'étudiant·e, tel que la force majeure, le cas fortuit ou une
+maladie attestée par un certificat de médecin.
+
+### Absence à un examen
+
+L'étudiant·e doit motiver, en remplissant le formulaire disponible dans le
+Centre étudiant, toute absence à une évaluation ou à un cours faisant l'objet
+d'une évaluation continue dès qu'il est en mesure de constater qu'il ne pourra
+être présent·e à une évaluation et fournir les pièces justificatives dans les
+sept jours suivant l'absence.
+
+### Délais pour la remise d'un travail
+
+L'étudiant·e doit motiver, en remplissant le formulaire disponible dans le
+Centre étudiant, toute demande de délai pour la remise d'un travail dès qu'il
+ou elle est en mesure de constater qu'il ou elle ne pourra remettre à temps le
+travail et fournir les pièces justificatives.
+
+<aside>On s'entend, avertissez-moi avant de remplir le questionnaire en
+question, peut-être trouverons nous une solution!</aside>
+
+La pénalité imposée pour les retards dans la remise des travaux est de **10
+points de pourcentage** par jour à moins d'indication contraire. Cette pénalité
+est calculée en déduisant 10 points de pourcentage à la note obtenue pour le
+travail en question. Il s'agit de la politique du Département.
+
+### La prévention du plagiat
+
+Le Département porte une attention toute particulière à la lutte contre le
+plagiat, le copiage ou la fraude lors des examens. Le plagiat consiste à
+utiliser de façon totale ou partielle, littérale ou déguisée le texte d'autrui
+en le faisant passer pour sien ou sans indication de référence à l'occasion
+d'un travail, d'un examen ou d'une activité faisant l'objet d'une évaluation.
+Cette fraude est lourdement sanctionnée.
+
+Tous les étudiant·e·s sont invités à consulter le site web
+<http://www.integrite.umontreal.ca/> et à prendre connaissance du Règlement
+disciplinaire sur le plagiat ou la fraude concernant les étudiant·e·s. Plagier
+peut entrainer un échec, la suspension ou le renvoi de l'Université. 
+
+## Le harcèlement, y compris à caractère sexuel
+
+Il incombe à chaque membre de la communauté universitaire de se conduire avec
+respect en tout temps envers tout le monde. En particulier, le Département de
+science politique de l'Université de Montréal s'engage à créer un milieu
+accueillant et sécuritaire pour toutes et tous, quelle que soit leur identité.
+
+Les documents suivants ont des démarches pratiques à suivre :
+
+-   [Si vous pensez que vous vivez du
+    harcèlement](https://harcelement.umontreal.ca/obtenir-de-laide/vous-vivez-une-situation-difficile)
+-   [Si on s'est confié à vous ou si vous êtes témoin de
+    harcèlement](https://harcelement.umontreal.ca/obtenir-de-laide/vous-avez-ete-temoin-dune-situation/)
+
+Pour toute autre question : <http://harcelement.umontreal.ca/>
+
+## Besoin d'écoute? Situation de détresse?
+
+Comme étudiant·e, vous pouvez faire appel à plusieurs lignes d'écoute ou
+d'urgence. Tous les liens sont rassemblés sur la page [Ça va
+aller](https://www.cavaaller.ca/#services).
+
+Les étudiant·e·s ont accès à un [service 24 heures/7
+jours](http://www.aseq.ca/rte/fr/FA%C3%89CUM_Programmedaide_Programmedaide) offert
+par l'Alliance pour la santé étudiante au Québec. Le numéro est le
+suivant : 1-833-851-1363.
+
+Vous pouvez aussi faire appel à une sentinelle. La sentinelle est un·e
+employé·e de l'UdeM, formé·e et disponible pour vous accueillir, vous écouter
+et vous orienter vers les bonnes ressources. Son accueil est spontané,
+respectueux et confidentiel. Voir le [Bottin des
+sentinelles](http://cscp.umontreal.ca/activiteprevention/sentinelle.htm) au
+besoin.
+
+Évidemment, vous pouvez venir me parler en privé si vous en ressentez le
+besoin.
