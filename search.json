@@ -28,6 +28,13 @@
     "text": "Chargé de cours\nCréé et enseigné par Samuel Guay, doctorant en psychologie - option neuroscience cognitive."
   },
   {
+    "objectID": "semaines.html",
+    "href": "semaines.html",
+    "title": "Calendrier",
+    "section": "",
+    "text": "Trier par\n       Ordre par défaut\n         \n          Titre\n        \n         \n          Date - Le plus ancien\n        \n         \n          Date - Le plus récent\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\n📌 Semaine 0\n\n\n\n\n\n\n\ncours\n\n\nsemaine\n\n\n\n\nAttendons que le trimestre débute avant d’ajouter du contenu! Il n’y a absolument rien à voir ici… ou peut-être pas 🤔?\n\n\n\n\n\n\n6 sept. 2022\n\n\nSamuel Guay\n\n\n\n\n\n\nAucun article correspondant"
+  },
+  {
     "objectID": "syllabus.html",
     "href": "syllabus.html",
     "title": "FAS1002 – Initiation à la programmation en sciences sociales",
@@ -91,6 +98,13 @@
     "text": "Besoin d’écoute? Situation de détresse?\nComme étudiant·e, vous pouvez faire appel à plusieurs lignes d’écoute ou d’urgence. Tous les liens sont rassemblés sur la page Ça va aller.\nLes étudiant·e·s ont accès à un service 24 heures/7 jours offert par l’Alliance pour la santé étudiante au Québec. Le numéro est le suivant : 1-833-851-1363.\nVous pouvez aussi faire appel à une sentinelle. La sentinelle est un·e employé·e de l’UdeM, formé·e et disponible pour vous accueillir, vous écouter et vous orienter vers les bonnes ressources. Son accueil est spontané, respectueux et confidentiel. Voir le Bottin des sentinelles au besoin.\nÉvidemment, vous pouvez venir me parler en privé si vous en ressentez le besoin."
   },
   {
+    "objectID": "index.html#accès-rapide-à-la-dernière-semaine",
+    "href": "index.html#accès-rapide-à-la-dernière-semaine",
+    "title": "Bienvenue au cours",
+    "section": "Accès rapide à la dernière semaine",
+    "text": "Accès rapide à la dernière semaine"
+  },
+  {
     "objectID": "semaines/00.html",
     "href": "semaines/00.html",
     "title": "📌 Semaine 0",
@@ -103,19 +117,5 @@
     "title": "📌 Semaine 0",
     "section": "Mais.. voici une belle tarte!",
     "text": "Mais.. voici une belle tarte!\n\n\nCode\npar(mar = c(0, 1, 0, 1))\npie(\n  c(280, 60, 20),\n  c('Ciel', 'Côté ensoleillé de la pyramide', 'Côté ombragé de la pyramide'),\n  col = c('#0292D8', '#F7EA39', '#C4B632'),\n  init.angle = -50, border = NA\n)\n\n\n\n\n\nSVP, évitez les tartes dans vos travaux!\n\n\n\n\n\nVous serez capables de faire beaucoup plus à la fin de la session!\n\nÀ la semaine prochaine ✌️"
-  },
-  {
-    "objectID": "semaines.html",
-    "href": "semaines.html",
-    "title": "Calendrier",
-    "section": "",
-    "text": "Trier par\n       Ordre par défaut\n         \n          Titre\n        \n         \n          Date - Le plus ancien\n        \n         \n          Date - Le plus récent\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\n📌 Semaine 0\n\n\n\n\n\n\n\ncours\n\n\nsemaine\n\n\n\n\nAttendons que le trimestre débute avant d’ajouter du contenu! Il n’y a absolument rien à voir ici… ou peut-être pas 🤔?\n\n\n\n\n\n\n6 sept. 2022\n\n\nSamuel Guay\n\n\n\n\n\n\nAucun article correspondant"
-  },
-  {
-    "objectID": "index.html#accès-rapide-à-la-dernière-semaine",
-    "href": "index.html#accès-rapide-à-la-dernière-semaine",
-    "title": "Bienvenue au cours",
-    "section": "Accès rapide à la dernière semaine",
-    "text": "Accès rapide à la dernière semaine"
   }
 ]
