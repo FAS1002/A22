@@ -4,7 +4,7 @@ subtitle: FAS1002
 about:
   id: hero-heading
   template: trestles
-  image: "/assets/img/pexels-oussama-bergaoui-463684_sm.jpg"
+  image: "assets/img/pexels-oussama-bergaoui-463684_sm.jpg"
   # credit: |
   #   "Photo par [Oussama Bergaoui sur Pexels](https://www.pexels.com/photo/figurine-of-human-skeleton-sitting-infront-of-computer-463684/)" 
   links:
