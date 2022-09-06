@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.54">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>FAS1002-A22 - FAS1002 – Initiation à la programmation en sciences sociales</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "Pas de résultats",
+    "search-matching-documents-text": "documents trouvés",
+    "search-copy-link-title": "Copier le lien vers la recherche",
+    "search-hide-matches-text": "Cacher les correspondances additionnelles",
+    "search-more-match-text": "correspondance de plus dans ce document",
+    "search-more-matches-text": "correspondances de plus dans ce document",
+    "search-clear-button-title": "Effacer",
+    "search-detached-cancel-button-title": "Annuler",
+    "search-submit-button-title": "Envoyer"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+<link rel="stylesheet" href="assets/scss/styles.css">
+<meta name="twitter:title" content="FAS1002-A22 - FAS1002 – Initiation à la programmation en sciences sociales">
+<meta name="twitter:description" content="Plan de cours <br> Automne 2022">
+<meta name="twitter:image" content="https://FAS1002.github.io/A22/assets/img/R4DS_cover.png">
+<meta name="twitter:creator" content="@SamGuay_">
+<meta name="twitter:image-height" content="750">
+<meta name="twitter:image-width" content="500">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./assets/img/logo.png" alt="" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">FAS1002-A22</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html">Accueil</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./a-propos.html">À propos</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./syllabus.html" aria-current="page">Plan de cours</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./semaines.html">Calendrier</a>
+  </li>  
+</ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">FAS1002 – Initiation à la programmation en sciences sociales</h1>
+            <p class="subtitle lead">Plan de cours <br> Automne 2022</p>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Sur cette page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#prérequis-objectifs-et-pédagogie" id="toc-prérequis-objectifs-et-pédagogie" class="nav-link" data-scroll-target="#prérequis-objectifs-et-pédagogie">Prérequis, objectifs et pédagogie</a></li>
+  <li><a href="#ouvrages" id="toc-ouvrages" class="nav-link" data-scroll-target="#ouvrages">Ouvrages</a></li>
+  <li><a href="#évaluations" id="toc-évaluations" class="nav-link" data-scroll-target="#évaluations">Évaluations</a></li>
+  <li><a href="#calendrier" id="toc-calendrier" class="nav-link" data-scroll-target="#calendrier">Calendrier</a></li>
+  <li><a href="#rappel-de-règlements-pédagogiques" id="toc-rappel-de-règlements-pédagogiques" class="nav-link" data-scroll-target="#rappel-de-règlements-pédagogiques">Rappel de règlements pédagogiques</a>
+  <ul class="collapse">
+  <li><a href="#absence-à-un-examen" id="toc-absence-à-un-examen" class="nav-link" data-scroll-target="#absence-à-un-examen">Absence à un examen</a></li>
+  <li><a href="#délais-pour-la-remise-dun-travail" id="toc-délais-pour-la-remise-dun-travail" class="nav-link" data-scroll-target="#délais-pour-la-remise-dun-travail">Délais pour la remise d’un travail</a></li>
+  <li><a href="#la-prévention-du-plagiat" id="toc-la-prévention-du-plagiat" class="nav-link" data-scroll-target="#la-prévention-du-plagiat">La prévention du plagiat</a></li>
+  </ul></li>
+  <li><a href="#le-harcèlement-y-compris-à-caractère-sexuel" id="toc-le-harcèlement-y-compris-à-caractère-sexuel" class="nav-link" data-scroll-target="#le-harcèlement-y-compris-à-caractère-sexuel">Le harcèlement, y compris à caractère sexuel</a></li>
+  <li><a href="#besoin-découte-situation-de-détresse" id="toc-besoin-découte-situation-de-détresse" class="nav-link" data-scroll-target="#besoin-découte-situation-de-détresse">Besoin d’écoute? Situation de détresse?</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/FAS1002/A22/edit/main/syllabus.qmd" class="toc-action">Modifier cette page</a></p><p><a href="https://github.com/FAS1002/A22/issues/new" class="toc-action">Faire part d'un problème</a></p><p><a href="https://github.com/FAS1002/A22/blob/main/syllabus.qmd" class="toc-action">Voir la source</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
+
+
+
+
+<p><strong>Chargé de cours:</strong> Samuel Guay<br>
+<strong>Horaire du cours:</strong> Mardi, 16:00 - 18:59<br>
+<strong>Local du cours:</strong> En ligne ou au B-4240, Pavillon 3200 Jean-Brillant<br>
+<strong>Bureau:</strong> En ligne<br>
+<strong>Disponibilité:</strong> Prise de rendez-vous au <a href="https://rencontre.samuelguay.ca">rencontre.samuelguay.ca</a><br>
+<strong>Courriel:</strong> <a href="mailto:samuel.guay@umontreal.ca">samuel.guay@umontreal.ca</a></p>
+<hr>
+<div class="callout-warning callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Avertissement
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><span style="font-size:1.15em;"><em>En raison de l’incertitude liée à la situation sanitaire, la <strong>présence physique au cours est optionnelle</strong>, et ce, peu importe la décision et les recommandations du gouvernement et de l’Université. La planification du cours a été pensée de façon à ce que tout le monde soit à l’aise de participer peu importe le mode de communication employé. De plus, nous avons la chance d’avoir un sujet et des activités d’apprentissage qui ont été conçus, entre autres, pour le travail collaboratif à distance.</em></span></p>
+</div>
+</div>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>Ce cours est une introduction à la programmation en sciences sociales avec R, un langage de programmation et un environnement statistique les plus populaires dans le monde pour l’analyse de données. Principalement convoité pour ses fonctionnalités statistiques avancées, R s’avère autant utilisé en recherche qu’en industrie, ce qui confère un avantage concret à son apprentissage. À ce sujet, R se prête bien à l’apprentissage de la programmation en raison de:</p>
+<ol type="1">
+<li>sa nature <a href="https://fr.wikipedia.org/wiki/Logiciel_libre">libre</a> et gratuite;</li>
+<li>sa polyvalence de fonctionnalités;</li>
+<li>sa popularité et sa variété de domaines d’application;</li>
+<li>la diversité de ressources et d’aide disponible gratuitement sur le Web;</li>
+<li>sa vibrante communauté reconnue pour son inclusivité et son support bienveillant.</li>
+</ol>
+<p>Ce cours offre un apprentissage axé sur l’acquisition de compétences pratiques et réelles qui sont devenues essentielles en science des données reproductibles. Dans la première partie du cours, les concepts et techniques de base en programmation informatique seront enseignés pour se familiariser avec l’environnement et développer ses compétences qui faciliteront la manipulation, et l’analyse des données avec R. La deuxième partie du cours couvre des fonctions et des procédures couramment utilisées dans R et les aspects de travail collaboratif. La troisième partie du cours propose un survol des différents dialectes ou styles de syntaxe en R, du principe de données bien rangées ou <em>Tidy data</em> et de nettoyage de données en découvrant les expressions régulières. Enfin, le dialecte du <em>Tidyverse</em> et d’autres packages facilitant la vie des analystes seront abordés avant de clore la session avec des trucs et astuces pour déboguer son code, l’importance de la reproductibilité et de la science ouverte.</p>
+</section>
+<section id="prérequis-objectifs-et-pédagogie" class="level2">
+<h2 class="anchored" data-anchor-id="prérequis-objectifs-et-pédagogie">Prérequis, objectifs et pédagogie</h2>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Prérequis</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Objectifs</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Pédagogie</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>Le cours ne nécessite aucune connaissance préalable en programmation ou statistique. Les étudiant·e·s de tous horizons sont les bienvenu·e·s. Ce cours d’initiation à la programmation se veut accessible pour tout individu désirant développer des connaissances en science des données.</p>
+<section id="qui-bénéficiera-le-plus-du-cours" class="level3">
+<h3 class="anchored" data-anchor-id="qui-bénéficiera-le-plus-du-cours">Qui bénéficiera le plus du cours:</h3>
+<p>(En ordre décroissant)</p>
+<ul>
+<li>L’individu qui n’a aucune notion de programmation ou du langage R;</li>
+<li>L’individu qui a appris de façon autodidacte et qui souhaite consolider ses bases;</li>
+<li>L’individu qui connait R et qui souhaite apprendre les méthodes de travail collaboratif.</li>
+</ul>
+<p>À noter que l’emphase est mise avant tout sur l’apprentissage des notions pour les néophytes en la matière, donc une personne ayant déjà des connaissances pourrait trouver que le cours n’avance pas assez vite. Ceci étant dit, le cours a été pensé afin d’offrir une flexibilité pour les individus plus rapides ou avancés qui leur permet d’approfondir des concepts liés au cours ou d’assister leurs collègues.</p>
+<p>Enfin, il importe de préciser que ce cours ne prétend pas rendre la personne qui complète le cours experte en programmation ou en analyse de données. Ce cours offre plutôt la possibilité d’apprendre et de mettre en pratique les bases de la programmation avec R dans un environnement structuré qui favorise l’autonomie de sa propre courbe d’apprentissage en fonction de ses intérêts.</p>
+</section>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>L’objectif principal du cours <em>FAS1002 - Initiation à la programmation en sciences sociales</em> est d’offrir une première exposition positive à la programmation et de développer une culture de l’informatique dans le but d’acquérir des compétences techniques et des compétences générales essentielles en science des données. Pour ce faire, une approche axée sur la pratique sera mise de l’avant afin de se familiariser avec plusieurs concepts et outils de base en informatique qui permettront une meilleure compréhension et utilisation de R et son univers en vue de l’application de méthodes statistiques avancées dans les cours suivants. Plus spécifiquement, les séances abordent différents aspects techniques qui permettront d’apprendre graduellement à développer du code afin d’analyser des données, produire des rapports interactifs et bien plus encore.</p>
+<p>Les compétences techniques qui seront apprises comprennent:</p>
+<ul>
+<li>Connaitre les types et les structures des données les plus communs;</li>
+<li>Manipuler et nettoyer des jeux de données;</li>
+<li>Conceptualiser et créer des boucles pour réaliser différents types d’analyses;</li>
+<li>Utiliser des fonctions internes et créer des fonctions originales;</li>
+<li>Manipuler et transformer des chaines de caractères des bases de données;</li>
+<li>Construire des tableaux et des figures pour réaliser des analyses statistiques simples;</li>
+<li>Connaître les différents packages du <a href="https://www.tidyverse.org/">Tidyverse</a>;</li>
+<li>Maitriser <a href="https://www.rstudio.com/products/rstudio/">RStudio</a>, un environnement de développement intégré (IDE) libre et gratuit;</li>
+<li>Être en mesure d’appliquer les bonnes pratiques reconnues en contexte de partage de code et de travail collaboratif.</li>
+</ul>
+<p>L’individu complétant le cours avec assiduité sera également en mesure de transférer et d’appliquer ses connaissances dans d’autres environnements puisque des compétences générales seront acquises:</p>
+<ul>
+<li>Capacité à chercher de l’aide et à bien poser ses questions;</li>
+<li>Connaitre les concepts de base d’informatique et de programmation;</li>
+<li>Élaborer la structure de scripts à l’aide de pseudocode et décomposition;</li>
+<li>Capacité à résoudre des problèmes concrets à l’aide de la programmation;</li>
+<li>Savoir choisir les outils ou programmes optimaux pour manipuler et analyser des données;</li>
+<li>Comprendre l’importance de la reproductibilité et de la science ouverte dans le contexte de programmation et de données.</li>
+</ul>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<p>Ce cours est interactif et se déroule principalement, sans grande surprise, sur votre ordinateur! La meilleure façon d’apprendre des outils de programmation et d’analyse est de travailler directement avec des données et mettre du temps à essayer de construire des choses. Adoptant une méthode d’enseignement analogue à une classe inversée, la majorité de la théorie doit être lue ou vue avant les classes et le temps en classe sera consacré à la révision de concepts, à répondre aux questions et échanger, à des sessions de codage en direct et à avancer les travaux. Plusieurs modalités d’enseignement seront utilisées afin d’agrémenter l’apprentissage des concepts et techniques en vue de les appliquer pour résoudre des problèmes réels et concrets. Contrairement aux langages de programmation à usage général tels que Python, R a été spécialement conçu pour les statistiques. Nous apprendrons à faire des choses plus générales de programmation, mais l’utilité principale de R demeure l’analyse de données. Cependant, les compétences enseignées dans ce cours sont conçues pour être transférables à d’autres langages comme Python.</p>
+<p>Afin de maximiser les apprentissages, tout ce qui peut se faire avec R sera fait avec R, autant les notes de cours, les questionnaires, les devoirs que les travaux. Nous utiliserons également une <a href="https://edstem.org/">plateforme Web, Ed</a>, qui permettra d’agrémenter la pédagogie et le bon déroulement du cours. Le principal atout de la plateforme est qu’elle permet de poser des questions avec du code R et de le faire rouler, donc tout le monde peut commenter et suggérer des pistes de solutions.</p>
+<p>Une période d’installation et de débogage des différents logiciels est prévue à l’horaire lors de la première semaine puisqu’il y a souvent des erreurs. Les bogues sont nos amis, ils offrent des opportunités en or pour apprendre. L’enseignement dans ce cours consiste, avant tout, à soutenir l’apprentissage.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="ouvrages" class="level2">
+<h2 class="anchored" data-anchor-id="ouvrages">Ouvrages</h2>
+<p>Toutes les lectures proposées dans le cadre du cours sont disponibles gratuitement et librement sur internet. Les trois ressources ci-dessous permettront d’acquérir des connaissances approfondies de la programmation, R et du Tidyverse. D’autres ressources complémentant les ouvrages principaux seront partagés tout au long de la session et elles seront ajoutées au calendrier du cours.</p>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">Programmer avec R</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">R for Data Science</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false">Tidyverse Skills for Data Science</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<p>L’ouvrage principal sur lequel la première partie du cours est basée est <a href="https://vigou3.gitlab.io/programmer-avec-r">Programmer avec R</a> par <a href="https://gitlab.com/vigou3/programmer-avec-r">Vincent Goulet (2022)</a></p>
+<p>Selon l’auteur:</p>
+<blockquote class="blockquote">
+<p><a href="https://vigou3.gitlab.io/programmer-avec-r"><em>Programmer avec R</em></a> est un ouvrage d’initiation à la programmation informatique basé sur le langage R. Les fonctionnalités statistiques de R n’y sont pas abordées. On se concentre plutôt sur l’apprentissage du langage de programmation sous-jacent.</p>
+<p>L’ouvrage repose sur une philosophie d’apprentissage du langage R par l’exposition à un maximum de code et par la pratique de la programmation. C’est pourquoi les chapitres sont rédigés de manière synthétique et qu’ils comportent peu d’exemples au fil du texte.</p>
+<p>En revanche, le lecteur est appelé à lire et à exécuter le code informatique se trouvant dans les sections d’exemples à la fin de chacun des chapitres. Ce code et les commentaires qui l’accompagnent reviennent sur l’essentiel des concepts du chapitre et les complémentent souvent.</p>
+<p>Question de développer, chez le lecteur, une culture de l’informatique et une connaissance des outils de développement informatique essentiels, <a href="https://vigou3.gitlab.io/programmer-avec-r"><em>Programmer avec R</em></a>traite également de l’histoire des langages de programmation; des principes de base des systèmes d’exploitation et des systèmes de gestion de fichiers; des bonnes pratiques en matière de travail collaboratif; des outils d’analyse et de contrôle de texte <code>grep</code>, <code>sed</code> et <code>awk</code>.</p>
+</blockquote>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<div class="grid">
+<div class="g-col-12 g-col-md-9">
+<p>Écrit en partie par <a href="https://hadley.nz/">Hadley Wickham</a>, l’un des principaux développeurs du <a href="https://www.tidyverse.org/">Tidyverse</a>, <a href="https://r4ds.had.co.nz/">R for Data Science</a> est souvent cité comme étant LA porte d’entrée à l’analyse de données avec R et le Tidyverse. Il s’agit d’un des deux ouvrages essentiels pour la deuxième partie du cours.</p>
+<p>Extrait tiré sur <a href="https://www.tidyverse.org/learn/">tidyverse.org/learn</a>:</p>
+<blockquote class="blockquote">
+<p>The best place to start learning the tidyverse is R for Data Science (R4DS for short), an O’Reilly book written by Hadley Wickham and Garrett Grolemund. It’s designed to take you from knowing nothing about R or the tidyverse to having all the basic tools of data science at your fingertips.</p>
+</blockquote>
+</div>
+<div class="g-col-12 g-col-md-3 order-md-first d-flex align-items-center">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/img/R4DS_cover.png" class="mb-0 img-fluid figure-img" alt="Couverture du livre R for Data Science"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
+<div class="grid">
+<div class="g-col-12 g-col-md-9">
+<p>Développé par les membres du <a href="https://jhudatascience.org/">Johns Hopkins Data Science Lab</a>, <a href="https://jhudatascience.org/tidyversecourse/">Tidyverse Skills for Data Science</a> regroupe toutes les informations nécessaires afin de compléter la spécialisation qui porte le même sur sur Coursera, <a href="https://www.coursera.org/specializations/tidyverse-data-science-r">Tidyverse Skills for Data Science in R Specialization</a>. Il s’agit donc d’une ressource très complète de grande qualité.</p>
+<p>Il s’agit de la deuxième ressources essentielles pour la deuxième partie du cours.</p>
+</div>
+<div class="g-col-12 g-col-md-3 order-md-first d-flex align-items-center">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://jhudatascience.org/images/tidyverse.png" class="mb-0 img-fluid figure-img" alt="Logo du Tidyverse Skills for Data Science"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="évaluations" class="level2">
+<h2 class="anchored" data-anchor-id="évaluations">Évaluations</h2>
+<p>En plus des lectures et de la théorie enseignée, il y a plusieurs méthodes d’évaluation servant à mesurer la progression des apprentissages tout au long du semestre. Aucun examen en classe n’est prévu, seulement des travaux de différentes ampleurs. Les évaluations servent avant tout d’aide pour compléter et appliquer avec assiduité la matière vue dans le cours.</p>
+<p>Sur un total de <strong>100 points</strong>:</p>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true"><strong>Participation - 10%</strong></a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false"><strong>Exercices - 30%</strong></a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false"><strong>Travail de mi-session - 25%</strong></a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-4" role="tab" aria-controls="tabset-3-4" aria-selected="false"><strong>Travail final - 35%</strong></a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<ul>
+<li>10 points sont alloués pour la participation observée autant sur les plateformes que dans les séances en direct. J’estime qu’être engagé·e dans le cadre du cours ne signifie pas nécessairement de prendre la parole lors des séances synchrones. Vous pouvez faire preuve de participation par le biais d’entraide avec vos collègues lors des sessions de codage, à réagir aux commentaires des autres, tenter de répondre aux questions ou suggérer des améliorations sur le code des autres, etc.</li>
+</ul>
+</div>
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<ul>
+<li>30 points sont alloués pour <strong>12 mini-exercices</strong> et 6 modules avec quiz dispersés tout au long de la session qui doivent être complétés avant le début du cours. Ces activités doivent être complétées avec un score de 100 % pour obtenir tous les points, mais elles peuvent être reprises à l’infini. Le principal objectif est de motiver l’étudiant·e à compléter le contenu à temps et mettre en évidence les concepts essentiels à apprendre.</li>
+</ul>
+</div>
+<div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
+<ul>
+<li>25 points sont alloués pour le travail de mi-session qui évaluera les compétences enseignées jusqu’à la semaine de lecture. Des instructions détaillées sur ce qui est attendu dans le travail seront fournies lors des premières semaines du semestre. Ce travail mettra à l’épreuve concepts de bases en programmation, gestion de version de contrôle et collaboration.
+<ul>
+<li>Date limite pour la remise: <a href="https://time.is/2359_25_Oct_2022_in_Anywhere_on_Earth/Montreal">25 octobre 2022 - 23:59 - AOE (Anywhere On Earth)</a>.</li>
+</ul></li>
+</ul>
+</div>
+<div id="tabset-3-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-4-tab">
+<ul>
+<li>35 points sont alloués pour le travail final qui prendra la forme d’un vrai rapport de recherche complet et automatisé développé en collaboration. Tous les concepts abordés dans le cours devront être approfondis et utilisés lors de son élaboration.
+<ul>
+<li>Date limite pour la remise: <a href="https://time.is/2359_18_Dec_2022_in_Anywhere_on_Earth/Montreal">18 décembre 2022 - 23:59 - AOE (Anywhere On Earth)</a>.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="calendrier" class="level2">
+<h2 class="anchored" data-anchor-id="calendrier">Calendrier</h2>
+<div class="cal_grid_container">
+<div class="cal_date">
+<p>6 septembre</p>
+</div>
+<div class="cal_week">
+<p>Semaine 1</p>
+</div>
+<div class="cal_week_content">
+<p><strong>Présentation du plan de cours; Installation de R, RStudio et Git.</strong><br>
+Toutes les lectures vous seront indiquées et partagées sur <a href="https://edstem.org/us/courses/6933/discussion/574747">Ed</a>, <a href="https://edstem.org/us/courses/6933/discussion/574747">la plateforme de discussions</a>, et sur le <a href="https://fas1002.github.io/">site web du cours</a>.</p>
+</div>
+<div class="cal_reading">
+<p>Lectures</p>
+</div>
+<div class="cal_reading_content">
+<p>Plan de cours; Chapitre 1 de Programmer avec R</p>
+</div>
+<div class="cal_assessment">
+<p>Évaluations</p>
+</div>
+<div class="cal_assessment_content">
+<p>Module 1 à compléter avant le cours</p>
+</div>
+<!-- Week 2 -->
+<div class="cal_date">
+<p>13 septembre</p>
+</div>
+<div class="cal_week">
+<p>Semaine 2</p>
+</div>
+<div class="cal_week_content">
+<p><strong>Éléments d’informatique pour la programmation et l’algorithmique</strong></p>
+</div>
+<div class="cal_reading">
+<p>Lectures</p>
+</div>
+<div class="cal_reading_content">
+<p><strong>Chapitres 1</strong> et <strong>2</strong> de Programmer avec R et <a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010372"><strong>Lawlor et al. (2022)</strong></a></p>
+</div>
+<div class="cal_assessment">
+<p>Évaluations</p>
+</div>
+<div class="cal_assessment_content">
+<p><strong>Swirl 1 + 2 + 3</strong> et <strong>Module 2</strong> à compléter avant le cours</p>
+</div>
+<!-- Week 3 -->
+<div class="cal_date">
+<p>20 septembre</p>
+</div>
+<div class="cal_week">
+<p>Semaine 3</p>
+</div>
+<div class="cal_week_content">
+<p><strong>Présentation de R; Documentation et aide</strong></p>
+</div>
+<div class="cal_reading">
+<p>Lectures</p>
+</div>
+<div class="cal_reading_content">
+<p><strong>Chapitre 3 de Programmer avec R</strong></p>
+</div>
+<div class="cal_assessment">
+<p>Évaluations</p>
+</div>
+<div class="cal_assessment_content">
+<p><strong>Swirl 4 + 5</strong> à compléter avant le cours</p>
+</div>
+<!-- Week 4 -->
+<div class="cal_date">
+<p>27 septembre</p>
+</div>
+<div class="cal_week">
+<p>Semaine 4</p>
+</div>
+<div class="cal_week_content">
+<p><strong>Bases de la programmation et R</strong></p>
+</div>
+<div class="cal_reading">
+<p>Lectures</p>
+</div>
+<div class="cal_reading_content">
+<p><strong>Chapitre 4 de Programmer avec R</strong></p>
+</div>
+<div class="cal_assessment">
+<p>Évaluations</p>
+</div>
+<div class="cal_assessment_content">
+<p><strong>Swirl 6 + 7 + 8 et Module 3</strong> à compléter avant le cours</p>
+</div>
+<!-- Week 5 -->
+<div class="cal_date">
+<p>4 octobre</p>
+</div>
+<div class="cal_week">
+<p>Semaine 5</p>
+</div>
+<div class="cal_week_content">
+<p><strong>Structure et manipulation des données</strong></p>
+</div>
+<div class="cal_reading">
+<p>Lectures</p>
+</div>
+<div class="cal_reading_content">
+<p><strong>Chapitre 5 de Programmer avec R</strong></p>
+</div>
+<div class="cal_assessment">
+<p>Évaluations</p>
+</div>
+<div class="cal_assessment_content">
+<p><strong>Swirl 9 + 10 + 11</strong> à compléter avant le cours</p>
+</div>
+<!-- Week 6 -->
+<div class="cal_date">
+<p>11 octobre</p>
+</div>
+<div class="cal_week">
+<p>Semaine 6</p>
+</div>
+<div class="cal_week_content">
+<p><strong>Bonnes pratiques de programmation et de débogage; Gestion de versions et collaboration</strong></p>
+</div>
+<div class="cal_reading">
+<p>Lectures</p>
+</div>
+<div class="cal_reading_content">
+<p><strong>Chapitres 6 et 8 de Programmer avec R</strong></p>
+</div>
+<div class="cal_assessment">
+<p>Évaluations</p>
+</div>
+<div class="cal_assessment_content">
+<p><strong>Swirl 12 et Module 4</strong> à compléter avant le cours</p>
+</div>
+<!-- Week 7 -->
+<div class="cal_date">
+<p>18 octobre</p>
+</div>
+<div class="cal_week">
+<p>Semaine 7</p>
+</div>
+<div class="cal_week_content">
+<p><strong>Algorithmes et boucles</strong></p>
+</div>
+<div class="cal_reading">
+<p>Lectures</p>
+</div>
+<div class="cal_reading_content">
+<p><strong>Chapitre 7 de Programmer avec R et chapitres 6</strong> (p.&nbsp;165-174, 181-183 et 192-197); <strong>7</strong> (p.&nbsp;201–204) et <strong>9</strong> (p.&nbsp;227–232) <strong>de <a href="https://onlinelibrary.wiley.com/doi/epub/10.1002/9781119575955">Essential Algorithms</a></strong></p>
+</div>
+<div class="cal_assessment">
+<p>Évaluations</p>
+</div>
+<div class="cal_assessment_content">
+<p>-</p>
+</div>
+<!-- Week 6 -->
+<div class="cal_date">
+<p>25 octobre</p>
+</div>
+<div class="cal_week">
+<p>-</p>
+</div>
+<div class="cal_week_content">
+<p><strong>Pas de cours</strong> - Semaine de travaux et d’étude</p>
+</div>
+<div class="cal_reading">
+<p>Lectures</p>
+</div>
+<div class="cal_reading_content">
+<p>-</p>
+</div>
+<div class="cal_assessment">
+<p>Évaluations</p>
+</div>
+<div class="cal_assessment_content">
+<p>Date limite pour la remise du travail de mi-session: <a href="https://time.is/2359_25_Oct_2022_in_Anywhere_on_Earth/Montreal">25 octobre 2022 - 23:59 - AOE (Anywhere On Earth)</a></p>
+</div>
+<!-- Week 8 -->
+<div class="cal_date">
+<p>1 novembre</p>
+</div>
+<div class="cal_week">
+<p>Semaine 8</p>
+</div>
+<div class="cal_week_content">
+<p><strong>Utilisation de bibliothèques et de packages; Principes de Tidy data et de nettoyage de jeux de données</strong></p>
+</div>
+<div class="cal_reading">
+<p>Lectures</p>
+</div>
+<div class="cal_reading_content">
+<p><strong>Chapitre 11</strong> de <strong>Programmer avec R</strong> et <a href="https://jhudatascience.org/tidyversecourse/intro.html"><strong>Introduction to the Tidyverse</strong></a></p>
+</div>
+<div class="cal_assessment">
+<p>Évaluations</p>
+</div>
+<div class="cal_assessment_content">
+<p><strong>Module 5</strong> à compléter avant le cours</p>
+</div>
+<!-- Week 6 -->
+<div class="cal_date">
+<p>8 novembre</p>
+</div>
+<div class="cal_week">
+<p>Semaine 9</p>
+</div>
+<div class="cal_week_content">
+<p>Tidyverse I</p>
+</div>
+<div class="cal_reading">
+<p>Lectures</p>
+</div>
+<div class="cal_reading_content">
+<p>Section <a href="https://r4ds.had.co.nz/explore-intro.html"><strong>Explore</strong></a> de <a href="https://r4ds.had.co.nz">R for Data Science</a> et <a href="https://jhudatascience.org/tidyversecourse/get-data.html"><strong>Importing Data in the Tidyverse</strong></a> de <a href="https://jhudatascience.org/tidyversecourse/">Tidyverse Skills for Data Science</a></p>
+</div>
+<div class="cal_assessment">
+<p>Évaluations</p>
+</div>
+<div class="cal_assessment_content">
+<p>-</p>
+</div>
+<!-- Week 10 -->
+<div class="cal_date">
+<p>15 novembre</p>
+</div>
+<div class="cal_week">
+<p>Semaine 10</p>
+</div>
+<div class="cal_week_content">
+<p>Tidyverse II</p>
+</div>
+<div class="cal_reading">
+<p>Lectures</p>
+</div>
+<div class="cal_reading_content">
+<p>Sections <a href="https://r4ds.had.co.nz/wrangle-intro.html"><strong>Wrangle</strong></a> + <a href="https://r4ds.had.co.nz/program-intro.html"><strong>Program</strong></a> de <a href="https://r4ds.had.co.nz">R for Data Science</a> et <a href="https://jhudatascience.org/tidyversecourse/wrangle-data.html"><strong>Wrangling Data in the Tidyverse</strong></a> de <a href="https://jhudatascience.org/tidyversecourse/">Tidyverse Skills for Data Science</a></p>
+</div>
+<div class="cal_assessment">
+<p>Évaluations</p>
+</div>
+<div class="cal_assessment_content">
+<p><strong>Module 6</strong> à compléter avant le cours</p>
+</div>
+<!-- Week 11 -->
+<div class="cal_date">
+<p>22 novembre</p>
+</div>
+<div class="cal_week">
+<p>Semaine 11</p>
+</div>
+<div class="cal_week_content">
+<p>Tidyverse III et autres packages utilises</p>
+</div>
+<div class="cal_reading">
+<p>Lectures</p>
+</div>
+<div class="cal_reading_content">
+<p>Section <a href="https://r4ds.had.co.nz/model-intro.html"><strong>Model</strong></a> de <a href="https://r4ds.had.co.nz">R for Data Science</a> <strong>et <a href="https://jhudatascience.org/tidyversecourse/model.html">Modeling Data in the Tidyverse</a></strong> de <a href="https://jhudatascience.org/tidyversecourse/">Tidyverse Skills for Data Science</a></p>
+</div>
+<div class="cal_assessment">
+<p>Évaluations</p>
+</div>
+<div class="cal_assessment_content">
+<p>-</p>
+</div>
+<!-- Week 12 -->
+<div class="cal_date">
+<p>29 novembre</p>
+</div>
+<div class="cal_week">
+<p>Semaine 12</p>
+</div>
+<div class="cal_week_content">
+<p><strong>Reproductibilité, science ouverte et programmation</strong></p>
+</div>
+<div class="cal_reading">
+<p>Lectures</p>
+</div>
+<div class="cal_reading_content">
+<p>À déterminer</p>
+</div>
+<div class="cal_assessment">
+<p>Évaluations</p>
+</div>
+<div class="cal_assessment_content">
+<p>-</p>
+</div>
+<!-- Week 13 -->
+<div class="cal_date">
+<p>6 décembre</p>
+</div>
+<div class="cal_week">
+<p>Semaine 13</p>
+</div>
+<div class="cal_week_content">
+<p><strong>La semaine manquante - Méli-mélo de trucs et astuces qu’on n’enseigne jamais</strong> (mais qu’on devrait peut-être enseigner)</p>
+</div>
+<div class="cal_reading">
+<p>Lectures</p>
+</div>
+<div class="cal_reading_content">
+<p>-</p>
+</div>
+<div class="cal_assessment">
+<p>Évaluations</p>
+</div>
+<div class="cal_assessment_content">
+<p>Date limite pour la remise du travail final: <a href="https://time.is/2359_18_Dec_2022_in_Anywhere_on_Earth/Montreal">18 décembre 2022 - 23:59 - AOE (Anywhere On Earth)</a>.</p>
+</div>
+</div>
+</section>
+<section id="rappel-de-règlements-pédagogiques" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="rappel-de-règlements-pédagogiques">Rappel de règlements pédagogiques</h2>
+<p>Veuillez prendre note que le trimestre se termine le 23 décembre 2022 (incluant la période des examens). Aucune demande d’examen différé ne sera acceptée sans motif valable. Nous entendons par motif valable, un motif indépendant de la volonté de l’étudiant·e, tel que la force majeure, le cas fortuit ou une maladie attestée par un certificat de médecin.</p>
+<section id="absence-à-un-examen" class="level3">
+<h3 class="anchored" data-anchor-id="absence-à-un-examen">Absence à un examen</h3>
+<p>L’étudiant·e doit motiver, en remplissant le formulaire disponible dans le Centre étudiant, toute absence à une évaluation ou à un cours faisant l’objet d’une évaluation continue dès qu’il est en mesure de constater qu’il ne pourra être présent·e à une évaluation et fournir les pièces justificatives dans les sept jours suivant l’absence.</p>
+</section>
+<section id="délais-pour-la-remise-dun-travail" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="délais-pour-la-remise-dun-travail">Délais pour la remise d’un travail</h3>
+<p>L’étudiant·e doit motiver, en remplissant le formulaire disponible dans le Centre étudiant, toute demande de délai pour la remise d’un travail dès qu’il ou elle est en mesure de constater qu’il ou elle ne pourra remettre à temps le travail et fournir les pièces justificatives.</p>
+<aside>
+On s’entend, avertissez-moi avant de remplir le questionnaire en question, peut-être trouverons nous une solution!
+</aside>
+<p>La pénalité imposée pour les retards dans la remise des travaux est de <strong>10 points de pourcentage</strong> par jour à moins d’indication contraire. Cette pénalité est calculée en déduisant 10 points de pourcentage à la note obtenue pour le travail en question. Il s’agit de la politique du Département.</p>
+</section>
+<section id="la-prévention-du-plagiat" class="level3">
+<h3 class="anchored" data-anchor-id="la-prévention-du-plagiat">La prévention du plagiat</h3>
+<p>Le Département porte une attention toute particulière à la lutte contre le plagiat, le copiage ou la fraude lors des examens. Le plagiat consiste à utiliser de façon totale ou partielle, littérale ou déguisée le texte d’autrui en le faisant passer pour sien ou sans indication de référence à l’occasion d’un travail, d’un examen ou d’une activité faisant l’objet d’une évaluation. Cette fraude est lourdement sanctionnée.</p>
+<p>Tous les étudiant·e·s sont invités à consulter le site web <a href="http://www.integrite.umontreal.ca/" class="uri">http://www.integrite.umontreal.ca/</a> et à prendre connaissance du Règlement disciplinaire sur le plagiat ou la fraude concernant les étudiant·e·s. Plagier peut entrainer un échec, la suspension ou le renvoi de l’Université.&nbsp;</p>
+</section>
+</section>
+<section id="le-harcèlement-y-compris-à-caractère-sexuel" class="level2">
+<h2 class="anchored" data-anchor-id="le-harcèlement-y-compris-à-caractère-sexuel">Le harcèlement, y compris à caractère sexuel</h2>
+<p>Il incombe à chaque membre de la communauté universitaire de se conduire avec respect en tout temps envers tout le monde. En particulier, le Département de science politique de l’Université de Montréal s’engage à créer un milieu accueillant et sécuritaire pour toutes et tous, quelle que soit leur identité.</p>
+<p>Les documents suivants ont des démarches pratiques à suivre&nbsp;:</p>
+<ul>
+<li><a href="https://harcelement.umontreal.ca/obtenir-de-laide/vous-vivez-une-situation-difficile">Si vous pensez que vous vivez du harcèlement</a></li>
+<li><a href="https://harcelement.umontreal.ca/obtenir-de-laide/vous-avez-ete-temoin-dune-situation/">Si on s’est confié à vous ou si vous êtes témoin de harcèlement</a></li>
+</ul>
+<p>Pour toute autre question&nbsp;: <a href="http://harcelement.umontreal.ca/" class="uri">http://harcelement.umontreal.ca/</a></p>
+</section>
+<section id="besoin-découte-situation-de-détresse" class="level2">
+<h2 class="anchored" data-anchor-id="besoin-découte-situation-de-détresse">Besoin d’écoute? Situation de détresse?</h2>
+<p>Comme étudiant·e, vous pouvez faire appel à plusieurs lignes d’écoute ou d’urgence. Tous les liens sont rassemblés sur la page&nbsp;<a href="https://www.cavaaller.ca/#services">Ça va aller</a>.</p>
+<p>Les étudiant·e·s ont accès à un&nbsp;<a href="http://www.aseq.ca/rte/fr/FA%C3%89CUM_Programmedaide_Programmedaide">service 24 heures/7 jours</a>&nbsp;offert par l’Alliance pour la santé étudiante au Québec. Le numéro est le suivant&nbsp;:&nbsp;1-833-851-1363.</p>
+<p>Vous pouvez aussi faire appel à une sentinelle. La sentinelle est un·e employé·e de l’UdeM, formé·e et disponible pour vous accueillir, vous écouter et vous orienter vers les bonnes ressources. Son accueil est spontané, respectueux et confidentiel. Voir le <a href="http://cscp.umontreal.ca/activiteprevention/sentinelle.htm">Bottin des sentinelles</a> au besoin.</p>
+<p>Évidemment, vous pouvez venir me parler en privé si vous en ressentez le besoin.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } 
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copié");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left"><a href="./remerciements.qmd" class="nav-link text-decoration-none">Propulsé par des logiciels libres 💖</a></div>   
+      <div class="nav-footer-center">
+        <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="./a-propos.html">Contact</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://github.com/FAS1002/A22">Licence</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="./a-propos.html">Contact</a>
+  </li>  
+</ul>
+      </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/FAS1002/">
+      <i class="bi bi-github" role="img" aria-label="GitHub du cours FAS1002">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
