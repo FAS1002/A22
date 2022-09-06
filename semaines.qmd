@@ -1,0 +1,15 @@
+---
+title: "Calendrier"
+listing:
+  contents: semaines
+  sort: "date desc"
+  type: default
+  categories: true
+  filter-ui: [title, date]
+  sort-ui: [title, date]
+  image-placeholder: "assets/img/s_cover.jpg"
+---
+
+À chaque semaine, les lectures, les tâches et les présentations apparaissant
+dans le plan de cours seront indiquées en plus d'y ajouter un compte-rendu de
+la séance au maximum le lendemain de la séance.

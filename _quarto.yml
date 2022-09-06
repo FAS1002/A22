@@ -1,0 +1,71 @@
+project:
+  type: website
+  preview:
+    port: 4200
+    browser: true
+
+website:
+# meta
+  title: FAS1002-A22
+  description: | 
+    "Page d'accueil du cours FAS1002 - Initiation à la
+    programmation en sciences sociales à l'Université de
+    Montréal donné au trimestre d'automne 2022."
+  site-url: https://FAS1002.github.io/A22/
+  repo-url: https://github.com/FAS1002/A22/
+  repo-actions: [edit, issue, source]
+  # opengraph: true
+  twitter-card:
+    creator: "@SamGuay_"
+
+# menu
+  navbar:
+    logo: "assets/img/logo.png"
+    # pinned: true
+    align: center
+    # background: "#011C27"
+    left:
+      - href: index.qmd
+        text: Accueil
+      - href: "a-propos.qmd"
+        text: "À propos"
+      - href: syllabus.qmd
+        text: Plan de cours
+      - href: semaines.qmd
+        text: Calendrier
+
+# footer
+  page-footer:
+    background: "#FFA69E"
+
+    left: |
+      [Propulsé par des logiciels libres 💖](/remerciements.qmd){.nav-link .text-decoration-none}
+    center:
+      - text: "À propos"
+        href: a-propos.qmd
+      - text: "Licence"
+        href: https://github.com/FAS1002/A22
+      - text: "Contact"
+        href: a-propos.qmd
+    right:
+      - icon: github
+        href: https://github.com/FAS1002/
+        aria-label: GitHub du cours FAS1002
+        
+format:
+  html:
+    theme:
+      light: [flatly, assets/scss/custom.scss]
+      dark: [darkly, assets/scss/custom-dark.scss]
+    code-copy: true
+    code-overflow: wrap
+    css: assets/scss/styles.css
+    toc: true
+    lang: "fr"
+    smooth-scroll: true
+    highlight-style: github
+    
+editor: visual
+
+execute:
+  freeze: auto

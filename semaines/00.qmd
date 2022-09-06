@@ -1,0 +1,32 @@
+---
+title: "📌 Semaine 0"
+description: "Attendons que le trimestre débute avant d'ajouter du contenu! Il n'y a absolument rien à voir ici... ou peut-être pas 🤔?"
+author: "Samuel Guay"
+date: "9/6/2022"
+categories:
+  - cours
+  - semaine
+code-fold: true
+---
+
+Cette page sert absolument à rien. L'objectif était simplement de servir
+d'exemple.
+
+## Mais.. voici une belle tarte!
+
+```{r pie, fig.cap='SVP, évitez les tartes dans vos travaux!', tidy=FALSE}
+par(mar = c(0, 1, 0, 1))
+pie(
+  c(280, 60, 20),
+  c('Ciel', 'Côté ensoleillé de la pyramide', 'Côté ombragé de la pyramide'),
+  col = c('#0292D8', '#F7EA39', '#C4B632'),
+  init.angle = -50, border = NA
+)
+```
+
+<aside>Vous serez capables de faire beaucoup plus à la fin de la
+session!</aside>
+
+À la semaine prochaine ✌️
+
+![](https://media.giphy.com/media/ptqAPgghLtHOa0SLJS/giphy.gif){fig-align="center"}

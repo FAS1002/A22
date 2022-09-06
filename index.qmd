@@ -1,0 +1,22 @@
+---
+title: "Bienvenue au cours"
+sidebar: false
+toc: false
+listing:
+  contents: semaines
+  sort: "date desc"
+  type: default
+  max-items: 1
+  image-placeholder: "/assets/img/s-cover.jpg"
+---
+
+::: {.light-mode}
+![](assets/img/logo.png){fig-alt="Logo de FAS1002" fig-align="center"}
+:::
+
+::: {.dark-mode}
+![](assets/img/logo_dark.png){fig-alt="Logo de FAS1002 sombre" fig-align="center"}
+:::
+
+## Accès rapide à la dernière semaine
+

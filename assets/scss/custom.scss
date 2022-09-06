@@ -1,0 +1,15 @@
+/*-- scss:defaults --*/
+
+@import 'https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap';
+
+$font-family-sans-serif: "Fira Sans", sans-serif;
+
+$link-color: #62959C;
+$navbar-bg: #62959C;
+
+/*-- scss:rules --*/
+
+.light-mode { display: block; }
+.dark-mode { display: none; }
+
+
