@@ -3,16 +3,16 @@
     "listing": "/semaines.html",
     "items": [
       "/semaines/02.html",
-      "/semaines/00.html",
-      "/semaines/01.html"
+      "/semaines/01.html",
+      "/semaines/00.html"
     ]
   },
   {
     "listing": "/index.html",
     "items": [
       "/semaines/02.html",
-      "/semaines/00.html",
-      "/semaines/01.html"
+      "/semaines/01.html",
+      "/semaines/00.html"
     ]
   }
 ]
