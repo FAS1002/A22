@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.1.189">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Samuel Guay">
+<meta name="description" content="Contenu pour la semaine, incluant les lectures et les modules">
+
+<title>FAS1002-A22 - Semaine 2</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "Pas de résultats",
+    "search-matching-documents-text": "documents trouvés",
+    "search-copy-link-title": "Copier le lien vers la recherche",
+    "search-hide-matches-text": "Cacher les correspondances additionnelles",
+    "search-more-match-text": "correspondance de plus dans ce document",
+    "search-more-matches-text": "correspondances de plus dans ce document",
+    "search-clear-button-title": "Effacer",
+    "search-detached-cancel-button-title": "Annuler",
+    "search-submit-button-title": "Envoyer"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+<link rel="stylesheet" href="../assets/scss/styles.css">
+<meta name="twitter:title" content="FAS1002-A22 - Semaine 2">
+<meta name="twitter:description" content="Contenu pour la semaine, incluant les lectures et les modules">
+<meta name="twitter:creator" content="@SamGuay_">
+<meta name="twitter:card" content="summary">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../assets/img/logo.png" alt="" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">FAS1002-A22</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html">Accueil</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../a-propos.html">À propos</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../syllabus.html">Plan de cours</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../semaines.html">Calendrier</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../installation.html">Installation</a>
+  </li>  
+</ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Sur cette page</h2>
+   
+  <ul>
+  <li><a href="#objectif-de-la-semaine-2" id="toc-objectif-de-la-semaine-2" class="nav-link active" data-scroll-target="#objectif-de-la-semaine-2">Objectif de la semaine 2</a></li>
+  <li><a href="#lectures" id="toc-lectures" class="nav-link" data-scroll-target="#lectures">1. Lectures</a>
+  <ul class="collapse">
+  <li><a href="#programmer-avec-r---chapitre-1-et-2" id="toc-programmer-avec-r---chapitre-1-et-2" class="nav-link" data-scroll-target="#programmer-avec-r---chapitre-1-et-2">Programmer avec R - Chapitre 1 et 2</a></li>
+  </ul></li>
+  <li><a href="#ligne-de-commande-cli" id="toc-ligne-de-commande-cli" class="nav-link" data-scroll-target="#ligne-de-commande-cli">2. Ligne de commande (CLI)</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">2.1 Introduction</a></li>
+  <li><a href="#prochaine-étape-pratique" id="toc-prochaine-étape-pratique" class="nav-link" data-scroll-target="#prochaine-étape-pratique">2.2 Prochaine étape: Pratique</a></li>
+  <li><a href="#mais...-ce-nest-pas-un-cours-sur-r" id="toc-mais...-ce-nest-pas-un-cours-sur-r" class="nav-link" data-scroll-target="#mais...-ce-nest-pas-un-cours-sur-r">Mais... ce n’est pas un cours sur R?</a></li>
+  <li><a href="#dernière-lecture" id="toc-dernière-lecture" class="nav-link" data-scroll-target="#dernière-lecture">3. Dernière lecture!</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/FAS1002/A22/edit/main/semaines/02.qmd" class="toc-action">Modifier cette page</a></p><p><a href="https://github.com/FAS1002/A22/issues/new" class="toc-action">Faire part d'un problème</a></p><p><a href="https://github.com/FAS1002/A22/blob/main/semaines/02.qmd" class="toc-action">Voir la source</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Semaine 2</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">cours</div>
+    <div class="quarto-category">semaine</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Contenu pour la semaine, incluant les lectures et les modules
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Auteur·rice</div>
+    <div class="quarto-title-meta-contents">
+             <p>Samuel Guay </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Date de publication</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">13 septembre 2022</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+</header>
+
+<section id="objectif-de-la-semaine-2" class="level2">
+<h2 class="anchored" data-anchor-id="objectif-de-la-semaine-2">Objectif de la semaine 2</h2>
+<p>Se familiariser avec quelques outils et concepts d'informatique afin d’être en mesure d’effectuer des opérations simples dans un système de fichiers à l’aide de l’interface en ligne de commande.</p>
+<p>À la fin du cours, nous devrions être en mesure de répondre à ces questions:</p>
+<ul>
+<li><p>Comment puis-je naviguer dans mon ordinateur?</p></li>
+<li><p>Comment puis-je voir les fichiers et les dossiers sur ma machine?</p></li>
+<li><p>Comment puis-je spécifier l’emplacement d’un fichier ou d’un dossier sur mon ordinateur?</p></li>
+<li><p>Comment puis-je créer, copier et supprimer des fichiers et des dossiers?</p></li>
+<li><p>Comment puis-je modifier des fichiers ou des dossiers?</p></li>
+</ul>
+<p>Vous êtes probablement déjà capables de répondre à toutes ces questions avec un interface graphique. Évidemment, je m’attends à ce que vous soyez capables d’y répondre également à partir d’un terminal.</p>
+</section>
+<section id="lectures" class="level2">
+<h2 class="anchored" data-anchor-id="lectures">1. Lectures</h2>
+<section id="programmer-avec-r---chapitre-1-et-2" class="level3">
+<h3 class="anchored" data-anchor-id="programmer-avec-r---chapitre-1-et-2">Programmer avec R - Chapitre 1 et 2</h3>
+<section id="lire-le-chapitre-1-pages-1-17-du-livre-programmer-avec-r." class="level4">
+<h4 class="anchored" data-anchor-id="lire-le-chapitre-1-pages-1-17-du-livre-programmer-avec-r.">1.1 Lire le <strong>chapitre 1 (pages 1-17)</strong> du livre <a href="https://edstem.org/us/courses/6933/resources?download=20545"><strong>Programmer avec R</strong></a>.</h4>
+<div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Vous pouvez télécharger le livre en cliquant sur le titre ci-haut ou en vous rendant sur la page des <a href="https://edstem.org/us/courses/6933/resources"><em>ressources</em></a><em>.</em> Pour télécharger le livre et tous les fichiers d’exercices et de code sur la <a href="https://gitlab.com/vigou3/programmer-avec-r/-/package_files/49736237/download">page officielle</a>.</p>
+</div>
+</div>
+<ul>
+<li>Si vous vous demandez “<em>Est-ce que toutes les sections sont vraiment importantes?</em>”, je vous dirais que la section <strong>1.3</strong> est la moins pertinente pour le cours. Cela ne lui enlève pas d’importance pour autant, mais si vous êtes pressé.e.s par le temps, cela vous allégera la tâche.</li>
+</ul>
+<p>Vous pouvez faire les exercices du chapitre, mais elles ne sont pas obligatoires pour le cours.</p>
+</section>
+<section id="lire-le-chapitre-2-pages-21-38-du-livre-programmer-avec-r" class="level4">
+<h4 class="anchored" data-anchor-id="lire-le-chapitre-2-pages-21-38-du-livre-programmer-avec-r">1.2 Lire le <strong>chapitre 2 (pages 21-38)</strong> du livre <a href="https://edstem.org/us/courses/6933/resources?download=20545"><strong>Programmer avec R</strong></a></h4>
+<ul>
+<li>Exercices plus pertinents pour le cours: <strong>2.2</strong>, <strong>2.3</strong>, <strong>2.4</strong>,</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="ligne-de-commande-cli" class="level2">
+<h2 class="anchored" data-anchor-id="ligne-de-commande-cli">2. Ligne de commande (CLI)</h2>
+</section>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">2.1 Introduction</h2>
+<p>Les humains et les ordinateurs interagissent généralement de différentes manières, par exemple via un clavier et une souris, des interfaces à écran tactile ou en utilisant des systèmes de reconnaissance vocale. Le moyen le plus largement utilisé pour interagir avec les ordinateurs personnels est appelé une <a href="https://fr.wikipedia.org/wiki/Interface_graphique">interface graphique</a> ou <strong>GUI</strong> pour <a href="https://en.wikipedia.org/wiki/Graphical_user_interface"><strong>G</strong>raphical <strong>U</strong>ser <strong>I</strong>nterface</a> en anglais. Avec une interface graphique, nous donnons des instructions à l’ordinateur en cliquant sur une souris et en utilisant des interactions guidées par des menus. À titre d’exemple, lorsque vous naviguez sur le site et que vous cliquez sur un lien votre ordinateur reçoit la commande et exécute l’action (ou une série d’actions) pour que la page apparaisse.</p>
+<p>Alors que l’aide visuelle d’une interface graphique rend la navigation et l’apprentissage intuitifs, cette façon de fournir des instructions à un ordinateur est très mal adaptée, notamment pour automatiser des tâches ou exécuter des centaines de tâches rapidement. Si les interfaces graphiques ont grandement facilité l'interaction humain-machine, elles n'ont pas pour autant fait disparaitre ou rendu obsolète la ligne de commande, particulièrement dans la pratique de la programmation.</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Mise en situation
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Imaginez la tâche suivante:</strong><br>
+Pour une recherche documentaire, vous devez copier la troisième ligne de mille fichiers texte dans mille répertoires différents et la coller dans un seul fichier. En utilisant une interface graphique, non seulement vous cliqueriez sur votre bureau pendant plusieurs, voire des dizaines, d’heures, mais vous pourriez également commettre une erreur dans le processus d’exécution de cette tâche répétitive. Une erreur aussi simple que de copier la deuxième ou la quatrième ligne par inadvertance à deux ou trois reprises pourrait invalider vos résultats.</p>
+</div>
+</div>
+<p>C’est, entre autres, dans des situations comme celle-ci que nous pouvons profiter de la puissance de la ligne de commande. La ligne de commande est la plus ancienne des interfaces pour interagir avec les ordinateurs. La ligne de commande du système d'exploitation demeure une interface importante pour les programmeurs.</p>
+<ul>
+<li><p>Parfois <strong><em>plus simple</em></strong> qu'une interface graphique</p></li>
+<li><p>Souvent <strong><em>plus rapide</em></strong> qu'une interface graphique</p></li>
+<li><p>Parfois la <strong>seule option</strong> (notamment pour les utilitaires Unix comme <a href="https://en.wikipedia.org/wiki/Grep"><code>grep</code></a>, <a href="https://en.wikipedia.org/wiki/Sed"><code>sed</code></a>, <a href="https://en.wikipedia.org/wiki/AWK"><code>awk</code></a>)</p></li>
+</ul>
+<p>Avant d’aller plus loin, abordons un peu de terminologie essentielle:</p>
+<ul>
+<li><p>(Interface en) <strong>Ligne de commande</strong> - <em><strong>Command Line</strong> Interface</em> - <strong>CLI</strong></p>
+<ul>
+<li>Mode d'interaction avec un programme informatique dans lequel l'utilisateur ou l’utilisatrice dicte les commandes et reçoit les réponses de l'ordinateur en<br>
+mode <u>texte.</u></li>
+</ul></li>
+</ul>
+<!-- -->
+<ul>
+<li><p><strong>Interpréteur</strong> de commande - <em><strong>Terminal</strong>, Shell</em></p>
+<ul>
+<li>Programme qui gère l'interface en ligne de commande.</li>
+</ul></li>
+</ul>
+<!-- -->
+<ul>
+<li><p>Invite de commande - <strong><em>Command prompt</em></strong></p>
+<ul>
+<li>Symbole affiché par l'interpréteur de commande pour indiquer qu'il est prêt à recevoir une commande.</li>
+</ul></li>
+</ul>
+<p>L’interpréteur de commande Unix (shell) est à la fois une interface de ligne de commande (CLI) et un langage de script, permettant d’effectuer automatiquement et rapidement des tâches répétitives. Avec les commandes appropriées, le shell ou terminal peut répéter des tâches avec ou sans modification autant de fois que nous le souhaitons, souvent en quelques secondes. En utilisant un terminal, la tâche dans l’exemple de la recherche documentaire ci-haut peut être accomplie en quelques secondes seulement.</p>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Astuce
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Lorsque vous cherchez sur internet pour obtenir de l’aide en lien avec ces terminalogies, vous allez rencontrer beaucoup de termes différents que les gens utilisent de façons interchangeables, par ex. cli, terminal, shell, bash, zshell, command line, etc. Sachez que même si leur définition varie, la plupart des utilisateurs et des utilisatrices mettent ces termes dans un même paquet. Lorsque nous débutons, je conseille souvent de ne pas trop s’entêter avec ces terminologies puisque vous trouverez réponses peu importe le terme utilisé.</p>
+</div>
+</div>
+<p>Dans le cadre du cours, nous nous concentrerons sur les interpréteurs de commande Unix, de type <a href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)">Bash</a>, puisque ceux-ci sont les plus répandus avec <a href="https://en.wikipedia.org/wiki/Z_shell">Z Shell</a> (Zsh). Il existe de nombreux programmes qui sont des shells; Bash n’est qu’un exemple. <strong>B</strong>ourne <strong>A</strong>gain <strong>SH</strong>ell a été nommé ainsi parce qu’il est dérivé d’un shell écrit par Stephen Bourne).</p>
+<p>Pour les quelques commandes que nous effectuerons, les individus sur MacOS qui utiliseront Zsh (désormais installé par défaut &gt;= Catalina) ne devraient rencontrer aucun problème. Pour ceux et celles sur Windows, nous utiliserons <a href="https://gitforwindows.org/">git-bash</a> éventuellement pour pour exécuter les commandes puisque ce sera les mêmes commandes et que ligne de commande Windows est différente. Nous apprendrons comment se servir de <a href="https://git-scm.com">Git</a> pour faire la gestion de versions de nos documents et git-bash est utilisé dans ce cas.</p>
+<p>Cependant, si votre terminal ne fonctionne pas pour une raison que vous ignorez, vous pourrez tout de même vous pratiquer sur <a href="rstudio.cloud">rstudio.cloud</a> qui permet d’utiliser bash dans l’onglet `terminal`.</p>
+</section>
+<section id="prochaine-étape-pratique" class="level2">
+<h2 class="anchored" data-anchor-id="prochaine-étape-pratique">2.2 Prochaine étape: Pratique</h2>
+<p>Pour la suite, vous devez vous rendre sur Ed pour une session de pratique et d’introductio à la ligne de commande!<br>
+<br>
+➡️ <a href="https://edstem.org/us/courses/6933/lessons/22144/" class="uri">https://edstem.org/us/courses/6933/lessons/22144/</a>.</p>
+</section>
+<section id="mais...-ce-nest-pas-un-cours-sur-r" class="level2">
+<h2 class="anchored" data-anchor-id="mais...-ce-nest-pas-un-cours-sur-r">Mais... ce n’est pas un cours sur R?</h2>
+<p>Vous vous demandez peut-être pourquoi débuter le cours en vous enseignant quelques commandes essentielles en ligne de commande? Simplement parce que la plupart des gens que j’aide en début de parcours ont des problèmes d’installation et d’accès à leurs fichiers de données. Souvent, ces derniers ne comprennent pas les principes de chemins absolus et relatifs par exemple, concepts qui deviennent concrets lorsqu’on utilise la CLI. Utiliser davantage la ligne de commande leur permet également d’optimiser davantage les méthodes de travail et éventuellement automatiser des pipelines complets d’analyses.</p>
+<p>L’utilisation d’un terminal demandera un certain effort et un certain temps d’apprentissage. Alors qu’une interface graphique vous présente des choix à sélectionner, les choix CLI ne vous sont pas automatiquement présentés, vous devrez donc apprendre quelques commandes comme un nouveau vocabulaire dans une langue que vous étudiez. Cependant, contrairement à une langue parlée, un petit nombre de « mots » (ou commandes) vous permet de faire un long chemin, et nous couvrirons ces quelques commandes.</p>
+<p>La grammaire d’un shell vous permet de combiner des outils qui existent dans de puissants pipelines et de gérer automatiquement de gros volumes de données. Des séquences de commandes peuvent être écrites dans un script, améliorant la reproductibilité de vos travaux, nous y viendrons au courant de la session.</p>
+<p>De plus, la ligne de commande est souvent le moyen le plus simple, parfois le seul, d’interagir avec des serveurs à distance (par exemple dans le <em>nuage</em>) et des superordinateurs comme les grappes de calcul (<em>clusters</em>) de <a href="https://www.calculquebec.ca/">Calcul Québec</a> et <a href="https://www.computecanada.ca/accueil/?lang=fr">Calcul Canada</a>. En science des données, la familiarité avec un terminal est presque essentielle pour exécuter une variété d’outils et de ressources spécialisés, y compris des systèmes informatiques haute performance. Puisque les clusters et les systèmes de <em>cloud computing</em> deviennent de plus en plus populaires pour le traitement des données scientifiques, être capable d’interagir dans un terminal devient une compétence nécessaire. Nous pouvons nous appuyer sur les compétences en ligne de commande couvertes ici pour aborder un large éventail de questions scientifiques et de défis informatiques.</p>
+</section>
+<section id="dernière-lecture" class="level2">
+<h2 class="anchored" data-anchor-id="dernière-lecture">3. Dernière lecture!</h2>
+<p>Pour terminer, veuillez lire l’article <a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010372"><em>Ten simple rules for teaching yourself R</em></a> de <a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010372"><strong>Lawlor et al. (2022)</strong></a> Vous pouvez aussi regarder <a href="https://twitter.com/Jake_Lawlor1/status/1565422331178192897">le thread sur Twitter</a> qui résume bien l’article pour sauver du temps.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/img/terminal.png" class="img-fluid figure-img" width="450"></p>
+</figure>
+</div>
+<hr>
+<div>
+<div class="small muted">
+<p>Adapté à partir de <a href="https://swcarpentry.github.io/shell-novice/">Shell Novice - The Carpentries (CC-BY)</a></p>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } 
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copié");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left"><a href="../remerciements.qmd" class="nav-link text-decoration-none">Propulsé par des logiciels libres 💖</a></div>   
+      <div class="nav-footer-center">
+        <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="../a-propos.html">Contact</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://github.com/FAS1002/A22">Licence</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../a-propos.html">Contact</a>
+  </li>  
+</ul>
+      </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/FAS1002/">
+      <i class="bi bi-github" role="img" aria-label="GitHub du cours FAS1002">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
