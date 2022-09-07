@@ -33,7 +33,9 @@ website:
         text: Plan de cours
       - href: semaines.qmd
         text: Calendrier
-
+      - href: installation.qmd
+        text: Installation
+        
 # footer
   page-footer:
     background: "#FFA69E"
