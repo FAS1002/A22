@@ -1,0 +1,151 @@
+---
+title: "Installation des logiciels"
+editor: visual
+---
+
+Bien installer et configurer tous les logiciels nécessaires est honnêtement la
+moitié de la bataille lorsque nous adoptons ces logiciels pour la première
+fois. Parfois l'installation se déroule sans problème, alors que d'autres fois
+c'est plus difficile en raison des particularités entre les différents
+ordinateurs (par exemple les systèmes d'exploitation Windows vs Mac vs Linux).
+La bonne nouvelle est qu'une fois que les logiciels sont installés, vous
+n'aurez plus à le faire sur cette machine. Lorsque vous aurez passé à travers
+l'installation, récompensez-vous, car vous aurez complété la partie du boulot
+la plus ennuyante!
+
+::: callout-note
+La grande majorité des étapes ci-dessous sont extraites et traduites à partir
+de la magnifique ressource [Happy Git and GitHub for the
+useR](https://happygitwithr.com/). Vous pouvez consulter directement la
+ressource à partir de la section [*I
+Installation*](https://happygitwithr.com/github-acct.html) pour complémenter
+les instructions ci-dessous.
+:::
+
+## 1. Installez ou mettez à jour [R](https://cloud.r-project.org/) et [RStudio](https://rstudio.com/)
+
+-   Installez d'abord [R](https://cloud.r-project.org/) pour votre système
+    d'exploitation (Windows, Mac, Linux) en vous rendant au
+    <https://cloud.r-project.org/>.
+
+    <aside>Si vous tombez sur un site qui a l'air plus ou moins attrayant, vous
+    êtes sur le bon site!</aside>
+
+    -   Si vous installer R pour la première fois, lisez attentivement les
+        instructions, car elles sont différentes selon le système
+        d'exploitation (OS).
+
+    -   Vous voulez installer au minimum la version `4.1` de R, car les
+        versions `3.X.X` vous causeront ~~probablement~~ des problèmes dans le
+        futur.
+
+-   Installez ensuite [RStudio](https://rstudio.com/) pour votre système
+    d'exploitation (Windows, Mac, Linux) en vous rendant au
+    <https://rstudio.com/products/rstudio/download/#download>.
+
+    -   Version \>= `2022.07.01`
+
+-   Ouvrez RStudio et installer les packages[^1] suivants en inscrivant la
+    commande suivante dans la [*console*]{.underline}[^2] ou en passant par
+    l'onglet `packages` à droite puis en cliquant sur `install` pour ensuite
+    inscrire le nom des packages à l'endroit dédié.
+
+    -   `install.packages(c("markdown", "swirl", "devtools", "usethis", "gitcreds", "tidyverse"))`
+
+[^1]: Nous verrons les packages beaucoup plus tard dans la session.
+
+[^2]: ![](assets/img/install_packages.png)
+
+    Comme ça ⬆️
+
+## 2. Créez un compte sur [GitHub](https://github.com/).
+
+C'est gratuit! Vous devez vous rendre au <https://github.com> et cliquer sur
+[*Sign
+up*](https://github.com/join?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home).
+
+-   Votre *username* (nom d'utilisateur) vous sera fort utile lorsque vous
+    synchroniserez vos travaux sur GitHub et il est public. Il s'agit de votre
+    identifiant avec le monde, votre futur employeur, etc., donc prenez soin de
+    bien le choisir.
+
+    -   Par exemple, le mien est simplement
+        [SamGuay](https://github.com/SamGuay)
+
+-   Pour plus de trucs et astuces sur le choix d'un nom d'utilisateur,
+    consultez la section [*Username
+    advice*](https://happygitwithr.com/github-acct.html#username-advice).
+
+## 3. Installez [Git](https://git-scm.com/)
+
+-   Il se peut que Git soit déjà installé sur votre machine, surtout si vous
+    utilisez un système d'exploitation Mac ou Linux, car Git est souvent
+    pré-installé. Vous pouvez vérifier s'il est déjà installé ou tentez de
+    l'installer et attendre que votre machine vous dise qu'il est déjà
+    installé.
+
+    -   Pour vérifier si Git est installé, ouvrez un terminal et tapez
+        `git --version`. Si vous obtenez quelque chose similaire à
+        `git version 2.25.1`, cela veut dire que git est bien installé et vous
+        pouvez ignorez cette étape!
+
+        -   Si vous ne vous souvenez plus comment ouvrir un terminal, suivez
+            ces
+            [instructions](https://happygitwithr.com/shell.html#outside-of-rstudio)
+            puisqu'elles varient selon votre système d'exploitation.
+
+        -   Pour les gens sur Windows, veuillez suivre ces
+            [instructions](https://happygitwithr.com/shell.html#windows-2) pour
+            vérifier que vous avez bel et bien installer Git for Windows/Git
+            Bash.
+
+## 4. Dites à Git qui vous êtes
+
+**Option A**
+
+Si vous êtes à l'aise d'ouvrir un terminal ([Appendix
+A](https://happygitwithr.com/shell.html#shell)), ouvrez un terminal et vous
+pouvez entrer ces lignes, une à la fois, avec les informations qui
+correspondent à celles que vous avez entrées sur GitHub.
+
+⚠️ Changez `Prénom Nom` par les vôtres. ⚠️
+
+`git config --global user.name 'Prénom Nom'`
+
+⚠️ Changez `votre@courriel.com` par votre adresse. ⚠️
+
+`git config --global user.email 'votre@courriel.ca'`
+
+Pour vérifier les informations que vous venez d'entrer sont bonnes, entrez:\
+`git config --global --list`
+
+::: callout-caution
+Pour les personnes qui utilisent **Windows**: Il se peut que vous rencontriez
+des obstacles que les gens sur Mac et Linux ne rencontrent pas. Si vous
+rencontrez des difficultés sous Windows, considérez qu'il existe différents
+types de shell/terminal et que vous vous trompez peut-être. Vous voulez être
+dans un shell «**Git Bash**» et non à *Power Shell* ou à la ligne de commande
+*cmd.exe*. Pour en savoir plus, consultez [cette
+annexe](https://happygitwithr.com/shell.html#windows-shell-hell).
+:::
+
+**Option B**
+
+Si vous n'est pas à l'aise avec RStudio ou un terminal. Nous ferons cette étape
+ensemble pendant le cours sur la gestion de version.
+
+## 5. Est-ce que Git, RStudio et GitHub s'entendent?
+
+Enfin, si vous voulez vous assurez du bon fonctionnement, veuillez suivre [ces
+instructions](https://happygitwithr.com/connect-intro.html) qui vous amèneront
+à créer les éléments nécessaires pour communiquer avec GitHub sans soucis.
+
+Si vous n'est pas à l'aise avec RStudio ou un terminal. Nous ferons cette étape
+ensemble pendant le cours sur la gestion de version.
+
+## Félicitations! 🎉
+
+Félicitations, vous avez survécu à l'installation, nous saurons dans quelques
+semaines si vous avez bien configuré le tout!
+
+![](assets/img/congrats.gif){width="350"}
