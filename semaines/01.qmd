@@ -1,0 +1,15 @@
+---
+title: "Semaine 1"
+description: "Contenu pour la semaine, incluant les lectures et les modules"
+author: "Samuel Guay"
+date: "9/6/2022"
+categories:
+  - cours
+  - semaine
+---
+
+::: g-col-12
+```{=html}
+<iframe class="slide-deck" src="/presentations/01.html"></iframe>
+```
+:::

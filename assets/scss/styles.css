@@ -40,4 +40,15 @@ to repeat the same sequence for each week in the calendar */
   border-bottom-style: dotted;
 }
 
+.slide-deck {
+  border-color: rgb(57, 61, 62);
+}
 
+.slide-deck {
+  border: 3px solid #dee2e6;
+    border-top-color: rgb(222, 226, 230);
+    border-right-color: rgb(222, 226, 230);
+    border-bottom-color: rgb(222, 226, 230);
+    border-left-color: rgb(222, 226, 230);
+  width: 100%;
+  height: 475px;

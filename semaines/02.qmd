@@ -1,0 +1,247 @@
+---
+title: "Semaine 2"
+description: "Contenu pour la semaine, incluant les lectures et les modules"
+author: "Samuel Guay"
+date: "9/13/2022"
+categories:
+  - cours
+  - semaine
+---
+
+## Objectif de la semaine 2
+
+Se familiariser avec quelques outils et concepts d\'informatique afin d'être en
+mesure d'effectuer des opérations simples dans un système de fichiers à l'aide
+de l'interface en ligne de commande.
+
+À la fin du cours, nous devrions être en mesure de répondre à ces questions:
+
+-   Comment puis-je naviguer dans mon ordinateur?
+
+-   Comment puis-je voir les fichiers et les dossiers sur ma machine?
+
+-   Comment puis-je spécifier l'emplacement d'un fichier ou d'un dossier sur
+    mon ordinateur?
+
+-   Comment puis-je créer, copier et supprimer des fichiers et des dossiers?
+
+-   Comment puis-je modifier des fichiers ou des dossiers?
+
+Vous êtes probablement déjà capables de répondre à toutes ces questions avec un
+interface graphique. Évidemment, je m'attends à ce que vous soyez capables d'y
+répondre également à partir d'un terminal.
+
+## 1. Lectures
+
+### Programmer avec R - Chapitre 1 et 2
+
+#### 1.1 Lire le **chapitre 1 (pages 1-17)** du livre [**Programmer avec R**](https://edstem.org/us/courses/6933/resources?download=20545).
+
+::: callout-important
+Vous pouvez télécharger le livre en cliquant sur le titre ci-haut ou en vous
+rendant sur la page des
+[*ressources*](https://edstem.org/us/courses/6933/resources)*.* Pour
+télécharger le livre et tous les fichiers d'exercices et de code sur la [page
+officielle](https://gitlab.com/vigou3/programmer-avec-r/-/package_files/49736237/download).
+:::
+
+-   Si vous vous demandez "*Est-ce que toutes les sections sont vraiment
+    importantes?*", je vous dirais que la section **1.3** est la moins
+    pertinente pour le cours. Cela ne lui enlève pas d'importance pour autant,
+    mais si vous êtes pressé.e.s par le temps, cela vous allégera la tâche.
+
+Vous pouvez faire les exercices du chapitre, mais elles ne sont pas
+obligatoires pour le cours.
+
+#### 1.2 Lire le **chapitre 2 (pages 21-38)** du livre [**Programmer avec R**](https://edstem.org/us/courses/6933/resources?download=20545) 
+
+-   Exercices plus pertinents pour le cours: **2.2**, **2.3**, **2.4**,
+
+## 2. Ligne de commande (CLI)
+
+## 2.1 Introduction
+
+Les humains et les ordinateurs interagissent généralement de différentes
+manières, par exemple via un clavier et une souris, des interfaces à écran
+tactile ou en utilisant des systèmes de reconnaissance vocale. Le moyen le plus
+largement utilisé pour interagir avec les ordinateurs personnels est appelé une
+[interface graphique](https://fr.wikipedia.org/wiki/Interface_graphique) ou
+**GUI** pour [**G**raphical **U**ser
+**I**nterface](https://en.wikipedia.org/wiki/Graphical_user_interface) en
+anglais. Avec une interface graphique, nous donnons des instructions à
+l'ordinateur en cliquant sur une souris et en utilisant des interactions
+guidées par des menus. À titre d'exemple, lorsque vous naviguez sur le site et
+que vous cliquez sur un lien votre ordinateur reçoit la commande et exécute
+l'action (ou une série d'actions) pour que la page apparaisse.
+
+Alors que l'aide visuelle d'une interface graphique rend la navigation et
+l'apprentissage intuitifs, cette façon de fournir des instructions à un
+ordinateur est très mal adaptée, notamment pour automatiser des tâches ou
+exécuter des centaines de tâches rapidement. Si les interfaces graphiques ont
+grandement facilité l\'interaction humain-machine, elles n\'ont pas pour autant
+fait disparaitre ou rendu obsolète la ligne de commande, particulièrement dans
+la pratique de la programmation.
+
+::: callout-note
+## Mise en situation
+
+**Imaginez la tâche suivante:**\
+Pour une recherche documentaire, vous devez copier la troisième ligne de mille
+fichiers texte dans mille répertoires différents et la coller dans un seul
+fichier. En utilisant une interface graphique, non seulement vous cliqueriez
+sur votre bureau pendant plusieurs, voire des dizaines, d'heures, mais vous
+pourriez également commettre une erreur dans le processus d'exécution de cette
+tâche répétitive. Une erreur aussi simple que de copier la deuxième ou la
+quatrième ligne par inadvertance à deux ou trois reprises pourrait invalider
+vos résultats.
+:::
+
+C'est, entre autres, dans des situations comme celle-ci que nous pouvons
+profiter de la puissance de la ligne de commande. La ligne de commande est la
+plus ancienne des interfaces pour interagir avec les ordinateurs. La ligne de
+commande du système d\'exploitation demeure une interface importante pour les
+programmeurs.
+
+-   Parfois ***plus simple*** qu\'une interface graphique
+
+-   Souvent ***plus rapide*** qu\'une interface graphique
+
+-   Parfois la **seule option** (notamment pour les utilitaires Unix comme
+    [`grep`](https://en.wikipedia.org/wiki/Grep),
+    [`sed`](https://en.wikipedia.org/wiki/Sed),
+    [`awk`](https://en.wikipedia.org/wiki/AWK))
+
+Avant d'aller plus loin, abordons un peu de terminologie essentielle:
+
+-   (Interface en) **Ligne de commande** - ***Command Line** Interface* -
+    **CLI**
+
+    -   Mode d\'interaction avec un programme informatique dans lequel
+        l\'utilisateur ou l'utilisatrice dicte les commandes et reçoit les
+        réponses de l\'ordinateur en\
+        mode [texte.]{.underline}
+
+```{=html}
+<!-- -->
+```
+-   **Interpréteur** de commande - ***Terminal**, Shell*
+
+    -   Programme qui gère l\'interface en ligne de commande.
+
+```{=html}
+<!-- -->
+```
+-   Invite de commande  - ***Command prompt***
+
+    -   Symbole affiché par l\'interpréteur de commande pour indiquer qu\'il
+        est prêt à recevoir une commande.
+
+L'interpréteur de commande Unix (shell) est à la fois une interface de ligne de
+commande (CLI) et un langage de script, permettant d'effectuer automatiquement
+et rapidement des tâches répétitives. Avec les commandes appropriées, le shell
+ou terminal peut répéter des tâches avec ou sans modification autant de fois
+que nous le souhaitons, souvent en quelques secondes. En utilisant un terminal,
+la tâche dans l'exemple de la recherche documentaire ci-haut peut être
+accomplie en quelques secondes seulement.
+
+::: callout-tip
+## Astuce
+
+Lorsque vous cherchez sur internet pour obtenir de l'aide en lien avec ces
+terminalogies, vous allez rencontrer beaucoup de termes différents que les gens
+utilisent de façons interchangeables, par ex. cli, terminal, shell, bash,
+zshell, command line, etc. Sachez que même si leur définition varie, la plupart
+des utilisateurs et des utilisatrices mettent ces termes dans un même paquet.
+Lorsque nous débutons, je conseille souvent de ne pas trop s'entêter avec ces
+terminologies puisque vous trouverez réponses peu importe le terme utilisé.
+:::
+
+Dans le cadre du cours, nous nous concentrerons sur les interpréteurs de
+commande Unix, de type [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)),
+puisque ceux-ci sont les plus répandus avec [Z
+Shell](https://en.wikipedia.org/wiki/Z_shell) (Zsh). Il existe de nombreux
+programmes qui sont des shells; Bash n'est qu'un exemple. **B**ourne **A**gain
+**SH**ell a été nommé ainsi parce qu'il est dérivé d'un shell écrit par Stephen
+Bourne).
+
+Pour les quelques commandes que nous effectuerons, les individus sur MacOS qui
+utiliseront Zsh (désormais installé par défaut \>= Catalina) ne devraient
+rencontrer aucun problème. Pour ceux et celles sur Windows, nous utiliserons
+[git-bash](https://gitforwindows.org/) éventuellement pour pour exécuter les
+commandes puisque ce sera les mêmes commandes et que ligne de commande Windows
+est différente. Nous apprendrons comment se servir de
+[Git](https://git-scm.com) pour faire la gestion de versions de nos documents
+et git-bash est utilisé dans ce cas.
+
+Cependant, si votre terminal ne fonctionne pas pour une raison que vous
+ignorez, vous pourrez tout de même vous pratiquer sur
+[rstudio.cloud](rstudio.cloud) qui permet d'utiliser bash dans l'onglet
+\`terminal\`.
+
+## 2.2 Prochaine étape: Pratique
+
+Pour la suite, vous devez vous rendre sur Ed pour une session de pratique et
+d'introductio à la ligne de commande! \
+\
+➡️ <https://edstem.org/us/courses/6933/lessons/22144/>.
+
+## Mais\... ce n'est pas un cours sur R?
+
+Vous vous demandez peut-être pourquoi débuter le cours en vous enseignant
+quelques commandes essentielles en ligne de commande? Simplement parce que la
+plupart des gens que j'aide en début de parcours ont des problèmes
+d'installation et d'accès à leurs fichiers de données. Souvent, ces derniers ne
+comprennent pas les principes de chemins absolus et relatifs par exemple,
+concepts qui deviennent concrets lorsqu'on utilise la CLI. Utiliser davantage
+la ligne de commande leur permet également d'optimiser davantage les méthodes
+de travail et éventuellement automatiser des pipelines complets d'analyses.
+
+L'utilisation d'un terminal demandera un certain effort et un certain temps
+d'apprentissage. Alors qu'une interface graphique vous présente des choix à
+sélectionner, les choix CLI ne vous sont pas automatiquement présentés, vous
+devrez donc apprendre quelques commandes comme un nouveau vocabulaire dans une
+langue que vous étudiez. Cependant, contrairement à une langue parlée, un petit
+nombre de « mots » (ou commandes) vous permet de faire un long chemin, et nous
+couvrirons ces quelques commandes.
+
+La grammaire d'un shell vous permet de combiner des outils qui existent dans de
+puissants pipelines et de gérer automatiquement de gros volumes de données. Des
+séquences de commandes peuvent être écrites dans un script, améliorant la
+reproductibilité de vos travaux, nous y viendrons au courant de la session.
+
+De plus, la ligne de commande est souvent le moyen le plus simple, parfois le
+seul, d'interagir avec des serveurs à distance (par exemple dans le *nuage*) et
+des superordinateurs comme les grappes de calcul (*clusters*) de [Calcul
+Québec](https://www.calculquebec.ca/) et [Calcul
+Canada](https://www.computecanada.ca/accueil/?lang=fr). En science des données,
+la familiarité avec un terminal est presque essentielle pour exécuter une
+variété d'outils et de ressources spécialisés, y compris des systèmes
+informatiques haute performance. Puisque les clusters et les systèmes de *cloud
+computing* deviennent de plus en plus populaires pour le traitement des données
+scientifiques, être capable d'interagir dans un terminal devient une compétence
+nécessaire. Nous pouvons nous appuyer sur les compétences en ligne de commande
+couvertes ici pour aborder un large éventail de questions scientifiques et de
+défis informatiques.
+
+## 3. Dernière lecture! 
+
+Pour terminer, veuillez lire l'article [*Ten simple rules for teaching yourself
+R*](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010372)
+de [**Lawlor et al.
+(2022)**](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010372)
+Vous pouvez aussi regarder [le thread sur
+Twitter](https://twitter.com/Jake_Lawlor1/status/1565422331178192897) qui
+résume bien l'article pour sauver du temps.
+
+![](/assets/img/terminal.png){fig-align="center" width="450"}
+
+-------------------------------------------------------------------------------
+
+<div>
+
+::: {.small .muted}
+Adapté à partir de [Shell Novice - The Carpentries
+(CC-BY)](https://swcarpentry.github.io/shell-novice/)
+:::
+
+</div>
