@@ -28,6 +28,76 @@
     "text": "Chargé de cours\nCréé et enseigné par Samuel Guay, doctorant en psychologie - option neuroscience cognitive."
   },
   {
+    "objectID": "presentations/01.html#votre-chargé-de-cours",
+    "href": "presentations/01.html#votre-chargé-de-cours",
+    "title": "Bienvenue au cours FAS1002!",
+    "section": "Votre chargé de cours",
+    "text": "Votre chargé de cours\n\n\n\n\n\n\n\n\nSamuel Guay (il/lui)\n\n\n\nDoctorant en psychologie - option neuroscience cognitive,  Université de Montréal.\nSports and Trauma Applied Research Lab, CIUSSS du Nord-de-l’Île-de-Montréal\nEn savoir plus ➡️ samuelguay.ca"
+  },
+  {
+    "objectID": "presentations/01.html#plan-de-la-séance",
+    "href": "presentations/01.html#plan-de-la-séance",
+    "title": "Bienvenue au cours FAS1002!",
+    "section": "Plan de la séance",
+    "text": "Plan de la séance\n\n\nPlan de cours + fonctionnement du cours | ⏲ ~60min\nInstallation des logiciels | ⏲ ~60min\nInstructions pour les devoirs | ⏲ ~59min"
+  },
+  {
+    "objectID": "presentations/01.html#tech-stack-principal-pour-le-cours",
+    "href": "presentations/01.html#tech-stack-principal-pour-le-cours",
+    "title": "Bienvenue au cours FAS1002!",
+    "section": "Tech stack principal pour le cours",
+    "text": "Tech stack principal pour le cours\n\nR >= v4.1.3 et RStudio v2022.07.1\nGitHub github.com/FAS1002 et Git\nForum de discussion et d’entraide (Ed)\nQuarto\n\n\n\n\n\n\n\nImportant\n\n\nTous les liens seront affichés sur une page du site web!"
+  },
+  {
+    "objectID": "presentations/01.html#page-daccueil",
+    "href": "presentations/01.html#page-daccueil",
+    "title": "Bienvenue au cours FAS1002!",
+    "section": "Page d’accueil",
+    "text": "Page d’accueil\nfas1002.github.io/A22\n\nTout se retrouve sur le site, matériel, lectures, etc.\nInclus les liens vers StudiUM, Ed, GitHub, les logiciels à installer, etc.\nCliquez ici pour visiter le site web!"
+  },
+  {
+    "objectID": "presentations/01.html#annonces",
+    "href": "presentations/01.html#annonces",
+    "title": "Bienvenue au cours FAS1002!",
+    "section": "Annonces",
+    "text": "Annonces\n\nToujours diffusées sur Ed et vous devriez recevoir un courriel.\nTechniquement, à chaque mercredi il y aura une annonce pour le matériel de la semaine."
+  },
+  {
+    "objectID": "presentations/01.html#support",
+    "href": "presentations/01.html#support",
+    "title": "Bienvenue au cours FAS1002!",
+    "section": "Support",
+    "text": "Support\n\nPoser et répondre aux questions sur le forum de discussion\nL’entraide est fortement recommandée!\nPar courriel si nécessaire\nLe web!\nSur rendez-vous!"
+  },
+  {
+    "objectID": "presentations/01.html#collaboration-réutilisation-de-code-etc.",
+    "href": "presentations/01.html#collaboration-réutilisation-de-code-etc.",
+    "title": "Bienvenue au cours FAS1002!",
+    "section": "Collaboration, réutilisation de code, etc.",
+    "text": "Collaboration, réutilisation de code, etc.\nSauf indication contraire explicite, la politique du cours est que vous pouvez utiliser toutes les ressources en ligne (par exemple, la communauté RStudio, StackOverflow, etc.), mais vous devez explicitement citer où vous avez obtenu tout code que vous utilisez directement ou utilisez comme source d’inspiration dans vos solutions."
+  },
+  {
+    "objectID": "presentations/01.html#covid",
+    "href": "presentations/01.html#covid",
+    "title": "Bienvenue au cours FAS1002!",
+    "section": "COVID",
+    "text": "COVID\n\nIl est toujours recommandé de porter un masque en tout temps à l’intérieur!\nVous êtes libres de faire vos propres choix."
+  },
+  {
+    "objectID": "presentations/01.html#installation-des-logiciels",
+    "href": "presentations/01.html#installation-des-logiciels",
+    "title": "Bienvenue au cours FAS1002!",
+    "section": "Installation des logiciels",
+    "text": "Installation des logiciels\n\nR, RStudio et quelques packages:\n\nmarkdown, swirl, devtools, usethis, gitcreds, tidyverse\n\nGit et GitHub ➡️ https://happygitwithr.com/\n\n\n\n\n\n\n\nAstuce\n\n\nInstructions détaillées se trouvent au FAS1002.github.io/A22/installation"
+  },
+  {
+    "objectID": "presentations/01.html#module-1",
+    "href": "presentations/01.html#module-1",
+    "title": "Bienvenue au cours FAS1002!",
+    "section": "Module 1",
+    "text": "Module 1\nVoir post sur Ed pour le code d’activation afin de remplir le premier module sur formr.\n\n\n\n\n\n\nImportant\n\n\nN’oubliez pas votre introduction sur Ed également!\n\n\n\n\n\n\nFAS1002.github.io/"
+  },
+  {
     "objectID": "semaines.html",
     "href": "semaines.html",
     "title": "Calendrier",
@@ -117,5 +187,54 @@
     "title": "📌 Semaine 0",
     "section": "Mais.. voici une belle tarte!",
     "text": "Mais.. voici une belle tarte!\n\n\nCode\npar(mar = c(0, 1, 0, 1))\npie(\n  c(280, 60, 20),\n  c('Ciel', 'Côté ensoleillé de la pyramide', 'Côté ombragé de la pyramide'),\n  col = c('#0292D8', '#F7EA39', '#C4B632'),\n  init.angle = -50, border = NA\n)\n\n\n\n\n\nSVP, évitez les tartes dans vos travaux!\n\n\n\n\n\nVous serez capables de faire beaucoup plus à la fin de la session!\n\nÀ la semaine prochaine ✌️"
+  },
+  {
+    "objectID": "installation.html",
+    "href": "installation.html",
+    "title": "Installation des logiciels",
+    "section": "",
+    "text": "Bien installer et configurer tous les logiciels nécessaires est honnêtement la moitié de la bataille lorsque nous adoptons ces logiciels pour la première fois. Parfois l’installation se déroule sans problème, alors que d’autres fois c’est plus difficile en raison des particularités entre les différents ordinateurs (par exemple les systèmes d’exploitation Windows vs Mac vs Linux). La bonne nouvelle est qu’une fois que les logiciels sont installés, vous n’aurez plus à le faire sur cette machine. Lorsque vous aurez passé à travers l’installation, récompensez-vous, car vous aurez complété la partie du boulot la plus ennuyante!"
+  },
+  {
+    "objectID": "installation.html#installez-ou-mettez-à-jour-r-et-rstudio",
+    "href": "installation.html#installez-ou-mettez-à-jour-r-et-rstudio",
+    "title": "Installation des logiciels",
+    "section": "1. Installez ou mettez à jour R et RStudio",
+    "text": "1. Installez ou mettez à jour R et RStudio\n\nInstallez d’abord R pour votre système d’exploitation (Windows, Mac, Linux) en vous rendant au https://cloud.r-project.org/.\n\nSi vous tombez sur un site qui a l’air plus ou moins attrayant, vous êtes sur le bon site!\n\n\nSi vous installer R pour la première fois, lisez attentivement les instructions, car elles sont différentes selon le système d’exploitation (OS).\nVous voulez installer au minimum la version 4.1 de R, car les versions 3.X.X vous causeront probablement des problèmes dans le futur.\n\nInstallez ensuite RStudio pour votre système d’exploitation (Windows, Mac, Linux) en vous rendant au https://rstudio.com/products/rstudio/download/#download.\n\nVersion >= 2022.07.01\n\nOuvrez RStudio et installer les packages1 suivants en inscrivant la commande suivante dans la console2 ou en passant par l’onglet packages à droite puis en cliquant sur install pour ensuite inscrire le nom des packages à l’endroit dédié.\n\ninstall.packages(c(\"markdown\", \"swirl\", \"devtools\", \"usethis\", \"gitcreds\", \"tidyverse\"))"
+  },
+  {
+    "objectID": "installation.html#créez-un-compte-sur-github.",
+    "href": "installation.html#créez-un-compte-sur-github.",
+    "title": "Installation des logiciels",
+    "section": "2. Créez un compte sur GitHub.",
+    "text": "2. Créez un compte sur GitHub.\nC’est gratuit! Vous devez vous rendre au https://github.com et cliquer sur Sign up.\n\nVotre username (nom d’utilisateur) vous sera fort utile lorsque vous synchroniserez vos travaux sur GitHub et il est public. Il s’agit de votre identifiant avec le monde, votre futur employeur, etc., donc prenez soin de bien le choisir.\n\nPar exemple, le mien est simplement SamGuay\n\nPour plus de trucs et astuces sur le choix d’un nom d’utilisateur, consultez la section Username advice."
+  },
+  {
+    "objectID": "installation.html#installez-git",
+    "href": "installation.html#installez-git",
+    "title": "Installation des logiciels",
+    "section": "3. Installez Git",
+    "text": "3. Installez Git\n\nIl se peut que Git soit déjà installé sur votre machine, surtout si vous utilisez un système d’exploitation Mac ou Linux, car Git est souvent pré-installé. Vous pouvez vérifier s’il est déjà installé ou tentez de l’installer et attendre que votre machine vous dise qu’il est déjà installé.\n\nPour vérifier si Git est installé, ouvrez un terminal et tapez git --version. Si vous obtenez quelque chose similaire à git version 2.25.1, cela veut dire que git est bien installé et vous pouvez ignorez cette étape!\n\nSi vous ne vous souvenez plus comment ouvrir un terminal, suivez ces instructions puisqu’elles varient selon votre système d’exploitation.\nPour les gens sur Windows, veuillez suivre ces instructions pour vérifier que vous avez bel et bien installer Git for Windows/Git Bash."
+  },
+  {
+    "objectID": "installation.html#dites-à-git-qui-vous-êtes",
+    "href": "installation.html#dites-à-git-qui-vous-êtes",
+    "title": "Installation des logiciels",
+    "section": "4. Dites à Git qui vous êtes",
+    "text": "4. Dites à Git qui vous êtes\nOption A\nSi vous êtes à l’aise d’ouvrir un terminal (Appendix A), ouvrez un terminal et vous pouvez entrer ces lignes, une à la fois, avec les informations qui correspondent à celles que vous avez entrées sur GitHub.\n⚠️ Changez Prénom Nom par les vôtres. ⚠️\ngit config --global user.name 'Prénom Nom'\n⚠️ Changez votre@courriel.com par votre adresse. ⚠️\ngit config --global user.email 'votre@courriel.ca'\nPour vérifier les informations que vous venez d’entrer sont bonnes, entrez:\ngit config --global --list\n\n\n\n\n\n\nMise en garde\n\n\n\nPour les personnes qui utilisent Windows: Il se peut que vous rencontriez des obstacles que les gens sur Mac et Linux ne rencontrent pas. Si vous rencontrez des difficultés sous Windows, considérez qu’il existe différents types de shell/terminal et que vous vous trompez peut-être. Vous voulez être dans un shell «Git Bash» et non à Power Shell ou à la ligne de commande cmd.exe. Pour en savoir plus, consultez cette annexe.\n\n\nOption B\nSi vous n’est pas à l’aise avec RStudio ou un terminal. Nous ferons cette étape ensemble pendant le cours sur la gestion de version."
+  },
+  {
+    "objectID": "installation.html#est-ce-que-git-rstudio-et-github-sentendent",
+    "href": "installation.html#est-ce-que-git-rstudio-et-github-sentendent",
+    "title": "Installation des logiciels",
+    "section": "5. Est-ce que Git, RStudio et GitHub s’entendent?",
+    "text": "5. Est-ce que Git, RStudio et GitHub s’entendent?\nEnfin, si vous voulez vous assurez du bon fonctionnement, veuillez suivre ces instructions qui vous amèneront à créer les éléments nécessaires pour communiquer avec GitHub sans soucis.\nSi vous n’est pas à l’aise avec RStudio ou un terminal. Nous ferons cette étape ensemble pendant le cours sur la gestion de version."
+  },
+  {
+    "objectID": "installation.html#félicitations",
+    "href": "installation.html#félicitations",
+    "title": "Installation des logiciels",
+    "section": "Félicitations! 🎉",
+    "text": "Félicitations! 🎉\nFélicitations, vous avez survécu à l’installation, nous saurons dans quelques semaines si vous avez bien configuré le tout!"
   }
 ]

@@ -2,22 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://FAS1002.github.io/A22/a-propos.html</loc>
-    <lastmod>2022-09-06T17:31:12.260Z</lastmod>
+    <lastmod>2022-09-07T18:12:47.354Z</lastmod>
+  </url>
+  <url>
+    <loc>https://FAS1002.github.io/A22/presentations/01.html</loc>
+    <lastmod>2022-09-07T18:12:47.774Z</lastmod>
   </url>
   <url>
     <loc>https://FAS1002.github.io/A22/semaines.html</loc>
-    <lastmod>2022-09-06T17:31:13.773Z</lastmod>
+    <lastmod>2022-09-07T18:12:48.938Z</lastmod>
   </url>
   <url>
     <loc>https://FAS1002.github.io/A22/syllabus.html</loc>
-    <lastmod>2022-09-06T17:31:14.813Z</lastmod>
+    <lastmod>2022-09-07T18:12:49.650Z</lastmod>
   </url>
   <url>
     <loc>https://FAS1002.github.io/A22/index.html</loc>
-    <lastmod>2022-09-06T17:31:15.281Z</lastmod>
+    <lastmod>2022-09-07T18:12:50.030Z</lastmod>
   </url>
   <url>
     <loc>https://FAS1002.github.io/A22/semaines/00.html</loc>
-    <lastmod>2022-09-06T17:31:16.017Z</lastmod>
+    <lastmod>2022-09-07T18:12:50.590Z</lastmod>
+  </url>
+  <url>
+    <loc>https://FAS1002.github.io/A22/installation.html</loc>
+    <lastmod>2022-09-07T18:12:50.994Z</lastmod>
   </url>
 </urlset>

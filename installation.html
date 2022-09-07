@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>FAS1002-A22 - Calendrier</title>
+<title>FAS1002-A22 - Installation des logiciels</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -62,42 +60,12 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Envoyer"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
-      
-      searchColumns: ["listing-title","listing-date"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <style>html{ scroll-behavior: smooth; }</style>
 
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="assets/scss/styles.css">
-<meta name="twitter:title" content="FAS1002-A22 - Calendrier">
-<meta name="twitter:description" content="À chaque semaine, les lectures, les tâches et les présentations apparaissant dans le plan de cours seront indiquées en plus d’y ajouter un compte-rendu de la séance au maximum le lendemain de la…">
+<meta name="twitter:title" content="FAS1002-A22 - Installation des logiciels">
+<meta name="twitter:description" content="Bien installer et configurer tous les logiciels nécessaires est honnêtement la moitié de la bataille lorsque nous adoptons ces logiciels pour la première fois.">
 <meta name="twitter:creator" content="@SamGuay_">
 <meta name="twitter:card" content="summary">
 </head>
@@ -131,7 +99,7 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./syllabus.html">Plan de cours</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./semaines.html" aria-current="page">Calendrier</a>
+    <a class="nav-link" href="./semaines.html">Calendrier</a>
   </li>  
 </ul>
               <div class="quarto-toggle-container">
@@ -147,14 +115,25 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Catégories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">Tous <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cours">cours <span class="quarto-category-count">(1)</span></div><div class="category" data-category="semaine">semaine <span class="quarto-category-count">(1)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Sur cette page</h2>
+   
+  <ul>
+  <li><a href="#installez-ou-mettez-à-jour-r-et-rstudio" id="toc-installez-ou-mettez-à-jour-r-et-rstudio" class="nav-link active" data-scroll-target="#installez-ou-mettez-à-jour-r-et-rstudio">1. Installez ou mettez à jour R et RStudio</a></li>
+  <li><a href="#créez-un-compte-sur-github." id="toc-créez-un-compte-sur-github." class="nav-link" data-scroll-target="#créez-un-compte-sur-github.">2. Créez un compte sur GitHub.</a></li>
+  <li><a href="#installez-git" id="toc-installez-git" class="nav-link" data-scroll-target="#installez-git">3. Installez Git</a></li>
+  <li><a href="#dites-à-git-qui-vous-êtes" id="toc-dites-à-git-qui-vous-êtes" class="nav-link" data-scroll-target="#dites-à-git-qui-vous-êtes">4. Dites à Git qui vous êtes</a></li>
+  <li><a href="#est-ce-que-git-rstudio-et-github-sentendent" id="toc-est-ce-que-git-rstudio-et-github-sentendent" class="nav-link" data-scroll-target="#est-ce-que-git-rstudio-et-github-sentendent">5. Est-ce que Git, RStudio et GitHub s’entendent?</a></li>
+  <li><a href="#félicitations" id="toc-félicitations" class="nav-link" data-scroll-target="#félicitations">Félicitations! 🎉</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/FAS1002/A22/edit/main/installation.qmd" class="toc-action">Modifier cette page</a></p><p><a href="https://github.com/FAS1002/A22/issues/new" class="toc-action">Faire part d'un problème</a></p><p><a href="https://github.com/FAS1002/A22/blob/main/installation.qmd" class="toc-action">Voir la source</a></p></div></div></nav>
+    </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Calendrier</h1>
+<h1 class="title">Installation des logiciels</h1>
 </div>
 
 
@@ -168,78 +147,113 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>À chaque semaine, les lectures, les tâches et les présentations apparaissant dans le plan de cours seront indiquées en plus d’y ajouter un compte-rendu de la séance au maximum le lendemain de la séance.</p>
+<p>Bien installer et configurer tous les logiciels nécessaires est honnêtement la moitié de la bataille lorsque nous adoptons ces logiciels pour la première fois. Parfois l’installation se déroule sans problème, alors que d’autres fois c’est plus difficile en raison des particularités entre les différents ordinateurs (par exemple les systèmes d’exploitation Windows vs Mac vs Linux). La bonne nouvelle est qu’une fois que les logiciels sont installés, vous n’aurez plus à le faire sur cette machine. Lorsque vous aurez passé à travers l’installation, récompensez-vous, car vous aurez complété la partie du boulot la plus ennuyante!</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>La grande majorité des étapes ci-dessous sont extraites et traduites à partir de la magnifique ressource <a href="https://happygitwithr.com/">Happy Git and GitHub for the useR</a>. Vous pouvez consulter directement la ressource à partir de la section <a href="https://happygitwithr.com/github-acct.html"><em>I Installation</em></a> pour complémenter les instructions ci-dessous.</p>
+</div>
+</div>
+<section id="installez-ou-mettez-à-jour-r-et-rstudio" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="installez-ou-mettez-à-jour-r-et-rstudio">1. Installez ou mettez à jour <a href="https://cloud.r-project.org/">R</a> et <a href="https://rstudio.com/">RStudio</a></h2>
+<ul class="page-columns page-full">
+<li class="page-columns page-full"><p>Installez d’abord <a href="https://cloud.r-project.org/">R</a> pour votre système d’exploitation (Windows, Mac, Linux) en vous rendant au <a href="https://cloud.r-project.org/" class="uri">https://cloud.r-project.org/</a>.</p>
+<aside>
+<p>Si vous tombez sur un site qui a l’air plus ou moins attrayant, vous êtes sur le bon site!</p>
+</aside>
+<ul>
+<li><p>Si vous installer R pour la première fois, lisez attentivement les instructions, car elles sont différentes selon le système d’exploitation (OS).</p></li>
+<li><p>Vous voulez installer au minimum la version <code>4.1</code> de R, car les versions <code>3.X.X</code> vous causeront <del>probablement</del> des problèmes dans le futur.</p></li>
+</ul></li>
+<li><p>Installez ensuite <a href="https://rstudio.com/">RStudio</a> pour votre système d’exploitation (Windows, Mac, Linux) en vous rendant au <a href="https://rstudio.com/products/rstudio/download/#download" class="uri">https://rstudio.com/products/rstudio/download/#download</a>.</p>
+<ul>
+<li>Version &gt;= <code>2022.07.01</code></li>
+</ul></li>
+<li><p>Ouvrez RStudio et installer les packages<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> suivants en inscrivant la commande suivante dans la <u><em>console</em></u><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> ou en passant par l’onglet <code>packages</code> à droite puis en cliquant sur <code>install</code> pour ensuite inscrire le nom des packages à l’endroit dédié.</p>
+<ul>
+<li><code>install.packages(c("markdown", "swirl", "devtools", "usethis", "gitcreds", "tidyverse"))</code></li>
+</ul></li>
+</ul>
+</section>
+<section id="créez-un-compte-sur-github." class="level2">
+<h2 class="anchored" data-anchor-id="créez-un-compte-sur-github.">2. Créez un compte sur <a href="https://github.com/">GitHub</a>.</h2>
+<p>C’est gratuit! Vous devez vous rendre au <a href="https://github.com" class="uri">https://github.com</a> et cliquer sur <a href="https://github.com/join?ref_cta=Sign+up&amp;ref_loc=header+logged+out&amp;ref_page=%2F&amp;source=header-home"><em>Sign up</em></a>.</p>
+<ul>
+<li><p>Votre <em>username</em> (nom d’utilisateur) vous sera fort utile lorsque vous synchroniserez vos travaux sur GitHub et il est public. Il s’agit de votre identifiant avec le monde, votre futur employeur, etc., donc prenez soin de bien le choisir.</p>
+<ul>
+<li>Par exemple, le mien est simplement <a href="https://github.com/SamGuay">SamGuay</a></li>
+</ul></li>
+<li><p>Pour plus de trucs et astuces sur le choix d’un nom d’utilisateur, consultez la section <a href="https://happygitwithr.com/github-acct.html#username-advice"><em>Username advice</em></a>.</p></li>
+</ul>
+</section>
+<section id="installez-git" class="level2">
+<h2 class="anchored" data-anchor-id="installez-git">3. Installez <a href="https://git-scm.com/">Git</a></h2>
+<ul>
+<li><p>Il se peut que Git soit déjà installé sur votre machine, surtout si vous utilisez un système d’exploitation Mac ou Linux, car Git est souvent pré-installé. Vous pouvez vérifier s’il est déjà installé ou tentez de l’installer et attendre que votre machine vous dise qu’il est déjà installé.</p>
+<ul>
+<li><p>Pour vérifier si Git est installé, ouvrez un terminal et tapez <code>git --version</code>. Si vous obtenez quelque chose similaire à <code>git version 2.25.1</code>, cela veut dire que git est bien installé et vous pouvez ignorez cette étape!</p>
+<ul>
+<li><p>Si vous ne vous souvenez plus comment ouvrir un terminal, suivez ces <a href="https://happygitwithr.com/shell.html#outside-of-rstudio">instructions</a> puisqu’elles varient selon votre système d’exploitation.</p></li>
+<li><p>Pour les gens sur Windows, veuillez suivre ces <a href="https://happygitwithr.com/shell.html#windows-2">instructions</a> pour vérifier que vous avez bel et bien installer Git for Windows/Git Bash.</p></li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="dites-à-git-qui-vous-êtes" class="level2">
+<h2 class="anchored" data-anchor-id="dites-à-git-qui-vous-êtes">4. Dites à Git qui vous êtes</h2>
+<p><strong>Option A</strong></p>
+<p>Si vous êtes à l’aise d’ouvrir un terminal (<a href="https://happygitwithr.com/shell.html#shell">Appendix A</a>), ouvrez un terminal et vous pouvez entrer ces lignes, une à la fois, avec les informations qui correspondent à celles que vous avez entrées sur GitHub.</p>
+<p>⚠️ Changez <code>Prénom Nom</code> par les vôtres. ⚠️</p>
+<p><code>git config --global user.name 'Prénom Nom'</code></p>
+<p>⚠️ Changez <code>votre@courriel.com</code> par votre adresse. ⚠️</p>
+<p><code>git config --global user.email 'votre@courriel.ca'</code></p>
+<p>Pour vérifier les informations que vous venez d’entrer sont bonnes, entrez:<br>
+<code>git config --global --list</code></p>
+<div class="callout-caution callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Mise en garde
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Pour les personnes qui utilisent <strong>Windows</strong>: Il se peut que vous rencontriez des obstacles que les gens sur Mac et Linux ne rencontrent pas. Si vous rencontrez des difficultés sous Windows, considérez qu’il existe différents types de shell/terminal et que vous vous trompez peut-être. Vous voulez être dans un shell «<strong>Git Bash</strong>» et non à <em>Power Shell</em> ou à la ligne de commande <em>cmd.exe</em>. Pour en savoir plus, consultez <a href="https://happygitwithr.com/shell.html#windows-shell-hell">cette annexe</a>.</p>
+</div>
+</div>
+<p><strong>Option B</strong></p>
+<p>Si vous n’est pas à l’aise avec RStudio ou un terminal. Nous ferons cette étape ensemble pendant le cours sur la gestion de version.</p>
+</section>
+<section id="est-ce-que-git-rstudio-et-github-sentendent" class="level2">
+<h2 class="anchored" data-anchor-id="est-ce-que-git-rstudio-et-github-sentendent">5. Est-ce que Git, RStudio et GitHub s’entendent?</h2>
+<p>Enfin, si vous voulez vous assurez du bon fonctionnement, veuillez suivre <a href="https://happygitwithr.com/connect-intro.html">ces instructions</a> qui vous amèneront à créer les éléments nécessaires pour communiquer avec GitHub sans soucis.</p>
+<p>Si vous n’est pas à l’aise avec RStudio ou un terminal. Nous ferons cette étape ensemble pendant le cours sur la gestion de version.</p>
+</section>
+<section id="félicitations" class="level2">
+<h2 class="anchored" data-anchor-id="félicitations">Félicitations! 🎉</h2>
+<p>Félicitations, vous avez survécu à l’installation, nous saurons dans quelques semaines si vous avez bien configuré le tout!</p>
+<p><img src="assets/img/congrats.gif" class="img-fluid" width="350"></p>
 
 
+</section>
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-     <select id="listing-listing-sort" class="form-select" aria-label="Trier par" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-       <option value="" disabled="" selected="" hidden="">Trier par</option>
-       <option value="index" data-direction="asc">Ordre par défaut</option>
-         <option value="listing-title" data-direction="asc">
-          Titre
-        </option>
-         <option value="listing-date-sort" data-direction="asc">
-          Date - Le plus ancien
-        </option>
-         <option value="listing-date-sort" data-direction="desc">
-          Date - Le plus récent
-        </option>
-     </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="cours,semaine" data-listing-date-sort="1662422400000" data-listing-file-modified-sort="1662574355749" data-listing-reading-time-sort="0.345">
-<div class="thumbnail">
-<p><a href="./semaines/00.html"> <img src="https://media.giphy.com/media/ptqAPgghLtHOa0SLJS/giphy.gif" class="thumnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./semaines/00.html">
-<h3 class="no-anchor listing-title">
-📌 Semaine 0
-</h3>
-<div class="listing-subtitle">
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Notes de bas de page</h2>
 
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('cours'); return false;">
-cours
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('semaine'); return false;">
-semaine
-</div>
-</div>
-<a href="./semaines/00.html">
-<div class="listing-description">
-<p>Attendons que le trimestre débute avant d’ajouter du contenu! Il n’y a absolument rien à voir ici… ou peut-être pas 🤔?</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./semaines/00.html">
-<div class="listing-date">
-6 sept. 2022
-</div>
-<div class="listing-author">
-Samuel Guay
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-Aucun article correspondant
-</div>
-</div></main> <!-- /main -->
+<ol>
+<li id="fn1"><p>Nous verrons les packages beaucoup plus tard dans la session.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p><img src="assets/img/install_packages.png" class="img-fluid"></p>
+<p>Comme ça ⬆️<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
