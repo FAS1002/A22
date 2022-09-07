@@ -134,6 +134,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#prochaine-étape-pratique" id="toc-prochaine-étape-pratique" class="nav-link" data-scroll-target="#prochaine-étape-pratique">2.2 Prochaine étape: Pratique</a></li>
   <li><a href="#mais...-ce-nest-pas-un-cours-sur-r" id="toc-mais...-ce-nest-pas-un-cours-sur-r" class="nav-link" data-scroll-target="#mais...-ce-nest-pas-un-cours-sur-r">Mais... ce n’est pas un cours sur R?</a></li>
   <li><a href="#dernière-lecture" id="toc-dernière-lecture" class="nav-link" data-scroll-target="#dernière-lecture">3. Dernière lecture!</a></li>
+  <li><a href="#module-2" id="toc-module-2" class="nav-link" data-scroll-target="#module-2">4. Module #2</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/FAS1002/A22/edit/main/semaines/02.qmd" class="toc-action">Modifier cette page</a></p><p><a href="https://github.com/FAS1002/A22/issues/new" class="toc-action">Faire part d'un problème</a></p><p><a href="https://github.com/FAS1002/A22/blob/main/semaines/02.qmd" class="toc-action">Voir la source</a></p></div></div></nav>
     </div>
@@ -179,7 +180,7 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="objectif-de-la-semaine-2" class="level2">
 <h2 class="anchored" data-anchor-id="objectif-de-la-semaine-2">Objectif de la semaine 2</h2>
-<p>Se familiariser avec quelques outils et concepts d'informatique afin d’être en mesure d’effectuer des opérations simples dans un système de fichiers à l’aide de l’interface en ligne de commande.</p>
+<p>Se familiariser avec quelques outils et concepts d’informatique afin d’être en mesure d’effectuer des opérations simples dans un système de fichiers à l’aide de l’interface en ligne de commande.</p>
 <p>À la fin du cours, nous devrions être en mesure de répondre à ces questions:</p>
 <ul>
 <li><p>Comment puis-je naviguer dans mon ordinateur?</p></li>
@@ -228,7 +229,7 @@ Important
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">2.1 Introduction</h2>
 <p>Les humains et les ordinateurs interagissent généralement de différentes manières, par exemple via un clavier et une souris, des interfaces à écran tactile ou en utilisant des systèmes de reconnaissance vocale. Le moyen le plus largement utilisé pour interagir avec les ordinateurs personnels est appelé une <a href="https://fr.wikipedia.org/wiki/Interface_graphique">interface graphique</a> ou <strong>GUI</strong> pour <a href="https://en.wikipedia.org/wiki/Graphical_user_interface"><strong>G</strong>raphical <strong>U</strong>ser <strong>I</strong>nterface</a> en anglais. Avec une interface graphique, nous donnons des instructions à l’ordinateur en cliquant sur une souris et en utilisant des interactions guidées par des menus. À titre d’exemple, lorsque vous naviguez sur le site et que vous cliquez sur un lien votre ordinateur reçoit la commande et exécute l’action (ou une série d’actions) pour que la page apparaisse.</p>
-<p>Alors que l’aide visuelle d’une interface graphique rend la navigation et l’apprentissage intuitifs, cette façon de fournir des instructions à un ordinateur est très mal adaptée, notamment pour automatiser des tâches ou exécuter des centaines de tâches rapidement. Si les interfaces graphiques ont grandement facilité l'interaction humain-machine, elles n'ont pas pour autant fait disparaitre ou rendu obsolète la ligne de commande, particulièrement dans la pratique de la programmation.</p>
+<p>Alors que l’aide visuelle d’une interface graphique rend la navigation et l’apprentissage intuitifs, cette façon de fournir des instructions à un ordinateur est très mal adaptée, notamment pour automatiser des tâches ou exécuter des centaines de tâches rapidement. Si les interfaces graphiques ont grandement facilité l’interaction humain-machine, elles n’ont pas pour autant fait disparaitre ou rendu obsolète la ligne de commande, particulièrement dans la pratique de la programmation.</p>
 <div class="callout-note callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -243,17 +244,17 @@ Mise en situation
 Pour une recherche documentaire, vous devez copier la troisième ligne de mille fichiers texte dans mille répertoires différents et la coller dans un seul fichier. En utilisant une interface graphique, non seulement vous cliqueriez sur votre bureau pendant plusieurs, voire des dizaines, d’heures, mais vous pourriez également commettre une erreur dans le processus d’exécution de cette tâche répétitive. Une erreur aussi simple que de copier la deuxième ou la quatrième ligne par inadvertance à deux ou trois reprises pourrait invalider vos résultats.</p>
 </div>
 </div>
-<p>C’est, entre autres, dans des situations comme celle-ci que nous pouvons profiter de la puissance de la ligne de commande. La ligne de commande est la plus ancienne des interfaces pour interagir avec les ordinateurs. La ligne de commande du système d'exploitation demeure une interface importante pour les programmeurs.</p>
+<p>C’est, entre autres, dans des situations comme celle-ci que nous pouvons profiter de la puissance de la ligne de commande. La ligne de commande est la plus ancienne des interfaces pour interagir avec les ordinateurs. La ligne de commande du système d’exploitation demeure une interface importante pour les programmeurs.</p>
 <ul>
-<li><p>Parfois <strong><em>plus simple</em></strong> qu'une interface graphique</p></li>
-<li><p>Souvent <strong><em>plus rapide</em></strong> qu'une interface graphique</p></li>
+<li><p>Parfois <strong><em>plus simple</em></strong> qu’une interface graphique</p></li>
+<li><p>Souvent <strong><em>plus rapide</em></strong> qu’une interface graphique</p></li>
 <li><p>Parfois la <strong>seule option</strong> (notamment pour les utilitaires Unix comme <a href="https://en.wikipedia.org/wiki/Grep"><code>grep</code></a>, <a href="https://en.wikipedia.org/wiki/Sed"><code>sed</code></a>, <a href="https://en.wikipedia.org/wiki/AWK"><code>awk</code></a>)</p></li>
 </ul>
 <p>Avant d’aller plus loin, abordons un peu de terminologie essentielle:</p>
 <ul>
 <li><p>(Interface en) <strong>Ligne de commande</strong> - <em><strong>Command Line</strong> Interface</em> - <strong>CLI</strong></p>
 <ul>
-<li>Mode d'interaction avec un programme informatique dans lequel l'utilisateur ou l’utilisatrice dicte les commandes et reçoit les réponses de l'ordinateur en<br>
+<li>Mode d’interaction avec un programme informatique dans lequel l’utilisateur ou l’utilisatrice dicte les commandes et reçoit les réponses de l’ordinateur en<br>
 mode <u>texte.</u></li>
 </ul></li>
 </ul>
@@ -261,14 +262,14 @@ mode <u>texte.</u></li>
 <ul>
 <li><p><strong>Interpréteur</strong> de commande - <em><strong>Terminal</strong>, Shell</em></p>
 <ul>
-<li>Programme qui gère l'interface en ligne de commande.</li>
+<li>Programme qui gère l’interface en ligne de commande.</li>
 </ul></li>
 </ul>
 <!-- -->
 <ul>
 <li><p>Invite de commande - <strong><em>Command prompt</em></strong></p>
 <ul>
-<li>Symbole affiché par l'interpréteur de commande pour indiquer qu'il est prêt à recevoir une commande.</li>
+<li>Symbole affiché par l’interpréteur de commande pour indiquer qu’il est prêt à recevoir une commande.</li>
 </ul></li>
 </ul>
 <p>L’interpréteur de commande Unix (shell) est à la fois une interface de ligne de commande (CLI) et un langage de script, permettant d’effectuer automatiquement et rapidement des tâches répétitives. Avec les commandes appropriées, le shell ou terminal peut répéter des tâches avec ou sans modification autant de fois que nous le souhaitons, souvent en quelques secondes. En utilisant un terminal, la tâche dans l’exemple de la recherche documentaire ci-haut peut être accomplie en quelques secondes seulement.</p>
@@ -310,10 +311,14 @@ Astuce
 <p><img src="../assets/img/terminal.png" class="img-fluid figure-img" width="450"></p>
 </figure>
 </div>
+</section>
+<section id="module-2" class="level2">
+<h2 class="anchored" data-anchor-id="module-2">4. Module #2</h2>
+<p>Lorsque vos lectures sont terminées, vous pouvez aller compléter le <a href="https://edstem.org/us/courses/6933/lessons/22446/slides/129346">module #2 sur Ed</a> cette fois-ci!</p>
 <hr>
 <div>
 <div class="small muted">
-<p>Adapté à partir de <a href="https://swcarpentry.github.io/shell-novice/">Shell Novice - The Carpentries (CC-BY)</a></p>
+<p>Partie sur la ligne de commande adaptée de <a href="https://swcarpentry.github.io/shell-novice/">Shell Novice - The Carpentries (CC-BY)</a></p>
 </div>
 </div>
 
