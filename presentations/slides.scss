@@ -1,0 +1,31 @@
+/*-- scss:defaults --*/
+
+// fonts
+@import 'https://fonts.googleapis.com/css2?family=Fira+Sans';
+
+$font-family-sans-serif: "Fira Sans", sans-serif;
+$presentation-heading-color: #FFA69E;
+$body-bg: #011c27; 
+$body-color: #fff;
+$link-color: #62959C;
+$presentation-title-slide-text-align: "left";
+/*-- scss:rules  colors: FFCD9E 79C386 264653--*/
+
+details>summary {
+  font-size: 0.75em;
+}
+
+.small {
+  font-size: 0.75em;
+}
+
+.v-center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+}
+
+#vcenter {
+  vertical-align: middle;
+}

@@ -1,0 +1,125 @@
+---
+title: "Bienvenue au cours FAS1002!"
+subtitle: "FAS1002 - Automne 2022"
+author: "Samuel Guay"
+footer:  "[FAS1002.github.io/](https://FAS1002.github.io/)"
+logo: "images/logo.png"
+format: 
+  revealjs: 
+    theme: slides.scss
+    transition: fade
+    slide-number: true
+editor: visual
+# execute:
+#   freeze: auto
+---
+
+## Votre chargé de cours
+
+::: columns
+::: {#vcenter .column width="50%"}
+![](https://www.gravatar.com/avatar/5d5641f9ec6f020743c4ff93ff68adef?s=240&d=mp){style="border-radius: 50%"
+fig-alt="Photo de Samuel Guay" fig-align="center"}
+
+::: {style="text-align: center;"}
+Samuel Guay (il/lui)
+:::
+:::
+
+::: {.column width="50%"}
+-   Doctorant en psychologie - option neuroscience cognitive, <br> [Université
+    de Montréal](https://psy.umontreal.ca).
+-   Sports and Trauma Applied Research Lab, [CIUSSS du
+    Nord-de-l'Île-de-Montréal](htttps://rechercheciusssnim.ca)
+-   En savoir plus ➡️ [samuelguay.ca](https://samuelguay.ca)
+:::
+:::
+
+## Plan de la séance
+
+::: incremental
+1.  Plan de cours + fonctionnement du cours \| ⏲ \~60min
+
+2.  Installation des logiciels \| ⏲ \~60min
+
+3.  Instructions pour les devoirs \| ⏲ \~59min
+:::
+
+# Aperçu du cours
+
+## Tech stack principal pour le cours
+
+-   [R \>= v4.1.3](https://www.r-project.org/) et [RStudio
+    v2022.07.1](https://www.rstudio.com/products/rstudio/download/)
+-   GitHub [github.com/FAS1002](https://github.com/FAS1002) et
+    [Git](https://happygitwithr.com/)
+-   [Forum de discussion et
+    d'entraide](https://edstem.org/us/courses/6933/discussion/) (Ed)
+-   [Quarto](https://quarto.org)
+
+::: callout-important
+Tous les liens seront affichés sur une page du site web!
+:::
+
+## Page d'accueil
+
+[fas1002.github.io/A22](https:/fas1002.github.io/A22)
+
+-   Tout se retrouve sur le site, matériel, lectures, etc.
+-   Inclus les liens vers ~~StudiUM,~~ Ed, GitHub, les logiciels à installer,
+    etc.
+-   [Cliquez ici pour visiter le site web](https://fas1002.github.io/A22)!
+
+## Annonces
+
+-   Toujours diffusées sur Ed et vous devriez recevoir un courriel.
+-   Techniquement, à chaque mercredi il y aura une annonce pour le matériel de
+    la semaine.
+
+## Support
+
+-   Poser et répondre aux questions sur le forum de discussion
+-   L'entraide est fortement recommandée!
+-   Par courriel **si nécessaire**
+-   Le web!
+-   Sur rendez-vous!
+
+# Pour terminer
+
+## Collaboration, réutilisation de code, etc.
+
+Sauf indication contraire explicite, la politique du cours est que vous pouvez
+utiliser toutes les ressources en ligne (par exemple, la communauté RStudio,
+StackOverflow, etc.), mais vous **devez explicitement citer** où vous avez
+obtenu tout code que vous utilisez directement ou utilisez comme source
+d'inspiration dans vos solutions.
+
+## COVID
+
+-   Il est toujours recommandé de porter un masque en tout temps à l'intérieur!
+
+-   Vous êtes libres de faire vos propres choix.
+
+## Installation des logiciels
+
+-   [R](https://www.r-project.org/), [RStudio](https://rstudio.com) et quelques
+    packages:
+    -   `markdown`, `swirl`, `devtools`, `usethis`, `gitcreds`, `tidyverse`
+-   Git et GitHub ➡️ <https://happygitwithr.com/>
+
+::: callout-tip
+## Astuce
+
+Instructions détaillées se trouvent au
+[FAS1002.github.io/A22/installation](https://FAS1002.github.io/installation)
+:::
+
+## Module 1
+
+Voir post sur [Ed](https://edstem.org/us/courses/6933) pour le code
+d'activation afin de remplir le premier module sur
+[formr](https://fas1002-m01.formr.org).
+
+::: callout-important
+N'oubliez pas votre introduction sur Ed également!
+:::
