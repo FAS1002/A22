@@ -239,6 +239,15 @@ Lorsque vos lectures sont terminées, vous pouvez aller compléter le [module #2
 sur Ed](https://edstem.org/us/courses/6933/lessons/22446/slides/129346) cette
 fois-ci!
 
+::: callout-important
+N'oubliez pas de compléter les 3 premiers cours dans Swirl \> 1: R Programming
+\> 1: Basic Building Blocks, puis 2: Workspace and Files et 3: Sequences of
+Numbers.\
+\
+Dans la console R, `swirl()` puis suivez les étapes pour vous rendre dans R
+Programming.
+:::
+
 Bonne semaine :)
 
 -------------------------------------------------------------------------------
