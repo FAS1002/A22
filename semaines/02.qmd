@@ -10,7 +10,7 @@ categories:
 
 ## Objectif de la semaine 2
 
-Se familiariser avec quelques outils et concepts d\'informatique afin d'être en
+Se familiariser avec quelques outils et concepts d'informatique afin d'être en
 mesure d'effectuer des opérations simples dans un système de fichiers à l'aide
 de l'interface en ligne de commande.
 
@@ -53,7 +53,7 @@ officielle](https://gitlab.com/vigou3/programmer-avec-r/-/package_files/49736237
 Vous pouvez faire les exercices du chapitre, mais elles ne sont pas
 obligatoires pour le cours.
 
-#### 1.2 Lire le **chapitre 2 (pages 21-38)** du livre [**Programmer avec R**](https://edstem.org/us/courses/6933/resources?download=20545) 
+#### 1.2 Lire le **chapitre 2 (pages 21-38)** du livre [**Programmer avec R**](https://edstem.org/us/courses/6933/resources?download=20545)
 
 -   Exercices plus pertinents pour le cours: **2.2**, **2.3**, **2.4**,
 
@@ -78,7 +78,7 @@ Alors que l'aide visuelle d'une interface graphique rend la navigation et
 l'apprentissage intuitifs, cette façon de fournir des instructions à un
 ordinateur est très mal adaptée, notamment pour automatiser des tâches ou
 exécuter des centaines de tâches rapidement. Si les interfaces graphiques ont
-grandement facilité l\'interaction humain-machine, elles n\'ont pas pour autant
+grandement facilité l'interaction humain-machine, elles n'ont pas pour autant
 fait disparaitre ou rendu obsolète la ligne de commande, particulièrement dans
 la pratique de la programmation.
 
@@ -99,12 +99,12 @@ vos résultats.
 C'est, entre autres, dans des situations comme celle-ci que nous pouvons
 profiter de la puissance de la ligne de commande. La ligne de commande est la
 plus ancienne des interfaces pour interagir avec les ordinateurs. La ligne de
-commande du système d\'exploitation demeure une interface importante pour les
+commande du système d'exploitation demeure une interface importante pour les
 programmeurs.
 
--   Parfois ***plus simple*** qu\'une interface graphique
+-   Parfois ***plus simple*** qu'une interface graphique
 
--   Souvent ***plus rapide*** qu\'une interface graphique
+-   Souvent ***plus rapide*** qu'une interface graphique
 
 -   Parfois la **seule option** (notamment pour les utilitaires Unix comme
     [`grep`](https://en.wikipedia.org/wiki/Grep),
@@ -116,25 +116,23 @@ Avant d'aller plus loin, abordons un peu de terminologie essentielle:
 -   (Interface en) **Ligne de commande** - ***Command Line** Interface* -
     **CLI**
 
-    -   Mode d\'interaction avec un programme informatique dans lequel
-        l\'utilisateur ou l'utilisatrice dicte les commandes et reçoit les
-        réponses de l\'ordinateur en\
+    -   Mode d'interaction avec un programme informatique dans lequel
+        l'utilisateur ou l'utilisatrice dicte les commandes et reçoit les
+        réponses de l'ordinateur en\
         mode [texte.]{.underline}
 
-```{=html}
 <!-- -->
-```
+
 -   **Interpréteur** de commande - ***Terminal**, Shell*
 
-    -   Programme qui gère l\'interface en ligne de commande.
+    -   Programme qui gère l'interface en ligne de commande.
 
-```{=html}
 <!-- -->
-```
--   Invite de commande  - ***Command prompt***
 
-    -   Symbole affiché par l\'interpréteur de commande pour indiquer qu\'il
-        est prêt à recevoir une commande.
+-   Invite de commande - ***Command prompt***
+
+    -   Symbole affiché par l'interpréteur de commande pour indiquer qu'il est
+        prêt à recevoir une commande.
 
 L'interpréteur de commande Unix (shell) est à la fois une interface de ligne de
 commande (CLI) et un langage de script, permettant d'effectuer automatiquement
@@ -181,7 +179,7 @@ ignorez, vous pourrez tout de même vous pratiquer sur
 ## 2.2 Prochaine étape: Pratique
 
 Pour la suite, vous devez vous rendre sur Ed pour une session de pratique et
-d'introductio à la ligne de commande! \
+d'introductio à la ligne de commande!\
 \
 ➡️ <https://edstem.org/us/courses/6933/lessons/22144/>.
 
@@ -223,7 +221,7 @@ nécessaire. Nous pouvons nous appuyer sur les compétences en ligne de commande
 couvertes ici pour aborder un large éventail de questions scientifiques et de
 défis informatiques.
 
-## 3. Dernière lecture! 
+## 3. Dernière lecture!
 
 Pour terminer, veuillez lire l'article [*Ten simple rules for teaching yourself
 R*](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010372)
@@ -235,12 +233,18 @@ résume bien l'article pour sauver du temps.
 
 ![](/assets/img/terminal.png){fig-align="center" width="450"}
 
+## 4. Module #2
+
+Lorsque vos lectures sont terminées, vous pouvez aller compléter le [module #2
+sur Ed](https://edstem.org/us/courses/6933/lessons/22446/slides/129346) cette
+fois-ci!
+
 -------------------------------------------------------------------------------
 
 <div>
 
 ::: {.small .muted}
-Adapté à partir de [Shell Novice - The Carpentries
+Partie sur la ligne de commande adaptée de [Shell Novice - The Carpentries
 (CC-BY)](https://swcarpentry.github.io/shell-novice/)
 :::
 

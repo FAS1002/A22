@@ -1,5 +1,5 @@
 ---
-title: "Calendrier"
+title: "Calendrier des séances"
 listing:
   contents: semaines
   sort: "date desc"
@@ -12,4 +12,4 @@ listing:
 
 À chaque semaine, les lectures, les tâches et les présentations apparaissant
 dans le plan de cours seront indiquées en plus d'y ajouter un compte-rendu de
-la séance au maximum le lendemain de la séance.
+la séance au courant de la semaine qui suit.
