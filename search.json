@@ -193,7 +193,7 @@
     "href": "semaines/02.html",
     "title": "Semaine 2",
     "section": "",
-    "text": "Se familiariser avec quelques outils et concepts d’informatique afin d’être en mesure d’effectuer des opérations simples dans un système de fichiers à l’aide de l’interface en ligne de commande.\nÀ la fin du cours, nous devrions être en mesure de répondre à ces questions:\n\nComment puis-je naviguer dans mon ordinateur?\nComment puis-je voir les fichiers et les dossiers sur ma machine?\nComment puis-je spécifier l’emplacement d’un fichier ou d’un dossier sur mon ordinateur?\nComment puis-je créer, copier et supprimer des fichiers et des dossiers?\nComment puis-je modifier des fichiers ou des dossiers?\n\nVous êtes probablement déjà capables de répondre à toutes ces questions avec un interface graphique. Évidemment, je m’attends à ce que vous soyez capables d’y répondre également à partir d’un terminal."
+    "text": "Se familiariser avec quelques outils et concepts d’informatique afin d’être en mesure d’effectuer des opérations simples dans un système de fichiers à l’aide de l’interface en ligne de commande.\nÀ la fin du cours, vous devriez être en mesure de répondre à ces questions:\n\nComment puis-je naviguer dans mon ordinateur?\nComment puis-je voir les fichiers et les dossiers sur ma machine?\nComment puis-je spécifier l’emplacement d’un fichier ou d’un dossier sur mon ordinateur?\nComment puis-je créer, copier et supprimer des fichiers et des dossiers?\nComment puis-je modifier des fichiers ou des dossiers?\n\nVous êtes probablement déjà capables de répondre à toutes ces questions avec un interface graphique. Évidemment, je m’attends à ce que vous soyez capables d’y répondre également à partir d’un terminal."
   },
   {
     "objectID": "semaines/02.html#lectures",
@@ -242,7 +242,7 @@
     "href": "semaines/02.html#module-2",
     "title": "Semaine 2",
     "section": "4. Module #2",
-    "text": "4. Module #2\nLorsque vos lectures sont terminées, vous pouvez aller compléter le module #2 sur Ed cette fois-ci!\n\n\n\n\n\n\nImportant\n\n\n\nN’oubliez pas de compléter les 3 premiers cours dans Swirl > 1: R Programming > 1: Basic Building Blocks, puis 2: Workspace and Files et 3: Sequences of Numbers.\n\nDans la console R, swirl() puis suivez les étapes pour vous rendre dans R Programming.\n\n\nBonne semaine :)\n\n\n\nPartie sur la ligne de commande adaptée de Shell Novice - The Carpentries (CC-BY)"
+    "text": "4. Module #2\nLorsque vos lectures sont terminées, vous pouvez aller compléter le module #2 sur Ed cette fois-ci!\n\n\n\n\n\n\nImportant\n\n\n\nN’oubliez pas de compléter les 3 premiers cours dans Swirl > 1: R Programming > 1: Basic Building Blocks, puis 2: Workspace and Files et 3: Sequences of Numbers.\n\nDans la console R, swirl() puis suivez les étapes pour vous rendre dans R Programming.\n\n\nVous pouvez envoyer vos captures d’écran dans un thread privé sur Ed. Vous pouvez envoyer toutes vos captures d’écran de Swirl dans le même thread.\nBonne semaine :)\n\n\n\nPartie sur la ligne de commande adaptée de Shell Novice - The Carpentries (CC-BY)"
   },
   {
     "objectID": "installation.html",
