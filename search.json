@@ -102,7 +102,7 @@
     "href": "semaines.html",
     "title": "Calendrier des séances",
     "section": "",
-    "text": "Trier par\n       Ordre par défaut\n         \n          Titre\n        \n         \n          Date - Le plus ancien\n        \n         \n          Date - Le plus récent\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nSemaine 2\n\n\n\n\n\n\n\ncours\n\n\nsemaine\n\n\n\n\nContenu pour la semaine, incluant les lectures et les modules\n\n\n\n\n\n\n13 sept. 2022\n\n\nSamuel Guay\n\n\n\n\n\n\n  \n\n\n\n\nSemaine 1\n\n\n\n\n\n\n\ncours\n\n\nsemaine\n\n\n\n\nContenu pour la semaine, incluant les lectures et les modules\n\n\n\n\n\n\n6 sept. 2022\n\n\nSamuel Guay\n\n\n\n\n\n\n  \n\n\n\n\n📌 Semaine 0\n\n\n\n\n\n\n\ncours\n\n\nsemaine\n\n\n\n\nAttendons que le trimestre débute avant d’ajouter du contenu! Il n’y a absolument rien à voir ici… ou peut-être pas 🤔?\n\n\n\n\n\n\n5 sept. 2022\n\n\nSamuel Guay\n\n\n\n\n\n\nAucun article correspondant"
+    "text": "Trier par\n       Ordre par défaut\n         \n          Titre\n        \n         \n          Date - Le plus ancien\n        \n         \n          Date - Le plus récent\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nSemaine 3\n\n\n\n\n\n\n\ncours\n\n\nsemaine\n\n\n\n\nContenu pour la semaine, incluant les lectures et les modules\n\n\n\n\n\n\n20 sept. 2022\n\n\nSamuel Guay\n\n\n\n\n\n\n  \n\n\n\n\nSemaine 2\n\n\n\n\n\n\n\ncours\n\n\nsemaine\n\n\n\n\nContenu pour la semaine, incluant les lectures et les modules\n\n\n\n\n\n\n13 sept. 2022\n\n\nSamuel Guay\n\n\n\n\n\n\n  \n\n\n\n\nSemaine 1\n\n\n\n\n\n\n\ncours\n\n\nsemaine\n\n\n\n\nContenu pour la semaine, incluant les lectures et les modules\n\n\n\n\n\n\n6 sept. 2022\n\n\nSamuel Guay\n\n\n\n\n\n\n  \n\n\n\n\n📌 Semaine 0\n\n\n\n\n\n\n\ncours\n\n\nsemaine\n\n\n\n\nAttendons que le trimestre débute avant d’ajouter du contenu! Il n’y a absolument rien à voir ici… ou peut-être pas 🤔?\n\n\n\n\n\n\n5 sept. 2022\n\n\nSamuel Guay\n\n\n\n\n\n\nAucun article correspondant"
   },
   {
     "objectID": "syllabus.html",
@@ -243,6 +243,27 @@
     "title": "Semaine 2",
     "section": "4. Module #2",
     "text": "4. Module #2\nLorsque vos lectures sont terminées, vous pouvez aller compléter le module #2 sur Ed cette fois-ci!\n\n\n\n\n\n\nImportant\n\n\n\nN’oubliez pas de compléter les 3 premiers cours dans Swirl > 1: R Programming > 1: Basic Building Blocks, puis 2: Workspace and Files et 3: Sequences of Numbers.\n\nDans la console R, swirl() puis suivez les étapes pour vous rendre dans R Programming.\n\n\nVous pouvez envoyer vos captures d’écran dans un thread privé sur Ed. Vous pouvez envoyer toutes vos captures d’écran de Swirl dans le même thread.\nBonne semaine :)\n\n\n\nPartie sur la ligne de commande adaptée de Shell Novice - The Carpentries (CC-BY)"
+  },
+  {
+    "objectID": "semaines/03.html",
+    "href": "semaines/03.html",
+    "title": "Semaine 3",
+    "section": "",
+    "text": "Objectif de ce module:\nSe familiariser avec l’environnement de R et R Studio.\nÀ la fin du cours, vous devriez être en mesure de répondre à ces questions:"
+  },
+  {
+    "objectID": "semaines/03.html#lectures",
+    "href": "semaines/03.html#lectures",
+    "title": "Semaine 3",
+    "section": "1. Lectures",
+    "text": "1. Lectures\n\nProgrammer avec R - Chapitre 1 et 2\n\n1.1 Lire le chapitre 3 (pages 45-61) du livre Programmer avec R.\n\n\n\n\n\n\nImportant\n\n\n\nVous pouvez télécharger le livre en cliquant sur le titre ci-haut ou en vous rendant sur la page des ressources. Pour télécharger le livre et tous les fichiers d’exercices et de code sur la page officielle.\n\n\nVous pouvez faire les exercices du chapitre sur votre ordinateur avec RStudio.\nVous pouvez également regarder la vidéo d’Introduction qui accompagne le chapitre 3 si vous l’avez pas déjà fait."
+  },
+  {
+    "objectID": "semaines/03.html#exercices",
+    "href": "semaines/03.html#exercices",
+    "title": "Semaine 3",
+    "section": "2. Exercices",
+    "text": "2. Exercices\nSwirl 4 + 5 à compléter avant le cours.\nVous pouvez envoyer vos captures d’écran dans un thread privé sur Ed. Vous pouvez envoyer toutes vos captures d’écran de Swirl dans le même thread."
   },
   {
     "objectID": "installation.html",
