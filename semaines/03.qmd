@@ -1,0 +1,57 @@
+---
+title: "Semaine 3"
+description: "Contenu pour la semaine, incluant les lectures et les modules"
+author: "Samuel Guay"
+date: "9/20/2022"
+categories:
+  - cours
+  - semaine
+---
+
+**Objectif de ce module**:\
+Se familiariser avec l'environnement de R et R Studio.
+
+À la fin du cours, vous devriez être en mesure de répondre à ces questions:
+
+-   Qu'est-ce que R?
+
+-   Quelle est la principale particularité de R comparativement à d'autres
+    langages en sciences des données?
+
+-   Comment installer R et autres logiciels utiles lorsque nous voulons
+    programmer?
+
+-   Quel(s) IDE(s) ou éditeur de texte pouvons-nous utiliser pour développer du
+    code R?
+
+    -   Quelle est la différence entre un IDE et un éditeur?
+
+-   Avoir une idée de ce qu'est l'approche « *code réel et objets virtuels* » ?
+
+## 1. Lectures
+
+### Programmer avec R - Chapitre 1 et 2
+
+#### 1.1 Lire le **chapitre 3 (pages 45-61)** du livre [**Programmer avec R**](https://edstem.org/us/courses/6933/resources?download=20545).
+
+::: callout-important
+Vous pouvez télécharger le livre en cliquant sur le titre ci-haut ou en vous
+rendant sur la page des
+[*ressources*](https://edstem.org/us/courses/6933/resources)*.* Pour
+télécharger le livre et tous les fichiers d'exercices et de code sur la [page
+officielle](https://gitlab.com/vigou3/programmer-avec-r/-/package_files/49736237/download).
+:::
+
+Vous pouvez faire les exercices du chapitre sur votre ordinateur avec RStudio.
+
+Vous pouvez également regarder la vidéo d'Introduction qui accompagne le
+chapitre 3 si vous l'avez pas déjà fait.
+
+{{< video https://youtu.be/FnoMjJ9Knl0 >}}
+
+## 2. Exercices
+
+**Swirl 4 + 5** à compléter avant le cours.
+
+Vous pouvez envoyer vos captures d'écran dans un *thread privé* sur Ed. Vous
+pouvez envoyer toutes vos captures d'écran de Swirl dans le même *thread*.

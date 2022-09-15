@@ -14,7 +14,7 @@ Se familiariser avec quelques outils et concepts d'informatique afin d'être en
 mesure d'effectuer des opérations simples dans un système de fichiers à l'aide
 de l'interface en ligne de commande.
 
-À la fin du cours, nous devrions être en mesure de répondre à ces questions:
+À la fin du cours, vous devriez être en mesure de répondre à ces questions:
 
 -   Comment puis-je naviguer dans mon ordinateur?
 
@@ -247,6 +247,9 @@ Numbers.\
 Dans la console R, `swirl()` puis suivez les étapes pour vous rendre dans R
 Programming.
 :::
+
+**Vous pouvez envoyer vos captures d'écran dans un *thread privé* sur Ed. Vous
+pouvez envoyer toutes vos captures d'écran de Swirl dans le même *thread*.**
 
 Bonne semaine :)
 
