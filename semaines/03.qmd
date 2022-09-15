@@ -55,3 +55,8 @@ chapitre 3 si vous l'avez pas déjà fait.
 
 Vous pouvez envoyer vos captures d'écran dans un *thread privé* sur Ed. Vous
 pouvez envoyer toutes vos captures d'écran de Swirl dans le même *thread*.
+
+![](/assets/img/code_hero.jpg){fig-align="center" width="1280"}
+
+Figure par [\@allison_horst](https://twitter.com/allison_horst)
+([CC-BY](https://creativecommons.org/licenses/by/4.0/))
