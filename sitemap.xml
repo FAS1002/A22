@@ -1,43 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://FAS1002.github.io/A22/a-propos.html</loc>
-    <lastmod>2022-09-15T17:53:49.868Z</lastmod>
-  </url>
-  <url>
-    <loc>https://FAS1002.github.io/A22/presentations/01.html</loc>
-    <lastmod>2022-09-15T17:53:50.348Z</lastmod>
-  </url>
-  <url>
-    <loc>https://FAS1002.github.io/A22/semaines.html</loc>
-    <lastmod>2022-09-15T17:53:51.612Z</lastmod>
-  </url>
-  <url>
-    <loc>https://FAS1002.github.io/A22/syllabus.html</loc>
-    <lastmod>2022-09-15T17:53:52.392Z</lastmod>
-  </url>
-  <url>
-    <loc>https://FAS1002.github.io/A22/index.html</loc>
-    <lastmod>2022-09-15T17:53:52.756Z</lastmod>
-  </url>
-  <url>
-    <loc>https://FAS1002.github.io/A22/semaines/00.html</loc>
-    <lastmod>2022-09-15T17:53:53.320Z</lastmod>
-  </url>
-  <url>
     <loc>https://FAS1002.github.io/A22/semaines/02.html</loc>
-    <lastmod>2022-09-15T17:53:53.844Z</lastmod>
+    <lastmod>2022-09-22T05:04:46.083Z</lastmod>
   </url>
   <url>
     <loc>https://FAS1002.github.io/A22/semaines/01.html</loc>
-    <lastmod>2022-09-15T17:53:54.184Z</lastmod>
+    <lastmod>2022-09-22T05:04:47.211Z</lastmod>
+  </url>
+  <url>
+    <loc>https://FAS1002.github.io/A22/semaines/04.html</loc>
+    <lastmod>2022-09-22T05:04:47.635Z</lastmod>
+  </url>
+  <url>
+    <loc>https://FAS1002.github.io/A22/semaines/00.html</loc>
+    <lastmod>2022-09-22T05:04:48.259Z</lastmod>
   </url>
   <url>
     <loc>https://FAS1002.github.io/A22/semaines/03.html</loc>
-    <lastmod>2022-09-15T17:53:54.560Z</lastmod>
+    <lastmod>2022-09-22T05:04:48.655Z</lastmod>
+  </url>
+  <url>
+    <loc>https://FAS1002.github.io/A22/presentations/01.html</loc>
+    <lastmod>2022-09-22T05:04:49.063Z</lastmod>
+  </url>
+  <url>
+    <loc>https://FAS1002.github.io/A22/semaines.html</loc>
+    <lastmod>2022-09-22T05:04:50.167Z</lastmod>
+  </url>
+  <url>
+    <loc>https://FAS1002.github.io/A22/index.html</loc>
+    <lastmod>2022-09-22T05:04:50.515Z</lastmod>
   </url>
   <url>
     <loc>https://FAS1002.github.io/A22/installation.html</loc>
-    <lastmod>2022-09-15T17:53:54.968Z</lastmod>
+    <lastmod>2022-09-22T05:04:50.939Z</lastmod>
+  </url>
+  <url>
+    <loc>https://FAS1002.github.io/A22/a-propos.html</loc>
+    <lastmod>2022-09-22T05:04:51.323Z</lastmod>
+  </url>
+  <url>
+    <loc>https://FAS1002.github.io/A22/syllabus.html</loc>
+    <lastmod>2022-09-22T05:04:52.015Z</lastmod>
   </url>
 </urlset>
