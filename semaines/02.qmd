@@ -179,7 +179,7 @@ ignorez, vous pourrez tout de même vous pratiquer sur
 ## 2.2 Prochaine étape: Pratique
 
 Pour la suite, vous devez vous rendre sur Ed pour une session de pratique et
-d'introductio à la ligne de commande!\
+d'introduction à la ligne de commande!\
 \
 ➡️ <https://edstem.org/us/courses/6933/lessons/22144/>.
 

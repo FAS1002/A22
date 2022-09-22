@@ -8,7 +8,7 @@ categories:
   - semaine
 ---
 
-**Objectif de ce module**:\
+**Objectif de cette semaine**:\
 Se familiariser avec l'environnement de R et R Studio.
 
 À la fin du cours, vous devriez être en mesure de répondre à ces questions:
@@ -56,7 +56,8 @@ chapitre 3 si vous l'avez pas déjà fait.
 Vous pouvez envoyer vos captures d'écran dans un *thread privé* sur Ed. Vous
 pouvez envoyer toutes vos captures d'écran de Swirl dans le même *thread*.
 
-![](/assets/img/code_hero.jpg){fig-align="center" width="1280"}
+![](/assets/img/code_hero.jpg){fig-alt="A person in a cape that reads “code hero” who looks like they are flying through the air while typing on a computer while saying “I’m doing a think all on my own!” The coder’s arms and legs have ropes attached to two hot air balloons lifting them up, with labels on the balloons including “teachers”, “bloggers”, “friends”, “developers”. Below the code hero, several people carry a trampoline with labels “support” and “community” that will catch them if they fall"
+fig-align="center" width="1280"}
 
 Figure par [\@allison_horst](https://twitter.com/allison_horst)
 ([CC-BY](https://creativecommons.org/licenses/by/4.0/))

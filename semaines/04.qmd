@@ -1,0 +1,74 @@
+---
+title: "Semaine 4"
+description: "Contenu pour la semaine, incluant les lectures et les modules"
+author: "Samuel Guay"
+date: "9/27/2022"
+categories:
+  - cours
+  - semaine
+---
+
+## **Objectif de cette semaine**:
+
+::: callout-note
+Il s'agit des mêmes objectifs que la semaine dernière puisque nous n'avons que
+brièvement effleurer l'introduction à R.
+:::
+
+Se familiariser avec l'environnement de R et R Studio.
+
+À la fin du cours, vous devriez être en mesure de répondre à ces questions:
+
+-   Qu'est-ce que R?
+
+-   Quelle est la principale particularité de R comparativement à d'autres
+    langages en sciences des données?
+
+-   Comment installer R et autres logiciels utiles lorsque nous voulons
+    programmer?
+
+-   Quel(s) IDE(s) ou éditeur de texte pouvons-nous utiliser pour développer du
+    code R?
+
+    -   Quelle est la différence entre un IDE et un éditeur?
+
+-   Avoir une idée de ce qu'est l'approche « *code réel et objets virtuels* » ?
+
+## 1. Lectures
+
+### Programmer avec R
+
+#### 1.1 Lire le **chapitre 4 (pages 63-112)** du livre [**Programmer avec R**](https://edstem.org/us/courses/6933/resources?download=20545).
+
+::: callout-important
+Vous pouvez télécharger le livre en cliquant sur le titre ci-haut ou en vous
+rendant sur la page des
+[*ressources*](https://edstem.org/us/courses/6933/resources)*.* Pour
+télécharger le livre et tous les fichiers d'exercices et de code sur la [page
+officielle](https://gitlab.com/vigou3/programmer-avec-r/-/package_files/49736237/download).
+:::
+
+Vous pouvez faire les exercices du chapitre sur votre ordinateur avec RStudio.
+
+## 2. Module 3 + Exercices
+
+Lorsque vos lectures sont terminées, [complétez le module 3 sur
+Ed](https://edstem.org/us/courses/6933/lessons/22457). Vous pouvez développer
+vos solutions avec RStudio localement, mais vous devrez soumettre votre code
+dans l'interface des exercices sur Ed.
+
+**Swirl 6 + 7 + 8** à compléter avant le cours.
+
+Vous pouvez envoyer vos captures d'écran dans un *thread privé* sur Ed. Vous
+pouvez envoyer toutes vos captures d'écran de Swirl dans le même *thread* que
+les exercices précédents.
+
+-------------------------------------------------------------------------------
+
+![](/assets/img/r_rollercoaster.png){fig-alt="An illustrated cartoon graph with “How much I think I know about R” on the y-axis, with axis labels at “I know nothing” and “I know lots”, versus “time” on the x-axis. The line varies widely between the two. Above the line are emoji-like faces, showing uncertainty and hope early on. At a second peak is the label “join R community on twitter”, with a “mind-blown” emoji face. The line quickly descends, but with a happy looking emoji character sliding down it."
+fig-align="center"}
+
+Figure par [\@allison_horst](https://twitter.com/allison_horst)
+([CC-BY](https://creativecommons.org/licenses/by/4.0/))
+
+Bonne semaine!
