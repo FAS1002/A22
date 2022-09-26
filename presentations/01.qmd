@@ -2,7 +2,7 @@
 title: "Bienvenue au cours FAS1002!"
 subtitle: "FAS1002 - Automne 2022"
 author: "Samuel Guay"
-footer:  "[FAS1002.github.io/](https://FAS1002.github.io/)"
+footer:  "[FAS1002.github.io/A22](https://FAS1002.github.io/A22)"
 logo: "images/logo.png"
 format: 
   revealjs: 
