@@ -51,7 +51,7 @@ entrez la commande suivante dans la **console\`**:
 
 `install.packages("swirl")`
 
-![](images/paste-B76BD75D.png){fig-align="center" width="658"}
+![](assets/img/r-console.png){fig-align="center" width="705"}
 
 <aside>Notez que le symbole `>` au début de la ligne est l'invite de commande
 de R pour que vous tapiez quelque chose dans la console. Vous ne devez pas à
