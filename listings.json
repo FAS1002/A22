@@ -1,6 +1,6 @@
 [
   {
-    "listing": "/semaines.html",
+    "listing": "/index.html",
     "items": [
       "/semaines/04.html",
       "/semaines/03.html",
@@ -10,7 +10,7 @@
     ]
   },
   {
-    "listing": "/index.html",
+    "listing": "/semaines.html",
     "items": [
       "/semaines/04.html",
       "/semaines/03.html",
