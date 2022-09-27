@@ -35,6 +35,10 @@ website:
         text: Calendrier
       - href: installation.qmd
         text: Installation
+      - text: "Utilisation de packages"
+        menu:
+          - text: "Swirl"
+            href: utilisation-packages.qmd
         
 # footer
   page-footer:

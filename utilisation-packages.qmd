@@ -1,0 +1,132 @@
+---
+title: "Utilisation de packages spécifiques"
+editor: visual
+---
+
+## S'assurer que [R](https://cloud.r-project.org/) et [RStudio](https://rstudio.com/) sont installés et à jour.
+
+Si vous n'avez pas installez R et RStudio sur votre ordinateur, veuillez vous
+référez à [**la page d'installation**](/installation.html) pour vous assurer
+que vos logiciels sont à jour.
+
+::: callout-important
+Si vous n'êtes pas en mesure d'installer ou de mettre à jour R et RStudio parce
+que votre machine est trop vieille ou que votre employeur doit approuver
+l'installation de nouveaux logiciels, vous pouvez utiliser tout simplement
+[rstudio.cloud](rstudio.cloud), qui offre R et RStudio dans votre navigateur
+préféré.
+
+Lisez tout de même les instructions de [la page
+d'installation](/installation.html) puisque certaines instructions requièrent
+tout de même votre attention.
+:::
+
+## `Swirl`
+
+Qu'est-ce que `swirl`?
+
+`swirl` est un package^1^ pour le langage de programmation `R` qui transforme
+la console R en un [environnement d'apprentissage interactif]{.underline}. Les
+utilisateurs et les utilisatrices reçoivent une rétroaction immédiate tout au
+long des modules qui sont complétés à leur propre rythme. Plusieurs cours sont
+offerts et ils couvrent plusieurs aspects en lien avec la science des données
+et la programmation R.
+
+<aside>
+
+> ^1^*Dans la terminologie de R, un **package** est un ensemble cohérent de
+> fonctions, de jeux de données et de documentation. Les packages sont
+> regroupés dans une bibliothèque (library).*
+
+Définition adaptée de [Programmer avec
+R](https://vigou3.gitlab.io/programmer-avec-r/).
+
+</aside>
+
+### 1. Installer `swirl`
+
+Pour installer swirl, vous devez ouvrir RStudio (option recommandée) ou une
+console R tout simplement (option *vous savez ce que vous faites*). Ensuite,
+entrez la commande suivante dans la **console\`**:
+
+`install.packages("swirl")`
+
+![](images/paste-B76BD75D.png){fig-align="center" width="658"}
+
+<aside>Notez que le symbole `>` au début de la ligne est l'invite de commande
+de R pour que vous tapiez quelque chose dans la console. Vous ne devez pas à
+inclure vous-mêmes le `>` dans votre commande. Lorsque vous voyez le `>`, cela
+signifie que R est prêt à recevoir une commande.</aside>
+
+Si l'installation du package a été complétée avec succès, il devrait y avoir un
+message similaire en rouge dans la console ⬇️:
+
+``` {style="color: red;"}
+* installing *binary* package ‘swirl’ ...
+* DONE (swirl)
+
+The downloaded source packages are in
+    ‘/tmp/Rtmpp0JbwP/downloaded_packages’
+```
+
+### 2. Activer `swirl`
+
+Tout d'abord, vous devez charger ou importer le package `swirl` à l'aide de la
+fonction `library()`. Cette action rend disponibles les fonctionnalités du
+package en le chargeant dans l'environnement de la session de travail actuelle.
+
+``` r
+library("swirl")
+```
+
+Par chance, en chargeant `swirl`, un message apparaitra et vous indiquera
+comment activer l'environnement d'apprentissage:
+
+``` {style="color: red;"}
+| Hi! Type swirl() when you are ready to begin.
+```
+
+Il faut donc entrer la commande suivante puis appuyer sur ↵ (*`Entrée`*):
+
+``` r
+swirl()
+```
+
+### 3. Installer le cours *The basics of programming in R*
+
+Si c'est la première fois que vous utilisez swirl, vous serez amener à
+spécifier un nom qui permettra de vous reconnaitra à chaque fois que vous
+réactiverez swirl.
+
+Par la suite, il ne suffit que de suivre les instructions qui apparaitront à
+l'écran. Lorsque les instructions vous demanderont si vous voulez installer un
+cours, vous devrez choisir celui-ci pour le cours:
+
+    1: R Programming: The basics of programming in R
+
+Évidemment, rien ne vous empêche d'installer d'autres cours et de les compléter
+dans vos temps libres!
+
+### 4. Complétion des modules
+
+Tel qu'indiqué dans le [plan de cours](/sylllabus.html), plusieurs modules
+doivent être complétés à différents moments dans la session. Lorsque vous
+compléter un module, le logiciel vous demandera si vous voulez obtenir des
+crédits pour Coursera.org. Vous ne voulez recevoir les crédits, mais **il
+s'agit du meilleur moment pour prendre votre capture d'écran à ce moment comme
+preuve de complétion du module.**
+
+::: callout-note
+## Soumission des captures d'écran
+
+Lorsque vous finissez les différents modules de swirl dans le cadre du cours,
+vous devez ouvrir un [thread privé sur
+Ed](https://edstem.org/us/courses/6933/discussion/new) et coller les images.
+
+::: callout-important
+À chaque nouveau module complété, veuillez coller la capture d'écran **dans le
+même** **thread**.
+:::
+:::
+
+Bon succès!

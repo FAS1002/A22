@@ -3,6 +3,17 @@ title: "Installation des logiciels"
 editor: visual
 ---
 
+::: callout-important
+Si vous n'êtes pas en mesure d'installer ou de mettre à jour R et RStudio parce
+que votre machine est trop vieille ou que votre employeur doit approuver
+l'installation de nouveaux logiciels, vous pouvez utiliser tout simplement
+[rstudio.cloud](rstudio.cloud), qui offre R et RStudio dans votre navigateur
+préféré.
+
+Lisez tout de même les instructions ci-dessous puisque certaines d'entre elles
+requièrent votre attention.
+:::
+
 Bien installer et configurer tous les logiciels nécessaires est honnêtement la
 moitié de la bataille lorsque nous adoptons ces logiciels pour la première
 fois. Parfois l'installation se déroule sans problème, alors que d'autres fois
@@ -149,3 +160,4 @@ Félicitations, vous avez survécu à l'installation, nous saurons dans quelques
 semaines si vous avez bien configuré le tout!
 
 ![](assets/img/congrats.gif){width="350"}
+
