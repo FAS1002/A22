@@ -70,6 +70,69 @@
     "text": "Module 1\nVoir post sur Ed pour le code d’activation afin de remplir le premier module sur formr.\n\n\n\n\n\n\nImportant\n\n\nN’oubliez pas votre introduction sur Ed également!\n\n\n\n\n\n\nFAS1002.github.io/A22"
   },
   {
+    "objectID": "presentations/intro-r.html#rappel-site-du-cours",
+    "href": "presentations/intro-r.html#rappel-site-du-cours",
+    "title": "Introduction à R[Studio]",
+    "section": "📢 Rappel | Site du cours",
+    "text": "📢 Rappel | Site du cours\nVous êtes perdu.e.s? Vous cherchez quelque chose?\nTout se retrouve sur le site:\n\n\nPlan de cours incluant calendrier détaillé de la session\nPage avec le contenu des semaines précédentes\n\nIncluant les liens vers Ed, les modules, les présentations (comme celle-ci), etc.\n\nInstructions détaillées pour l’installation des logiciels\n\n\n\n\n\nhttps://FAS1002.github.io/A22"
+  },
+  {
+    "objectID": "presentations/intro-r.html#installation-des-logiciels",
+    "href": "presentations/intro-r.html#installation-des-logiciels",
+    "title": "Introduction à R[Studio]",
+    "section": "Installation des logiciels",
+    "text": "Installation des logiciels\n\nR, RStudio et quelques packages:\n\nmarkdown, swirl, devtools, usethis, gitcreds, tidyverse\n\nGit et GitHub ➡️ https://happygitwithr.com/\n\n\n\n\n\n\n\nAstuce\n\n\nTout est détaillé sur la page d’installation et swirl"
+  },
+  {
+    "objectID": "presentations/intro-r.html#lectures-swirl-modules",
+    "href": "presentations/intro-r.html#lectures-swirl-modules",
+    "title": "Introduction à R[Studio]",
+    "section": "Lectures > Swirl > Modules",
+    "text": "Lectures > Swirl > Modules\nOrdre à privilégier pour les travaux de la semaine:\n\n\n\nLectures\nExemples dans les lectures\n\nà ouvrir et jouer avec dans RStudio\n\nSwirl*\nModules\n\n\n\n\n\n\n\n\nTip\n\n\n⚠️ Les modules ferment le vendredi qui suit le cours. ⚠️\n* 🙊 Merci d’acheminer les captures d’écran dans un seul et unique thread privé sur Ed et non par courriel."
+  },
+  {
+    "objectID": "presentations/intro-r.html#besoin-dune-rencontre",
+    "href": "presentations/intro-r.html#besoin-dune-rencontre",
+    "title": "Introduction à R[Studio]",
+    "section": "Besoin d’une rencontre?",
+    "text": "Besoin d’une rencontre?\n\nPrise de rendez-vous au rencontre.samuelguay.ca"
+  },
+  {
+    "objectID": "presentations/intro-r.html#comment-naviguer-une-présentation",
+    "href": "presentations/intro-r.html#comment-naviguer-une-présentation",
+    "title": "Introduction à R[Studio]",
+    "section": "Comment naviguer une présentation?",
+    "text": "Comment naviguer une présentation?\n\n\n\n\n\n\n\n\nTip\n\n\n? pour accéder aux raccourcis clavier"
+  },
+  {
+    "objectID": "presentations/intro-r.html#élections-provinciales",
+    "href": "presentations/intro-r.html#élections-provinciales",
+    "title": "Introduction à R[Studio]",
+    "section": "Élections provinciales",
+    "text": "Élections provinciales\n☑️ Toujours possible d’aller voter sur le campus ☑️"
+  },
+  {
+    "objectID": "presentations/intro-r.html#un-des-objectifs-du-cours",
+    "href": "presentations/intro-r.html#un-des-objectifs-du-cours",
+    "title": "Introduction à R[Studio]",
+    "section": "Un des objectifs du cours",
+    "text": "Un des objectifs du cours\n\nApprendre à construire des suites d’expressions qui forment des programmes et qui permettent de réaliser une tâche donnée.\n\nPour y arriver, tout moyen est possible pour le moment:\n\nSwirl ➡️ code source\nChapitres du livre ➡️ surtout les exemples!\nVos collègues et/ou Ed\nLe web (Moteurs de recherche, SO, YT, etc.)\nAutres ressources?"
+  },
+  {
+    "objectID": "presentations/intro-r.html#rstudio",
+    "href": "presentations/intro-r.html#rstudio",
+    "title": "Introduction à R[Studio]",
+    "section": "R[Studio]",
+    "text": "R[Studio]"
+  },
+  {
+    "objectID": "presentations/intro-r.html#rstudio-1",
+    "href": "presentations/intro-r.html#rstudio-1",
+    "title": "Introduction à R[Studio]",
+    "section": "R[Studio]",
+    "text": "R[Studio]"
+  },
+  {
     "objectID": "syllabus.html",
     "href": "syllabus.html",
     "title": "FAS1002 – Initiation à la programmation en sciences sociales",
@@ -256,7 +319,14 @@
     "href": "semaines/04.html#module-3-exercices",
     "title": "Semaine 4",
     "section": "2. Module 3 + Exercices",
-    "text": "2. Module 3 + Exercices\nLorsque vos lectures sont terminées, complétez le module 3 sur Ed. Vous pouvez développer vos solutions avec RStudio localement, mais vous devrez soumettre votre code dans l’interface des exercices sur Ed.\nSwirl 6 + 7 + 8 à compléter avant le cours.\nVous pouvez envoyer vos captures d’écran dans un thread privé sur Ed. Vous pouvez envoyer toutes vos captures d’écran de Swirl dans le même thread que les exercices précédents.\n\n\n\n\n\n\nFigure par @allison_horst (CC-BY)\nBonne semaine!"
+    "text": "2. Module 3 + Exercices\nLorsque vos lectures sont terminées, complétez le module 3 sur Ed. Vous pouvez développer vos solutions avec RStudio localement, mais vous devrez soumettre votre code dans l’interface des exercices sur Ed.\nSwirl 6 + 7 + 8 à compléter avant le cours.\nVous pouvez envoyer vos captures d’écran dans un thread privé sur Ed. Vous pouvez envoyer toutes vos captures d’écran de Swirl dans le même thread que les exercices précédents.\n\n\n\n\n\n\nFigure par @allison_horst (CC-BY)"
+  },
+  {
+    "objectID": "semaines/04.html#présentation",
+    "href": "semaines/04.html#présentation",
+    "title": "Semaine 4",
+    "section": "3. Présentation",
+    "text": "3. Présentation\n\n\n\nBonne semaine!"
   },
   {
     "objectID": "semaines/02.html",
