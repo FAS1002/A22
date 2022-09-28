@@ -185,7 +185,7 @@ Pour y arriver, tout moyen est possible ***pour le moment***:
 
 3.  Révision des modules précédents \| ⏲ \~59min
 
-# Module 2
+# Module 3
 
 ```{r}
 countdown(minutes = 60)
