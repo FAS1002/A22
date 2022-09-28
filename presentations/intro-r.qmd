@@ -1,0 +1,192 @@
+---
+title: "Introduction à R[Studio]"
+subtitle: "FAS1002 - Automne 2022"
+author: "Samuel Guay"
+footer:  "[FAS1002.github.io/A22](https://FAS1002.github.io/A22)"
+logo: "images/logo.png"
+format: 
+  revealjs: 
+    theme: slides.scss
+    transition: fade
+    slide-number: true
+    preview-links: auto
+
+editor: visual
+# execute:
+#   freeze: auto
+---
+
+```{r include = FALSE}
+library(countdown)
+```
+
+# Plan de la séance
+
+::: incremental
+1.  Divers rappels \| ⏲ \~15min
+
+2.  Introduction à R et RStudio \| ⏲ \~1h30min
+
+3.  Révision des modules précédents \| ⏲ \~59min
+:::
+
+## 📢 Rappel \| [Site du cours](https://FAS1002.github.io/A22)
+
+Vous êtes perdu.e.s? Vous cherchez quelque chose?
+
+**Tout** se retrouve sur le [site](https://FAS1002.github.io/A22):
+
+::: incremental
+-   [Plan de cours](https://FAS1002.github.io/A22/syllabus.html) incluant
+    [calendrier détaillé de la
+    session](https://fas1002.github.io/A22/syllabus.html#calendrier)
+
+-   [Page avec le contenu des semaines
+    précédentes](https://FAS1002.github.io/A22/semaine.html)
+
+    -   Incluant les liens vers Ed, les modules, les présentations (comme
+        celle-ci), etc.
+
+-   [Instructions détaillées pour l'installation des
+    logiciels](https://FAS1002.github.io/A22/installation)
+:::
+
+::: {.callout-caution appearance="minimal"}
+<https://FAS1002.github.io/A22>
+:::
+
+## Installation des logiciels
+
+-   [R](https://www.r-project.org/), [RStudio](https://rstudio.com) et quelques
+    packages:
+    -   `markdown`, `swirl`, `devtools`, `usethis`, `gitcreds`, `tidyverse`
+-   Git et GitHub ➡️ <https://happygitwithr.com/>
+
+::: callout-tip
+## Astuce
+
+Tout est détaillé sur la [page
+d'installation](https://FAS1002.github.io/A22/installation) et
+[swirl](/utilisation-packages.html)
+:::
+
+## Lectures \> [Swirl](/utilisation-packages.html) \> Modules
+
+Ordre à privilégier pour les travaux de la semaine:
+
+::: columns
+::: {.column width="50%"}
+1.  Lectures
+
+2.  Exemples dans les lectures
+
+    -   à ouvrir et jouer avec dans RStudio
+
+3.  Swirl\*
+
+4.  Modules
+:::
+
+::: {.column width="50%"}
+::: callout-tip
+⚠️ Les modules ferment le vendredi **qui suit** le cours. ⚠️
+
+\* 🙊 Merci d'acheminer les captures d'écran dans un seul et unique *thread*
+privé sur Ed et non par courriel.
+:::
+:::
+:::
+
+## Besoin d'une rencontre?
+
+::: text-center
+Prise de rendez-vous au
+[rencontre.samuelguay.ca](https://rencontre.samuelguay.ca)
+:::
+
+<iframe src="https://outlook.office365.com/owa/calendar/SamuelGuay@Udemontreal.onmicrosoft.com/bookings/" width="100%" height="75%" scrolling="yes" style="border:0; margin:0">
+
+</iframe>
+
+## Comment naviguer une présentation?
+
+::: columns
+::: {.column width="60%"}
+::: callout-tip
+**`?`** pour accéder aux raccourcis clavier
+:::
+:::
+
+::: {.column width="40%"}
+![](images/keyboard_shortcuts.png)
+:::
+:::
+
+## Élections provinciales
+
+☑️ Toujours possible d'aller voter sur le campus ☑️
+
+![](images/paste-8C96A913.png){fig-align="center"}
+
+# Plan de la séance
+
+1.  ~~Divers rappels \| ⏲ \~15min~~
+
+2.  Introduction à R et RStudio \| ⏲ \~1h30min
+
+3.  Révision des modules précédents \| ⏲ \~59min
+
+# Introduction à R et RStudio
+
+## Un des objectifs du cours
+
+> Apprendre à construire des suites d'expressions qui forment des programmes et
+> qui permettent de réaliser une tâche donnée.
+
+Pour y arriver, tout moyen est possible ***pour le moment***:
+
+-   Swirl ➡️ [code
+    source](https://github.com/swirldev/swirl_courses/tree/master/R_Programming)
+-   Chapitres du livre ➡️ surtout les exemples!
+-   Vos collègues et/ou Ed
+-   **Le web (Moteurs de recherche,
+    [SO](https://stackoverflow.com/questions/tagged/r), YT, etc.)**
+-   Autres ressources?
+
+## R\[Studio\]
+
+![](images/paste-269CBA4A.png)
+
+## R\[Studio\]
+
+![](images/paste-8AA37FC3.png)
+
+## 
+
+![](images/paste-AD3EE45D.png)
+
+## 
+
+![](images/paste-CB22E3F6.png)
+
+## 
+
+![](images/paste-C43A9996.png)
+
+## 
+
+![](images/paste-EFCE73CB.png)
+
+# Plan de la séance
+
+1.  ~~Divers rappels \| ⏲ \~15min~~
+
+2.  ~~Introduction à R et RStudio \| ⏲ \~1h30min~~
+
+3.  Révision des modules précédents \| ⏲ \~59min
+
+# Module 2
+
+```{r}
+countdown(minutes = 60)
+```
