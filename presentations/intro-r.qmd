@@ -190,3 +190,5 @@ Pour y arriver, tout moyen est possible ***pour le moment***:
 ```{r}
 countdown(minutes = 60)
 ```
+
+Révision en classe!
