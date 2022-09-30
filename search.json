@@ -207,7 +207,7 @@
     "href": "semaines.html",
     "title": "Calendrier des séances",
     "section": "",
-    "text": "Trier par\n       Ordre par défaut\n         \n          Titre\n        \n         \n          Date - Le plus ancien\n        \n         \n          Date - Le plus récent\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nSemaine 4\n\n\n\n\n\n\n\ncours\n\n\nsemaine\n\n\n\n\nContenu pour la semaine, incluant les lectures et les modules\n\n\n\n\n\n\n27 sept. 2022\n\n\nSamuel Guay\n\n\n\n\n\n\n  \n\n\n\n\nSemaine 3\n\n\n\n\n\n\n\ncours\n\n\nsemaine\n\n\n\n\nContenu pour la semaine, incluant les lectures et les modules\n\n\n\n\n\n\n20 sept. 2022\n\n\nSamuel Guay\n\n\n\n\n\n\n  \n\n\n\n\nSemaine 2\n\n\n\n\n\n\n\ncours\n\n\nsemaine\n\n\n\n\nContenu pour la semaine, incluant les lectures et les modules\n\n\n\n\n\n\n13 sept. 2022\n\n\nSamuel Guay\n\n\n\n\n\n\n  \n\n\n\n\nSemaine 1\n\n\n\n\n\n\n\ncours\n\n\nsemaine\n\n\n\n\nContenu pour la semaine, incluant les lectures et les modules\n\n\n\n\n\n\n6 sept. 2022\n\n\nSamuel Guay\n\n\n\n\n\n\n  \n\n\n\n\n📌 Semaine 0\n\n\n\n\n\n\n\ncours\n\n\nsemaine\n\n\n\n\nAttendons que le trimestre débute avant d’ajouter du contenu! Il n’y a absolument rien à voir ici… ou peut-être pas 🤔?\n\n\n\n\n\n\n5 sept. 2022\n\n\nSamuel Guay\n\n\n\n\n\n\nAucun article correspondant"
+    "text": "Trier par\n       Ordre par défaut\n         \n          Titre\n        \n         \n          Date - Le plus ancien\n        \n         \n          Date - Le plus récent\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nSemaine 5\n\n\n\n\n\n\n\ncours\n\n\nsemaine\n\n\n\n\nContenu pour la semaine, incluant les lectures et les modules\n\n\n\n\n\n\n4 oct. 2022\n\n\nSamuel Guay\n\n\n\n\n\n\n  \n\n\n\n\nSemaine 4\n\n\n\n\n\n\n\ncours\n\n\nsemaine\n\n\n\n\nContenu pour la semaine, incluant les lectures et les modules\n\n\n\n\n\n\n27 sept. 2022\n\n\nSamuel Guay\n\n\n\n\n\n\n  \n\n\n\n\nSemaine 3\n\n\n\n\n\n\n\ncours\n\n\nsemaine\n\n\n\n\nContenu pour la semaine, incluant les lectures et les modules\n\n\n\n\n\n\n20 sept. 2022\n\n\nSamuel Guay\n\n\n\n\n\n\n  \n\n\n\n\nSemaine 2\n\n\n\n\n\n\n\ncours\n\n\nsemaine\n\n\n\n\nContenu pour la semaine, incluant les lectures et les modules\n\n\n\n\n\n\n13 sept. 2022\n\n\nSamuel Guay\n\n\n\n\n\n\n  \n\n\n\n\nSemaine 1\n\n\n\n\n\n\n\ncours\n\n\nsemaine\n\n\n\n\nContenu pour la semaine, incluant les lectures et les modules\n\n\n\n\n\n\n6 sept. 2022\n\n\nSamuel Guay\n\n\n\n\n\n\n  \n\n\n\n\n📌 Semaine 0\n\n\n\n\n\n\n\ncours\n\n\nsemaine\n\n\n\n\nAttendons que le trimestre débute avant d’ajouter du contenu! Il n’y a absolument rien à voir ici… ou peut-être pas 🤔?\n\n\n\n\n\n\n5 sept. 2022\n\n\nSamuel Guay\n\n\n\n\n\n\nAucun article correspondant"
   },
   {
     "objectID": "utilisation-packages.html",
@@ -299,6 +299,20 @@
     "title": "Installation des logiciels",
     "section": "Félicitations! 🎉",
     "text": "Félicitations! 🎉\nFélicitations, vous avez survécu à l’installation, nous saurons dans quelques semaines si vous avez bien configuré le tout!"
+  },
+  {
+    "objectID": "semaines/05.html",
+    "href": "semaines/05.html",
+    "title": "Semaine 5",
+    "section": "",
+    "text": "Comprendre les différentes structures de données et comment les manipuler.\nLors des lectures et des exercices, essayez de comprendre comment les différentes types de vecteurs, d’objets et de structures différents types d’objets"
+  },
+  {
+    "objectID": "semaines/05.html#lectures",
+    "href": "semaines/05.html#lectures",
+    "title": "Semaine 5",
+    "section": "1. Lectures",
+    "text": "1. Lectures\n\nProgrammer avec R\n\n1.1 Lire le chapitre 5 (pages 117-165) du livre Programmer avec R.\n\n\n\n\n\n\nImportant\n\n\n\nVous pouvez télécharger le livre en cliquant sur le titre ci-haut ou en vous rendant sur la page des ressources. Pour télécharger le livre et tous les fichiers d’exercices et de code sur la page officielle.\n\n\nVidéo en lien avec le cours:\n\n\nMatrices et tableaux\n\n\n\nFonction apply\n\n\n\nChapitre 5 - Fichier\nDans le chapitre 5, l’auteur mentionne de vous pratiquer avec le fichier donnees.R. Au lieu de regarder les lignes dans le livre uniquement, vous pouvez télécharger le fichier et l’utiliser dans RStudio. Si vous voulez vous pratiquer sur votre ordinateur, vous devez ouvrir le fichier donnees.R directement avec RStudio ou le télécharger dans votre projet que vous avez créé pour le cours afin que le fichier soit répertorié dans l’interface.\ndonnees.R\nJe vous suggère fortement d’accompagner votre lecture en analysant et essayant de rouler le code de façon proactive au lieu de regarder passivement le code. Cela rendra le tout plus agréable et plus instinctif à force de répéter les commandes que nous utilisons plus souvent.\nIl est tout à fait normal que certaines notions vous apparaissent compliquées. Certaines notions sont plus avancées, donc ne vous attardez pas trop si jamais il y a certaines parties du document qui sont floues pour vous.\n\n\n\n🎉 Résumé du chapitre 🎉\nBonne nouvelle, l’auteur du livre a mis en ligne une vidéo résumant le chapitre que vous pouvez visionner! La qualité de la vidéo est aussi excellente que celle du livre!\n\nJe vous laisse sur la thématique de cette semaine:\n\n\n\n\n\nFigure par @allison_horst (CC-BY)\nBonne semaine!"
   },
   {
     "objectID": "semaines/04.html",
