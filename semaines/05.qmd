@@ -1,0 +1,79 @@
+---
+title: "Semaine 5"
+description: "Contenu pour la semaine, incluant les lectures et les modules"
+author: "Samuel Guay"
+date: "10/04/2022"
+categories:
+  - cours
+  - semaine
+---
+
+## **Objectif de cette semaine**:
+
+**Comprendre les différentes structures de données et comment les manipuler.**
+
+Lors des lectures et des exercices, essayez de comprendre comment les
+différentes types de vecteurs, d'objets et de structures différents types
+d'objets
+
+## 1. Lectures
+
+### Programmer avec R
+
+#### 1.1 Lire le **chapitre 5 (pages 117-165)** du livre [**Programmer avec R**](https://edstem.org/us/courses/6933/resources?download=20545).
+
+::: callout-important
+Vous pouvez télécharger le livre en cliquant sur le titre ci-haut ou en vous
+rendant sur la page des
+[*ressources*](https://edstem.org/us/courses/6933/resources)*.* Pour
+télécharger le livre et tous les fichiers d'exercices et de code sur la [page
+officielle](https://gitlab.com/vigou3/programmer-avec-r/-/package_files/49736237/download).
+:::
+
+Vidéo en lien avec le cours:
+
+#### Matrices et tableaux
+
+{{< video https://youtu.be/6P2cFe3DBfw >}}
+
+#### Fonction apply
+
+{{< video https://youtu.be/1sNAMWiPs4E >}}
+
+#### Chapitre 5 - Fichier
+
+Dans le chapitre 5, l'auteur mentionne de vous pratiquer avec le fichier
+`donnees.R`. Au lieu de regarder les lignes dans le livre uniquement, vous
+pouvez télécharger le fichier et l'utiliser dans RStudio. Si vous voulez vous
+pratiquer sur votre ordinateur, vous devez ouvrir le fichier `donnees.R`
+directement avec RStudio ou le télécharger dans votre *projet* que vous avez
+créé pour le cours afin que le fichier soit répertorié dans l'interface.
+
+[donnees.R](/assets/fichiers/donnees.R)
+
+Je vous suggère fortement d'accompagner votre lecture en analysant et essayant
+de rouler le code de façon proactive au lieu de regarder passivement le code.
+Cela rendra le tout plus agréable et plus instinctif à force de répéter les
+commandes que nous utilisons plus souvent.
+
+Il est tout à fait normal que certaines notions vous apparaissent compliquées.
+Certaines notions sont plus avancées, donc ne vous attardez pas trop si jamais
+il y a certaines parties du document qui sont floues pour vous.
+
+### 🎉 Résumé du chapitre 🎉
+
+Bonne nouvelle, l'auteur du livre a mis en ligne une vidéo résumant le chapitre
+que vous pouvez visionner! La qualité de la vidéo est aussi excellente que
+celle du livre!
+
+{{< video https://youtu.be/PJNLa9lUAIQ >}}
+
+Je vous laisse sur la thématique de cette semaine:
+
+![](/assets/img/r_first_then.png){fig-alt="A digital cartoon with two illustrations: the top shows the R-logo with a scary face, and a small scared little fuzzy monster holding up a white flag in surrender while under a dark stormcloud. The text above says “at first I was like…” The lower cartoon is a friendly, smiling R-logo jumping up to give a happy fuzzy monster a high-five under a smiling sun and next to colorful flowers. The text above the bottom illustration reads “but now it’s like…”"
+fig-align="center"}
+
+Figure par [\@allison_horst](https://twitter.com/allison_horst)
+([CC-BY](https://creativecommons.org/licenses/by/4.0/))
+
+Bonne semaine!
