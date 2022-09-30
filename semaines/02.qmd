@@ -55,7 +55,15 @@ obligatoires pour le cours.
 
 #### 1.2 Lire le **chapitre 2 (pages 21-38)** du livre [**Programmer avec R**](https://edstem.org/us/courses/6933/resources?download=20545)
 
--   Exercices plus pertinents pour le cours: **2.2**, **2.3**, **2.4**,
+-   Exercices plus pertinents pour le cours: **2.2**, **2.3**, **2.4**.
+
+### 🎉 Résumé du chapitre 🎉
+
+Bonne nouvelle, l'auteur du livre a mis en ligne une vidéo résumant le chapitre
+que vous pouvez visionner! La qualité de la vidéo est aussi excellente que
+celle du livre!
+
+{{< video https://youtu.be/WZB3rxarjw8 >}}
 
 ## 2. Ligne de commande (CLI)
 

@@ -49,6 +49,27 @@ chapitre 3 si vous l'avez pas déjà fait.
 
 {{< video https://youtu.be/FnoMjJ9Knl0 >}}
 
+### 🎉 Résumé du chapitre 🎉
+
+Bonne nouvelle, l'auteur du livre a mis en ligne pas une, mais bien deux vidéos
+résumant le chapitre que vous pouvez visionner! La qualité de la vidéo est
+aussi excellente que celle du livre!
+
+::: grid
+::: g-col-6
+##### Bases de la programmation (partie 1)
+
+{{< video https://youtu.be/WpH5ZkMLAKY >}}
+:::
+
+::: g-col-6
+##### Bases de la programmation (partie 2)
+
+{{< video https://youtu.be/CgRSY484wAY >}}
+:::
+:::
+
+
 ## 2. Exercices
 
 **Swirl 4 + 5** à compléter avant le cours.

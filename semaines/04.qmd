@@ -63,6 +63,26 @@ Vous pouvez envoyer vos captures d'écran dans un *thread privé* sur Ed. Vous
 pouvez envoyer toutes vos captures d'écran de Swirl dans le même *thread* que
 les exercices précédents.
 
+### 🎉 Résumé du chapitre 🎉
+
+Bonne nouvelle, l'auteur du livre a mis en ligne pas une, mais bien deux vidéos
+résumant le chapitre que vous pouvez visionner! La qualité de la vidéo est
+aussi excellente que celle du livre!
+
+::: grid
+::: g-col-6
+##### Bases de la programmation (partie 1)
+
+{{< video https://youtu.be/WpH5ZkMLAKY >}}
+:::
+
+::: g-col-6
+##### Bases de la programmation (partie 2)
+
+{{< video https://youtu.be/CgRSY484wAY >}}
+:::
+:::
+
 -------------------------------------------------------------------------------
 
 ![](/assets/img/r_rollercoaster.png){fig-alt="An illustrated cartoon graph with “How much I think I know about R” on the y-axis, with axis labels at “I know nothing” and “I know lots”, versus “time” on the x-axis. The line varies widely between the two. Above the line are emoji-like faces, showing uncertainty and hope early on. At a second peak is the label “join R community on twitter”, with a “mind-blown” emoji face. The line quickly descends, but with a happy looking emoji character sliding down it."
