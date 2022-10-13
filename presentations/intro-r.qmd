@@ -67,10 +67,10 @@ Vous êtes perdu.e.s? Vous cherchez quelque chose?
 
 Tout est détaillé sur la [page
 d'installation](https://FAS1002.github.io/A22/installation) et
-[swirl](/utilisation-packages.html)
+[swirl](/utilisation.html)
 :::
 
-## Lectures \> [Swirl](/utilisation-packages.html) \> Modules
+## Lectures \> [Swirl](/utilisation.html) \> Modules
 
 Ordre à privilégier pour les travaux de la semaine:
 

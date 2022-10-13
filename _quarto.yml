@@ -35,10 +35,12 @@ website:
         text: Calendrier
       - href: installation.qmd
         text: Installation
-      - text: "Utilisation de packages"
+      - text: "Guide d'utilisation de logiciels et packages"
         menu:
           - text: "Swirl"
-            href: utilisation-packages.qmd
+            href: utilisation.qmd
+          - text: "Git"
+            href: utilisation.qmd#Git-et-GitHub
         
 # footer
   page-footer:
