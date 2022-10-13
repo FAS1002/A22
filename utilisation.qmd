@@ -144,3 +144,12 @@ Voici deux vidéos qui mettent en lumière les fonctionnalités de Git et GitHub
 {{< video https://youtu.be/hS-dloJsBhQ >}}
 
 ### Voici également une [brève présentation de Git et GitHub](https://docs.google.com/presentation/d/1Y5m8kVr48OI-iiAKTqeDC0HIhuGsTrUFpOdeGXeFW5o/edit#slide=id.g9cdb53faec_0_0) à laquelle j'ai contribuée dans le cadre d'un cours offert sur [EDU*lib*](https://catalogue.edulib.org/fr/cours/umontreal-isds/)*.*
+
+::: g-col-12
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQulOb6UhpZP_cGB6ArZD8Pwahk5YuxVXcVJwFdjWGODVZb4mdxckEPlLoVBAmVoxt-ZXGv2m__1KvR/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" width="100%" height="500" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
+
+</iframe>
+:::
+
+Il y a également une vidéo de moi qui présente si vous vous inscrivez au cours
+😁!
