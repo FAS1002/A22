@@ -1,0 +1,122 @@
+---
+title: "Semaine 7"
+description: "Contenu pour la semaine, incluant les lectures et les modules"
+author: "Samuel Guay"
+date: "10/18/2022"
+categories:
+  - cours
+  - semaine
+---
+
+## **Objectif de cette semaine**:
+
+**Comprendre certains algorithmes de base déjà disponibles dans R.**
+
+Lors des lectures et des exercices, essayez de penser aux différentes fonctions
+qui pourraient être utiles et tenter de trouver leur nom.
+
+## 1. Lectures
+
+### Programmer avec R
+
+#### 1.1 Lire le **chapitre 7 (pages 117-165)** du livre [**Programmer avec R**](https://edstem.org/us/courses/6933/resources?download=20545).
+
+::: callout-important
+Vous pouvez télécharger le livre en cliquant sur le titre ci-haut ou en vous
+rendant sur la page des
+[*ressources*](https://edstem.org/us/courses/6933/resources)*.* Pour
+télécharger le livre et tous les fichiers d'exercices et de code sur la [page
+officielle](https://gitlab.com/vigou3/programmer-avec-r/-/package_files/49736237/download).
+:::
+
+#### Chapitre 7 - Fichiers
+
+Dans le chapitre 7, l'auteur mentionne de vous pratiquer avec plusieurs
+fichiers. Au lieu de regarder les lignes dans le livre uniquement, vous pouvez
+télécharger le fichier et l'utiliser dans RStudio. Si vous voulez vous
+pratiquer sur votre ordinateur, vous devez ouvrir le fichier `donnees.R`
+directement avec RStudio ou le télécharger dans votre *projet* que vous avez
+créé pour le cours afin que le fichier soit répertorié dans l'interface.
+
+[tri.R](/assets/fichiers/tri.R)
+
+Je vous suggère fortement d'accompagner votre lecture en analysant et essayant
+de rouler le code de façon proactive au lieu de regarder passivement le code.
+Cela rendra le tout plus agréable et plus instinctif à force de répéter les
+commandes que nous utilisons plus souvent.
+
+Il est tout à fait normal que certaines notions vous apparaissent compliquées.
+Certaines notions sont plus avancées, donc ne vous attardez pas trop si jamais
+il y a certaines parties du document qui sont floues pour vous.
+
+Le jeu de données à utiliser pour les exercices:
+
+[100metres.dat](/assets/fichiers/100metres.dat)
+
+### 🎉 Résumé du chapitre 🎉
+
+Bonne nouvelle, l'auteur du livre a mis en ligne une vidéo résumant le chapitre
+que vous pouvez visionner! La qualité de la vidéo est aussi excellente que
+celle du livre!
+
+{{< video https://youtu.be/x0NnvL0T_HM >}}
+
+J'ajoute également le résumé du chapitre 2 à nouveau ici comme il portait sur
+les algorithmes et l'algorithmique
+
+{{< video https://youtu.be/WZB3rxarjw8 >}}
+
+### [**Essential Algorithms**](https://onlinelibrary.wiley.com/doi/epub/10.1002/9781119575955) **par Rod Stephens (2019)**
+
+La nouvelle version du livre disponible gratuitement et téléchargeable se
+trouve juste
+[ici](https://onlinelibrary.wiley.com/doi/epub/10.1002/9781119575955).
+
+::: callout-note
+IVous devrez probablement configurer votre proxy afin d'accéder aux ressources
+électroniques hors-campus.
+
+[Cliquez sur ce lien pour obtenir les instruction de configuration du
+proxy.](https://bib.umontreal.ca/travailler/soutien-informatique/proxy)
+
+⚠️ Si jamais vous n'arrivez pas à y avoir accès, écrivez-moi sur Ed et nous
+nous arrangerons autrement.
+:::
+
+**1.2.1 Lire le chapitre 6**
+
+Il y a deux passages à lire:
+
+1.  Les pages **167**-**171**. Vous pouvez également lire la section qui suit
+    sur l'algorithme *Bubblesort.*
+
+2.  Optionnels sont les algorithmes $O(NlogN)$ qui incluent les algorithmes
+    *Countingsort, Pigeonhole Sort et Bucketsort*.
+
+3.  La section *Summary* à la page **197-198**.
+
+**1.2.2 Lire le chapitre 7**
+
+Vous pouvez lire seulement les pages **201--204** sur les algorithmes *Linear
+Search, Binary Search* et le début d'*Interpolation Search*.
+
+**1.2.3 Lire le chapitre 9**
+
+Vous pouvez lire seulement les pages **227--232** qui introduisent les
+algorithmes récursifs.
+
+## 2. Consulter les consignes pour le travail de mi-session
+
+Prenez le temps de consulter les consignes avant la classe pour pouvoir les
+poser pendant le cours avant qu'on ne se quitte pour la semaine de lectures!
+
+-------------------------------------------------------------------------------
+
+Petit clin d'oeil pour le travail de session:
+
+![](/assets/img/r_proj.png){fig-alt="A cartoon of a cracked glass cube looking frustrated with casts on its arm and leg, with bandaids on it, containing “setwd”, looks on at a metal riveted cube labeled “R Proj” holding a skateboard looking sympathetic, and a smaller cube with a helmet on labeled “here” doing a trick on a skateboard."}
+
+Figure par [\@allison_horst](https://twitter.com/allison_horst)
+([CC-BY](https://creativecommons.org/licenses/by/4.0/))
+
+Bonne semaine! ✌️
