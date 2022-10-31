@@ -1,0 +1,40 @@
+---
+title: "Semaine 8"
+description: "Contenu pour la semaine, incluant les lectures et les modules"
+author: "Samuel Guay"
+date: "10/01/2022"
+categories:
+  - cours
+  - semaine
+---
+
+## **Objectif de cette semaine**:
+
+**Comprendre comment utiliser des packages et les principes de *Tidy data***
+
+## 1. Lectures
+
+::: callout-note
+Programmer avec R est désormais livre du passé!
+:::
+
+1.1 [**Introduction to the
+Tidyverse**](https://jhudatascience.org/tidyversecourse/intro.html#tidy-data)
+
+Veuillez lire les [**sections
+1.2**](https://jhudatascience.org/tidyversecourse/intro.html#tidy-data) **à
+1.5** inclusivement, la section 1.5 étant la moins importante pour le cours de
+cette semaine si jamais vous devez prioriser.
+
+::: callout-important
+#### C'est tout! Le module 5 est reporté à la semaine prochaine!
+:::
+
+Voici ce qui s'en vient pour le restant de la session:
+
+![](/assets/img/tidyverse.png){fig-alt="A cartoon of a cracked glass cube looking frustrated with casts on its arm and leg, with bandaids on it, containing “setwd”, looks on at a metal riveted cube labeled “R Proj” holding a skateboard looking sympathetic, and a smaller cube with a helmet on labeled “here” doing a trick on a skateboard."}
+
+Figure par [\@allison_horst](https://twitter.com/allison_horst)
+([CC-BY](https://creativecommons.org/licenses/by/4.0/))
+
+Bonne semaine! ✌️
