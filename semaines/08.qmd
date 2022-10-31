@@ -2,7 +2,7 @@
 title: "Semaine 8"
 description: "Contenu pour la semaine, incluant les lectures et les modules"
 author: "Samuel Guay"
-date: "10/01/2022"
+date: "11/01/2022"
 categories:
   - cours
   - semaine
