@@ -2,27 +2,27 @@
   {
     "listing": "/index.html",
     "items": [
+      "/semaines/08.html",
       "/semaines/07.html",
       "/semaines/05.html",
       "/semaines/04.html",
       "/semaines/03.html",
       "/semaines/02.html",
       "/semaines/01.html",
-      "/semaines/00.html",
-      "/semaines/08.html"
+      "/semaines/00.html"
     ]
   },
   {
     "listing": "/semaines.html",
     "items": [
+      "/semaines/08.html",
       "/semaines/07.html",
       "/semaines/05.html",
       "/semaines/04.html",
       "/semaines/03.html",
       "/semaines/02.html",
       "/semaines/01.html",
-      "/semaines/00.html",
-      "/semaines/08.html"
+      "/semaines/00.html"
     ]
   }
 ]
