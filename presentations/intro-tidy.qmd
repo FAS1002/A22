@@ -1,0 +1,297 @@
+---
+title: "Introduction aux données *Tidy* et au Tidyverse"
+subtitle: "FAS1002 - Automne 2022"
+author: "Samuel Guay"
+footer:  "[FAS1002.github.io/A22](https://FAS1002.github.io/A22)"
+logo: "images/logo.png"
+format: 
+  revealjs: 
+    theme: slides.scss
+    transition: fade
+    slide-number: true
+    preview-links: auto
+
+editor: visual
+# execute:
+#   freeze: auto
+# 
+
+# Merci pour vos travaux!
+# Comment ça été?
+# 
+# Nouveau départ avec le tidyverse!
+---
+
+```{r include = FALSE}
+library(countdown)
+```
+
+# Plan de la séance
+
+::: incremental
+1.  Utilisation de packages \| ⏲ \~30min
+
+2.  Introduction au Tidyverse et aux données Tidy \| ⏲ \~ 60min
+
+3.  Introduction convention de nommage et bonnes pratiques \| ⏲ \~60min
+:::
+
+# Packages
+
+## R est un logiciel à plusieurs composantes:
+
+::: incremental
+-   *R de base (**Base R**)*
+    -   Tout ce que nous avons vu première partie du cours était du ***Base
+        R***.
+
+    -   Il s'agit des les fonctions qui viennent avec R lorsque nous
+        l'installons pour la première fois.
+
+    -   Syntaxe un peu plus singulière
+
+        -   Chaque fonction et arguments s'écrivent selon les préférences de la
+            personne qui les ont créés.
+:::
+
+## Exemples de singularités:
+
+``` r
+sub(pattern, replacement, x, ...)
+gsub(pattern, replacement, x, ...)
+grep(pattern, x, ...)
+regexpr(pattern, text, ...)
+subset(x, ...)
+```
+
+-   `x` et `text` sont le même argument (l'input), mais s'appelle différemment
+    et n'a pas toujours la même position.
+
+-   `pattern` est le même argument et à la même position pour les quatre
+    premières fonctions
+
+-   Que représente `x`?
+
+-   Différence entre `sub()` et `gsub()` et `subset()`?
+
+## R est un logiciel à plusieurs composantes:
+
+::: incremental
+-   Les ***packages***
+    -   Ces packages sont en fait des extensions qui augmentent les capacités
+        de *Base R.*
+
+    -   Un **package** est un ensemble de fonctions documentées visant à la
+        réalisation d'une tâche particulière que nous pouvons installer et
+        importer dans R.
+
+    -   Ces package sont utiles, car nous pouvons construire nos scripts avec
+        ces fonctions au lieu de les inventer nous-mêmes!
+:::
+
+## CRAN
+
+-   Répertoire de package officiel s'appelle **CRAN** pour [Comprehensive R
+    Archive Network](https://cran.r-project.org/web/packages/index.html);
+
+    -   Il y a **\> 18 000 packages**, ce qui étend ses capacités, en plus de
+        permettre aux gens de créer des nouveaux packages - donnant à R des
+        possibilités infinies.
+
+-   Nous pouvons en trouvons aussi ailleurs, sur [GitHub](https://github.com)
+    par exemple.
+
+-   N'importe qui peut créer et partager un nouveau package.
+
+## CRAN {background-iframe="https://cran.r-project.org/web/packages/index.html"}
+
+## Démo installations + questions
+
+```{r}
+countdown(minutes = 10)
+```
+
+Comment installer un
+[package](https://github.com/RainCloudPlots/RainCloudPlots) seulement
+disponible sur GitHub?
+
+Qu'est-ce qu'un [addins](https://github.com/dreamRs/esquisse)?
+
+Comment mettre à jour un ou des packages?
+
+# Plan de la séance
+
+1.  ~~Utilisation de packages \| ⏲ \~30min~~
+
+2.  Introduction au Tidyverse et aux données Tidy \| ⏲ \~ 60min
+
+3.  Introduction convention de nommage et bonnes pratiques \| ⏲ \~60min
+
+# Introduction au Tidyverse
+
+## Un des objectifs du cours
+
+::: columns
+::: {.column width="40%"}
+[**Connaître les différents packages du
+[Tidyverse](https://www.tidyverse.org/)**]{.smallcaps}
+
+![](/assets/img/tidyverse.png){fig-align="center"}
+:::
+
+::: {.column width="60%"}
+> *The tidyverse is an opinionated collection of R packages designed for data
+> science. All packages share an underlying [**design
+> philosophy**]{.underline}, [**grammar**]{.underline}, and [**data
+> structures**]{.underline}.*
+>
+> \- [Tidyverse.org](https://www.tidyverse.org/)
+:::
+:::
+
+## Tidy + Universe = Tidyverse
+
+"**Bien rangé**" + **Univers** = Grande collection de packages conçus pour
+travailler ensemble dans le but de:
+
+::: columns
+::: {.column width="40%"}
+-   *Importer des **données**, de les nettoyer, manipuler, transformer,
+    convertir, analyser, visualiser, etc.*
+:::
+
+::: {.column width="60%"}
+[![Procédure typique en analyse de données - Image tirée R for Data Science
+(CC-BY-ND-NC)](images/paste-E46AB7C3.png){fig-align="center"}](https://r4ds.had.co.nz/introduction.html#what-you-will-learn)
+:::
+:::
+
+## Visite de [tidyverse.org](https://tidyverse.org)
+
+# Données tidy
+
+> Les illustrations suivantes sont tirées du billet
+> d'[Openscapes](https://www.openscapes.org) intitulé [Tidy Data for
+> reproducibility, efficiency, and
+> collaboration](https://www.openscapes.org/blog/2020/10/12/tidy-data/) par
+> Julia Lowndes et Allison Horst (CC-BY).
+
+##  {background-color="white" background-image="images/tidydata_7.jpg"}
+
+::: notes
+Lorsque nous parlons d'organiser les données pour nous aider à travailler de
+manière efficace, reproductible et collaborative, nous parlons de TIDY DATA.
+Nous voulons dire délibérément réfléchir à la forme et à la structure des
+données - quelque chose qui peut ne pas sembler très excitant mais qui change
+vraiment la donne.
+
+Parlons donc de ce que sont les données tidy et pourquoi elles sont si
+cruciales pour vos analyses pour votre vie analytique.
+:::
+
+##  {background-color="white" background-image="images/tidydata_1.jpg"}
+
+::: notes
+Les données ordonnées sont un moyen de décrire des données organisées avec une
+structure particulière - une structure rectangulaire, où chaque variable a sa
+propre colonne et chaque observation a sa propre ligne (Wickham 2014).
+
+COL = Variable (ou features en machine learning)
+
+Rangées = Observation!!
+
+-   Chaque variable a sa propre colonne;
+
+-   Chaque observation a sa propre rangée;
+
+-   Chaque valeur a sa propre cellule.
+:::
+
+## Exemples
+
+<https://tidyr.tidyverse.org/articles/tidy-data.html>
+
+##  {background-color="white" background-image="images/tidydata_2.jpg"}
+
+::: notes
+Cette structure standard de données ordonnées a conduit Hadley Wickham à la
+décrire comme Léon Tolstoï décrit les familles. Leo dit : « Les familles
+heureuses se ressemblent toutes ; toute famille malheureuse est malheureuse à
+sa manière ». De même, Hadley dit que "les ensembles de données bien rangés se
+ressemblent tous, mais chaque ensemble de données désordonné est désordonné à
+sa manière".
+:::
+
+##  {background-color="white" background-image="images/tidydata_3.jpg"}
+
+::: notes
+Des données tidy pour une science des données plus efficace Des données tidy
+vous permettent d'être plus efficace en utilisant des outils existants
+délibérément conçus pour faire ce que vous devez faire, du sous-ensemble de
+parties de vos données à la visualisation. L'utilisation d'outils existants
+vous évite de créer à partir de zéro chaque fois que vous travaillez avec un
+nouvel ensemble de données (ce qui peut prendre du temps et être démoralisant).
+Et heureusement, il existe de nombreux outils spécialement conçus pour
+transformer des données désordonnées en données ordonnées (par exemple, dans le
+package tidyr). En étant mieux équipé pour regrouper vos données dans un format
+ordonné, vous pouvez accéder plus rapidement à vos analyses pour commencer à
+répondre aux questions que vous posez.
+:::
+
+##  {background-color="white" background-image="images/tidydata_4.jpg"}
+
+::: notes
+Des données ordonnées pour une collaboration simplifiée Des données ordonnées
+facilitent la collaboration car nos amis peuvent utiliser les mêmes outils de
+manière familière. Que vous considériez les collaborateurs comme des
+coéquipiers actuels, votre futur moi ou vos futurs coéquipiers, l'organisation
+et le partage des données de manière cohérente et prévisible signifient moins
+d'ajustement, de temps et d'efforts pour tous.
+:::
+
+##  {background-color="white" background-image="images/tidydata_5.jpg"}
+
+::: notes
+Des données ordonnées pour la reproductibilité et la réutilisation Des données
+ordonnées facilitent également la reproduction des analyses car elles sont plus
+faciles à comprendre, à mettre à jour et à réutiliser. En utilisant ensemble
+des outils qui attendent tous des données ordonnées en entrée, vous pouvez
+créer et itérer des workflows vraiment puissants. Et, lorsque vous avez des
+entrées de données supplémentaires, il n'y a aucun problème à réexécuter votre
+code !
+:::
+
+##  {background-color="white" background-image="images/tidydata_6.jpg"}
+
+::: notes
+Des données bien rangées pour la vie ! Une fois que vous disposez d'outils pour
+travailler avec des données ordonnées en général, cela ouvre un tout nouveau
+monde d'ensembles de données qui se sentent plus accessibles car vous pouvez
+travailler avec des outils familiers. Cette confiance transférable et cette
+capacité à collaborer pourraient être la meilleure chose à propos de données
+bien rangées.
+:::
+
+## Démo + Questions:
+
+```{r}
+countdown(minutes = 20)
+```
+
+<https://r4ds.had.co.nz/tidy-data.html>
+
+# Plan de la séance
+
+1.  ~~Utilisation de packages \| ⏲ \~30min~~
+
+2.  ~~Introduction au Tidyverse et aux données Tidy \| ⏲ \~ 60min~~
+
+3.  Introduction convention de nommage et bonnes pratiques \| ⏲ \~60min
+
+# 
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSLIgpJ52rHGCOa7BK_nYN-623dONVg-b9CXyEKauTg9BbI6BkSKwzcRIu5BMK9bzNR9ICNjVGGgS25/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" width="1280" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
+
+</iframe>
+
+# C'est tout!

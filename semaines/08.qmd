@@ -37,4 +37,12 @@ Voici ce qui s'en vient pour le restant de la session:
 Figure par [\@allison_horst](https://twitter.com/allison_horst)
 ([CC-BY](https://creativecommons.org/licenses/by/4.0/))
 
+## 3. Présentation
+
+::: g-col-12
+```{=html}
+<iframe class="slide-deck" src="/presentations/intro-tidy.html"></iframe>
+```
+:::
+
 Bonne semaine! ✌️
