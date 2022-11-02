@@ -245,6 +245,132 @@
     "text": "Module 1\nVoir post sur Ed pour le code d’activation afin de remplir le premier module sur formr.\n\n\n\n\n\n\nImportant\n\n\nN’oubliez pas votre introduction sur Ed également!\n\n\n\n\n\n\nFAS1002.github.io/A22"
   },
   {
+    "objectID": "presentations/intro-tidy.html#r-est-un-logiciel-à-plusieurs-composantes",
+    "href": "presentations/intro-tidy.html#r-est-un-logiciel-à-plusieurs-composantes",
+    "title": "Introduction aux données Tidy et au Tidyverse",
+    "section": "R est un logiciel à plusieurs composantes:",
+    "text": "R est un logiciel à plusieurs composantes:\n\n\nR de base (Base R)\n\nTout ce que nous avons vu première partie du cours était du Base R.\nIl s’agit des les fonctions qui viennent avec R lorsque nous l’installons pour la première fois.\nSyntaxe un peu plus singulière\n\nChaque fonction et arguments s’écrivent selon les préférences de la personne qui les ont créés."
+  },
+  {
+    "objectID": "presentations/intro-tidy.html#exemples-de-singularités",
+    "href": "presentations/intro-tidy.html#exemples-de-singularités",
+    "title": "Introduction aux données Tidy et au Tidyverse",
+    "section": "Exemples de singularités:",
+    "text": "Exemples de singularités:\nsub(pattern, replacement, x, ...)\ngsub(pattern, replacement, x, ...)\ngrep(pattern, x, ...)\nregexpr(pattern, text, ...)\nsubset(x, ...)\n\nx et text sont le même argument (l’input), mais s’appelle différemment et n’a pas toujours la même position.\npattern est le même argument et à la même position pour les quatre premières fonctions\nQue représente x?\nDifférence entre sub() et gsub() et subset()?"
+  },
+  {
+    "objectID": "presentations/intro-tidy.html#r-est-un-logiciel-à-plusieurs-composantes-1",
+    "href": "presentations/intro-tidy.html#r-est-un-logiciel-à-plusieurs-composantes-1",
+    "title": "Introduction aux données Tidy et au Tidyverse",
+    "section": "R est un logiciel à plusieurs composantes:",
+    "text": "R est un logiciel à plusieurs composantes:\n\n\nLes packages\n\nCes packages sont en fait des extensions qui augmentent les capacités de Base R.\nUn package est un ensemble de fonctions documentées visant à la réalisation d’une tâche particulière que nous pouvons installer et importer dans R.\nCes package sont utiles, car nous pouvons construire nos scripts avec ces fonctions au lieu de les inventer nous-mêmes!"
+  },
+  {
+    "objectID": "presentations/intro-tidy.html#cran",
+    "href": "presentations/intro-tidy.html#cran",
+    "title": "Introduction aux données Tidy et au Tidyverse",
+    "section": "CRAN",
+    "text": "CRAN\n\nRépertoire de package officiel s’appelle CRAN pour Comprehensive R Archive Network;\n\nIl y a > 18 000 packages, ce qui étend ses capacités, en plus de permettre aux gens de créer des nouveaux packages - donnant à R des possibilités infinies.\n\nNous pouvons en trouvons aussi ailleurs, sur GitHub par exemple.\nN’importe qui peut créer et partager un nouveau package."
+  },
+  {
+    "objectID": "presentations/intro-tidy.html#cran-1",
+    "href": "presentations/intro-tidy.html#cran-1",
+    "title": "Introduction aux données Tidy et au Tidyverse",
+    "section": "CRAN",
+    "text": "CRAN"
+  },
+  {
+    "objectID": "presentations/intro-tidy.html#démo-installations-questions",
+    "href": "presentations/intro-tidy.html#démo-installations-questions",
+    "title": "Introduction aux données Tidy et au Tidyverse",
+    "section": "Démo installations + questions",
+    "text": "Démo installations + questions\n\n\n\n−+\n10:00\n\n\n\nComment installer un package seulement disponible sur GitHub?\nQu’est-ce qu’un addins?\nComment mettre à jour un ou des packages?"
+  },
+  {
+    "objectID": "presentations/intro-tidy.html#un-des-objectifs-du-cours",
+    "href": "presentations/intro-tidy.html#un-des-objectifs-du-cours",
+    "title": "Introduction aux données Tidy et au Tidyverse",
+    "section": "Un des objectifs du cours",
+    "text": "Un des objectifs du cours\n\n\nConnaître les différents packages du Tidyverse\n\n\n\n\n\n\n\nThe tidyverse is an opinionated collection of R packages designed for data science. All packages share an underlying design philosophy, grammar, and data structures.\n- Tidyverse.org"
+  },
+  {
+    "objectID": "presentations/intro-tidy.html#tidy-universe-tidyverse",
+    "href": "presentations/intro-tidy.html#tidy-universe-tidyverse",
+    "title": "Introduction aux données Tidy et au Tidyverse",
+    "section": "Tidy + Universe = Tidyverse",
+    "text": "Tidy + Universe = Tidyverse\n“Bien rangé” + Univers = Grande collection de packages conçus pour travailler ensemble dans le but de:\n\n\n\nImporter des données, de les nettoyer, manipuler, transformer, convertir, analyser, visualiser, etc.\n\n\n\n\n\nProcédure typique en analyse de données - Image tirée R for Data Science (CC-BY-ND-NC)"
+  },
+  {
+    "objectID": "presentations/intro-tidy.html#visite-de-tidyverse.org",
+    "href": "presentations/intro-tidy.html#visite-de-tidyverse.org",
+    "title": "Introduction aux données Tidy et au Tidyverse",
+    "section": "Visite de tidyverse.org",
+    "text": "Visite de tidyverse.org"
+  },
+  {
+    "objectID": "presentations/intro-tidy.html#section",
+    "href": "presentations/intro-tidy.html#section",
+    "title": "Introduction aux données Tidy et au Tidyverse",
+    "section": "",
+    "text": "Lorsque nous parlons d’organiser les données pour nous aider à travailler de manière efficace, reproductible et collaborative, nous parlons de TIDY DATA. Nous voulons dire délibérément réfléchir à la forme et à la structure des données - quelque chose qui peut ne pas sembler très excitant mais qui change vraiment la donne.\nParlons donc de ce que sont les données tidy et pourquoi elles sont si cruciales pour vos analyses pour votre vie analytique."
+  },
+  {
+    "objectID": "presentations/intro-tidy.html#section-1",
+    "href": "presentations/intro-tidy.html#section-1",
+    "title": "Introduction aux données Tidy et au Tidyverse",
+    "section": "",
+    "text": "Les données ordonnées sont un moyen de décrire des données organisées avec une structure particulière - une structure rectangulaire, où chaque variable a sa propre colonne et chaque observation a sa propre ligne (Wickham 2014).\nCOL = Variable (ou features en machine learning)\nRangées = Observation!!\n\nChaque variable a sa propre colonne;\nChaque observation a sa propre rangée;\nChaque valeur a sa propre cellule."
+  },
+  {
+    "objectID": "presentations/intro-tidy.html#exemples",
+    "href": "presentations/intro-tidy.html#exemples",
+    "title": "Introduction aux données Tidy et au Tidyverse",
+    "section": "Exemples",
+    "text": "Exemples\nhttps://tidyr.tidyverse.org/articles/tidy-data.html"
+  },
+  {
+    "objectID": "presentations/intro-tidy.html#section-2",
+    "href": "presentations/intro-tidy.html#section-2",
+    "title": "Introduction aux données Tidy et au Tidyverse",
+    "section": "",
+    "text": "Cette structure standard de données ordonnées a conduit Hadley Wickham à la décrire comme Léon Tolstoï décrit les familles. Leo dit : « Les familles heureuses se ressemblent toutes ; toute famille malheureuse est malheureuse à sa manière ». De même, Hadley dit que “les ensembles de données bien rangés se ressemblent tous, mais chaque ensemble de données désordonné est désordonné à sa manière”."
+  },
+  {
+    "objectID": "presentations/intro-tidy.html#section-3",
+    "href": "presentations/intro-tidy.html#section-3",
+    "title": "Introduction aux données Tidy et au Tidyverse",
+    "section": "",
+    "text": "Des données tidy pour une science des données plus efficace Des données tidy vous permettent d’être plus efficace en utilisant des outils existants délibérément conçus pour faire ce que vous devez faire, du sous-ensemble de parties de vos données à la visualisation. L’utilisation d’outils existants vous évite de créer à partir de zéro chaque fois que vous travaillez avec un nouvel ensemble de données (ce qui peut prendre du temps et être démoralisant). Et heureusement, il existe de nombreux outils spécialement conçus pour transformer des données désordonnées en données ordonnées (par exemple, dans le package tidyr). En étant mieux équipé pour regrouper vos données dans un format ordonné, vous pouvez accéder plus rapidement à vos analyses pour commencer à répondre aux questions que vous posez."
+  },
+  {
+    "objectID": "presentations/intro-tidy.html#section-4",
+    "href": "presentations/intro-tidy.html#section-4",
+    "title": "Introduction aux données Tidy et au Tidyverse",
+    "section": "",
+    "text": "Des données ordonnées pour une collaboration simplifiée Des données ordonnées facilitent la collaboration car nos amis peuvent utiliser les mêmes outils de manière familière. Que vous considériez les collaborateurs comme des coéquipiers actuels, votre futur moi ou vos futurs coéquipiers, l’organisation et le partage des données de manière cohérente et prévisible signifient moins d’ajustement, de temps et d’efforts pour tous."
+  },
+  {
+    "objectID": "presentations/intro-tidy.html#section-5",
+    "href": "presentations/intro-tidy.html#section-5",
+    "title": "Introduction aux données Tidy et au Tidyverse",
+    "section": "",
+    "text": "Des données ordonnées pour la reproductibilité et la réutilisation Des données ordonnées facilitent également la reproduction des analyses car elles sont plus faciles à comprendre, à mettre à jour et à réutiliser. En utilisant ensemble des outils qui attendent tous des données ordonnées en entrée, vous pouvez créer et itérer des workflows vraiment puissants. Et, lorsque vous avez des entrées de données supplémentaires, il n’y a aucun problème à réexécuter votre code !"
+  },
+  {
+    "objectID": "presentations/intro-tidy.html#section-6",
+    "href": "presentations/intro-tidy.html#section-6",
+    "title": "Introduction aux données Tidy et au Tidyverse",
+    "section": "",
+    "text": "Des données bien rangées pour la vie ! Une fois que vous disposez d’outils pour travailler avec des données ordonnées en général, cela ouvre un tout nouveau monde d’ensembles de données qui se sentent plus accessibles car vous pouvez travailler avec des outils familiers. Cette confiance transférable et cette capacité à collaborer pourraient être la meilleure chose à propos de données bien rangées."
+  },
+  {
+    "objectID": "presentations/intro-tidy.html#démo-questions",
+    "href": "presentations/intro-tidy.html#démo-questions",
+    "title": "Introduction aux données Tidy et au Tidyverse",
+    "section": "Démo + Questions:",
+    "text": "Démo + Questions:\n\n\n\n−+\n20:00\n\n\n\nhttps://r4ds.had.co.nz/tidy-data.html"
+  },
+  {
     "objectID": "presentations/intro-r.html#rappel-site-du-cours",
     "href": "presentations/intro-r.html#rappel-site-du-cours",
     "title": "Introduction à R[Studio]",
@@ -445,7 +571,14 @@
     "href": "semaines/08.html#lectures",
     "title": "Semaine 8",
     "section": "1. Lectures",
-    "text": "1. Lectures\n\n\n\n\n\n\nNote\n\n\n\nProgrammer avec R est désormais livre du passé!\n\n\n1.1 Introduction to the Tidyverse\nVeuillez lire les sections 1.2 à 1.5 inclusivement, la section 1.5 étant la moins importante pour le cours de cette semaine si jamais vous devez prioriser.\n\n\n\n\n\n\nC’est tout! Le module 5 est reporté à la semaine prochaine!\n\n\n\n\n\n\nVoici ce qui s’en vient pour le restant de la session:\n\nFigure par @allison_horst (CC-BY)\nBonne semaine! ✌️"
+    "text": "1. Lectures\n\n\n\n\n\n\nNote\n\n\n\nProgrammer avec R est désormais livre du passé!\n\n\n1.1 Introduction to the Tidyverse\nVeuillez lire les sections 1.2 à 1.5 inclusivement, la section 1.5 étant la moins importante pour le cours de cette semaine si jamais vous devez prioriser.\n\n\n\n\n\n\nC’est tout! Le module 5 est reporté à la semaine prochaine!\n\n\n\n\n\n\nVoici ce qui s’en vient pour le restant de la session:\n\nFigure par @allison_horst (CC-BY)"
+  },
+  {
+    "objectID": "semaines/08.html#présentation",
+    "href": "semaines/08.html#présentation",
+    "title": "Semaine 8",
+    "section": "3. Présentation",
+    "text": "3. Présentation\n\n\n\nBonne semaine! ✌️"
   },
   {
     "objectID": "semaines/04.html",
