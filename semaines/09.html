@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.1.251">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Samuel Guay">
+<meta name="description" content="Contenu pour la semaine, incluant les lectures et les modules">
+
+<title>FAS1002-A22 - Semaine 9</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "Pas de résultats",
+    "search-matching-documents-text": "documents trouvés",
+    "search-copy-link-title": "Copier le lien vers la recherche",
+    "search-hide-matches-text": "Cacher les correspondances additionnelles",
+    "search-more-match-text": "correspondance de plus dans ce document",
+    "search-more-matches-text": "correspondances de plus dans ce document",
+    "search-clear-button-title": "Effacer",
+    "search-detached-cancel-button-title": "Annuler",
+    "search-submit-button-title": "Envoyer"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+<link rel="stylesheet" href="../assets/scss/styles.css">
+<meta name="twitter:title" content="FAS1002-A22 - Semaine 9">
+<meta name="twitter:description" content="Contenu pour la semaine, incluant les lectures et les modules">
+<meta name="twitter:creator" content="@SamGuay_">
+<meta name="twitter:card" content="summary">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../assets/img/logo.png" alt="" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">FAS1002-A22</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html">Accueil</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../a-propos.html">À propos</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../syllabus.html">Plan de cours</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../semaines.html">Calendrier</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../installation.html">Installation</a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-guide-dutilisation-de-logiciels-et-packages" role="button" data-bs-toggle="dropdown" aria-expanded="false">Guide d’utilisation de logiciels et packages</a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-guide-dutilisation-de-logiciels-et-packages">    
+        <li>
+    <a class="dropdown-item" href="../utilisation.html">
+ <span class="dropdown-text">Swirl</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../utilisation.html#Git-et-GitHub">
+ <span class="dropdown-text">Git</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Sur cette page</h2>
+   
+  <ul>
+  <li><a href="#objectif-de-cette-semaine" id="toc-objectif-de-cette-semaine" class="nav-link active" data-scroll-target="#objectif-de-cette-semaine"><strong>Objectif de cette semaine</strong>:</a></li>
+  <li><a href="#lectures" id="toc-lectures" class="nav-link" data-scroll-target="#lectures">1. Lectures</a>
+  <ul class="collapse">
+  <li><a href="#chapitre-2-de-introduction-to-the-tidyverse" id="toc-chapitre-2-de-introduction-to-the-tidyverse" class="nav-link" data-scroll-target="#chapitre-2-de-introduction-to-the-tidyverse">1.1 Chapitre 2 de <strong>Introduction to the Tidyverse</strong></a></li>
+  <li><a href="#brève-introduction-aux-expressions-régulières" id="toc-brève-introduction-aux-expressions-régulières" class="nav-link" data-scroll-target="#brève-introduction-aux-expressions-régulières">1.2 Brève introduction aux expressions régulières</a></li>
+  </ul></li>
+  <li><a href="#module-5" id="toc-module-5" class="nav-link" data-scroll-target="#module-5">2. Module 5</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/FAS1002/A22/edit/main/semaines/09.qmd" class="toc-action">Modifier cette page</a></p><p><a href="https://github.com/FAS1002/A22/issues/new" class="toc-action">Faire part d'un problème</a></p><p><a href="https://github.com/FAS1002/A22/blob/main/semaines/09.qmd" class="toc-action">Voir la source</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Semaine 9</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">cours</div>
+    <div class="quarto-category">semaine</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Contenu pour la semaine, incluant les lectures et les modules
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Auteur·rice</div>
+    <div class="quarto-title-meta-contents">
+             <p>Samuel Guay </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Date de publication</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">8 novembre 2022</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+</header>
+
+<section id="objectif-de-cette-semaine" class="level2">
+<h2 class="anchored" data-anchor-id="objectif-de-cette-semaine"><strong>Objectif de cette semaine</strong>:</h2>
+<p><strong>Comprendre comment utiliser les principaux packages pour importer des données à partir de divers formats de fichiers et directement à partir de sites web!</strong></p>
+<p>Si le temps le permet, nous toucherons également aux expressions régulières.</p>
+</section>
+<section id="lectures" class="level2">
+<h2 class="anchored" data-anchor-id="lectures">1. Lectures</h2>
+<section id="chapitre-2-de-introduction-to-the-tidyverse" class="level3">
+<h3 class="anchored" data-anchor-id="chapitre-2-de-introduction-to-the-tidyverse">1.1 <a href="https://jhudatascience.org/tidyversecourse/get-data.html#tibbles">Chapitre 2</a> de <a href="https://jhudatascience.org/tidyversecourse/intro.html#tidy-data"><strong>Introduction to the Tidyverse</strong></a></h3>
+<p>Veuillez lire à partir de la <a href="https://jhudatascience.org/tidyversecourse/get-data.html#tibbles"><strong>section 2.2</strong></a>. Vous pouvez sauter la section 2.15 qui touche au package <code>googledrive</code>.</p>
+</section>
+<section id="brève-introduction-aux-expressions-régulières" class="level3">
+<h3 class="anchored" data-anchor-id="brève-introduction-aux-expressions-régulières">1.2 Brève introduction aux expressions régulières</h3>
+<p>Les <strong>expressions régulières</strong> sont communément appelées <strong><em>regex</em></strong> ou <strong><em>regexp</em></strong> pour <strong><em>regular expressions</em></strong> en anglais. Selon <a href="https://fr.wikipedia.org/wiki/Expression_r%C3%A9guli%C3%A8re">Wikipédia</a>, une expression régulière est <em>“une chaîne de caractères, qui décrit, selon une syntaxe précise, un ensemble de chaînes de caractères possibles”</em>. Si vous n’avez jamais entendu parlé des regex, il se peut que cette définition ne vous aide pas à comprendre le concept. Dans le texte ci-bas, nous tenterons de démystifier le tout.</p>
+<p>En résumé, ces expressions permettent de décrire des motifs (<em>patterns</em>) à l’aide de formules “relativement simples” pour trouver, valider, extraire ou modifier du texte ou des nombres. L’utilisation d’expressions régulières sur le Web est omniprésente, sans que vous ne le sachiez, par exemple lorsqu’on veut valider nos réponses dans un formulaire et que l’engin nous dit que notre âge devrait contenir que des chiffres et non des lettres ou simplement pour valider une adresse de courriel.</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>En fait, vous avez probablement déjà utilisé certains principes lors de vos recherches sur internet ou dans un catalogue de la bibliothèque. Par exemple, si vous recherchez un certain mot, vous pouvez appliquer la méthode de la troncature pour remplacer <strong>toutes</strong> les terminaisons possibles d’une racine avec <code>*</code> ou remplacer <strong>une</strong> lettre ou <strong>un</strong> chiffre au sein d’un mot avec <code>?</code>. Par exemple, la recherche avec le mot <code>social</code> vs <code>socia*</code> vs <code>socia?</code> ne donnerait pas nécessairement les mêmes résultats puisque <code>socia*</code> pourrait prendre beaucoup de formes différentes, par exemple, <code>social</code>, <code>socialement,</code> <code>sociaux</code>, etc.</p>
+</div>
+</div>
+<p>Les expressions régulières sont également très utilisée, sans surprise, par les programmeurs et de plus en plus en science des données. Ce n’est pas tout le monde qui connait les expressions régulières, mais dès qu’on maitrise la base, il est difficile de faire autrement. Il s’agit d’une des meilleures qualités qu’un scientifiques des données possède, car cela permet de sauver beaucoup de temps! C’est une connaissance capitale lorsque vient le temps de nettoyer des données et d’extraire certaines informations clées.</p>
+<p>Voici un classique de <a href="https://xkcd.com/208/">xkcd</a>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/img/xkcd_208.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p>À titre d’exemples d’utilisation essentielle sont les fameux vérificateurs de “sécurité” de mots de passe. Considérez ces consignes:</p>
+<pre><code>Pour être considéré sécuritaire, votre mot de passe doit contenir:
+    Au moins 8 caractères
+    Au moins 1 chiffre
+    Au moins 1 minuscule (a-z)
+    Au moins 1 majuscue (A-Z)
+    Au moins 1 caractère spécial (! @ # $)</code></pre>
+<p>Une expression régulière qui permet de valider un mot de passe de la sorte est <code>^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,}$</code>. Cette expression parait drôlement compliquée et elle l’est! Il y a beaucoup de <em>patterns</em> à vérifier. Heureusement, les regex que nous utilisons avec nos données sont “rarement” aussi compliquées. Pensez par exemple à extraire des numéros de téléphone, des codes d’aéroport, certains mots précis, etc.</p>
+<blockquote class="blockquote">
+<p>Le chapitre 11 de Programmer avec R mentionne les outils <code>grep</code>, <code>sed</code>, et <code>awk</code> qui sont très puissants. Cependant, pour le cours, nous nous concentrerons sur les concepts de base et expressions utiles dans R.</p>
+</blockquote>
+<section id="composition-dune-expression-régulière" class="level4">
+<h4 class="anchored" data-anchor-id="composition-dune-expression-régulière">Composition d’une expression régulière</h4>
+<p>Lorsque nous voulons construire une expression régulière, notre but de créer un “modèle” qui permettra de trouver les portions de chaines de caractères qui lui correspond. C’est un outil très puissant, mais qui peut nous causer quelques maux de tête si on essaie de créer une expression sans trop savoir ce que représente les différents caractères ou ensembles de caractères.</p>
+<p>Comme dans la construction d’une fonction, nous pouvons créer l’expression de façon graduelle à l’aide de sous-expressions. Par contre, avant de créer, il faut connaitre ou, du moins, avoir une idée de l’existence des différentes possibilités. À se rappeler qu’une expression régulière n’est qu’un langage de description d’une chaine de texte.</p>
+<section id="syntaxe-de-base" class="level5">
+<h5 class="anchored" data-anchor-id="syntaxe-de-base">Syntaxe de base</h5>
+<p>Il y a plusieurs règles ou principes de base lorsque nous composons des expressions régulières. Voici les principales règles:</p>
+<ul>
+<li><p>Un caractère littéral correspond à la première occurrence de ce caractère dans la chaine de texte ciblée.</p></li>
+<li><p>Une expression régulière peut être formée par une ou plusieurs expressions régulières combinées. Elle correspond alors à toute chaine de texte qui correspond aux sous-expressions. Autrement dit, les composantes d’une expression régulière sont par défaut reliées par une clause<br>
+« et ».</p></li>
+</ul>
+<p>Si nous voulons trouver un mot textuellement dans un texte, le plus simple est d’écrire les caractères littéraux en guise d’expression.<br>
+Par exemple, l’expression <code>soir</code> fonctionnerait autant dans <code>soir</code>, bon<code>soir</code> et <code>soir</code>ée.</p>
+<p>Voici les principaux opérateurs et leur fonction</p>
+<dl>
+<dt><code>.</code></dt>
+<dd>
+<p>Le <code>.</code> (point) peut prendre n’importe quel caractère sauf “”. Il s’agit du wildcard le plus utilisé.</p>
+</dd>
+<dt><code>?</code></dt>
+<dd>
+<p>le caractère précédent apparait 0 ou 1 fois seulement.</p>
+</dd>
+<dt><code>*</code></dt>
+<dd>
+<p>le caractère précédent apparait 0 ou plusieurs fois.</p>
+</dd>
+<dt><code>+</code></dt>
+<dd>
+<p>le caractère précédent apparait 1 ou plusieurs fois.</p>
+</dd>
+<dt><code>{n}</code></dt>
+<dd>
+<p>le caractère précédent apparait exactement n fois.</p>
+</dd>
+<dt><code>{n,m}</code></dt>
+<dd>
+<p>le caractère précédent apparait au moins n fois et pas plus de m fois.</p>
+</dd>
+<dt><code>[agd]</code></dt>
+<dd>
+<p>le caractère est un de ceux indiqués dans les [ ].</p>
+</dd>
+<dt><code>[^agd]</code></dt>
+<dd>
+<p>le caractère n’est pas de ceux indiqués dans les [ ].</p>
+</dd>
+<dt><code>[c-e]</code></dt>
+<dd>
+<p>le - à l’intérieur des [ ] indique une plage de caractères ou de chiffres. Dans l’exemple, le caractère doit être c, d ou e.</p>
+</dd>
+<dt><code>()</code></dt>
+<dd>
+<p>Les ( ) regroupent plusieurs caractères en une entité.</p>
+</dd>
+<dt><code>|</code> (pipe)</dt>
+<dd>
+<p>Opérateur logique OU, comme dans R!</p>
+</dd>
+<dt><code>^</code></dt>
+<dd>
+<p>Débute la chaine de caractères.</p>
+</dd>
+<dt><code>$</code></dt>
+<dd>
+<p>Termine la chaine de caractères.</p>
+</dd>
+</dl>
+</section>
+<section id="sous-expressions-les-plus-communes" class="level5">
+<h5 class="anchored" data-anchor-id="sous-expressions-les-plus-communes">Sous-expressions les plus communes:</h5>
+<dl>
+<dt><code>.*</code></dt>
+<dd>
+<p>correspond à une chaine de caractères quelconques de longueur arbitraire, y compris zéro.</p>
+</dd>
+<dt><code>.+</code></dt>
+<dd>
+<p>correspond à une chaine de caractères quelconques longue d’au moins un caractère ; équivalent à <code>..*</code></p>
+</dd>
+<dt><code>.?</code></dt>
+<dd>
+<p>correspond à aucun ou un seul caractère quelconque.</p>
+</dd>
+<dt><code>[a-z]</code> et <code>[A-Z]</code></dt>
+<dd>
+<p>correspondent à l’alphabet en minuscule et majuscule respectivement, sans accents.</p>
+</dd>
+<dt><code>[0-9]</code></dt>
+<dd>
+<p>correspond aux entiers de 0 à 9.</p>
+</dd>
+</dl>
+<p>Évidemment, il y en a beaucoup plus. Heureusement, il y a une <em>cheatsheet</em> qui a été traduite en français pour nous aider à se rappeler des opérations les plus courantes.</p>
+<p>Dans ce document, vous verrez qu’on regroupe les différents opérateurs selon leur fonction, soit <em>métacaractères</em>, <em>Classes</em> et <em>Groupes de caractères,</em> <em>Ancres</em>, <em>Quantifieurs</em>, etc.</p>
+<p>📓 <a href="../assets/fichiers/regex_fr.pdf">Aide-mémoire pour les regex en français</a> créé par <a href="mailto:ian.kopacka@ages.at">Ian Kopacka</a> et traduit par <a href="https://www.ahmadoudicko.com/">Ahmadou Dicko</a> (CC BY)</p>
+</section>
+</section>
+</section>
+</section>
+<section id="module-5" class="level2">
+<h2 class="anchored" data-anchor-id="module-5">2. Module 5</h2>
+<p>Le module 5 est relativement simple à compléter, veuillez tout simplement remplir le questionnaire qui se trouve au <a href="https://fas1002-m02.formr.org/"><strong>https://fas1002-m02.formr.org/</strong></a>. Il est important de remplir le questionnaire avec le même <a href="https://edstem.org/us/courses/6933/discussion/1736805">code d’identification</a> qu’au début de la session, car nous nous amuserons avec les données au prochain cours!</p>
+<hr>
+<p><img src="../assets/img/workflow-cute.png" class="img-fluid" alt="Updated from Grolemund &amp; Wickham's classis R4DS schematic, envisioned by Dr. Julia Lowndes for her 2019 useR! keynote talk and illustrated by Allison Horst."></p>
+<p>Figure par <a href="https://twitter.com/allison_horst">@allison_horst</a> (<a href="https://creativecommons.org/licenses/by/4.0/">CC-BY</a>)</p>
+<p>Bonne semaine! ✌️</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } 
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copié");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left"><a href="../remerciements.qmd" class="nav-link text-decoration-none">Propulsé par des logiciels libres 💖</a></div>   
+      <div class="nav-footer-center">
+        <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="../a-propos.html">Contact</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://github.com/FAS1002/A22">Licence</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../a-propos.html">Contact</a>
+  </li>  
+</ul>
+      </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/FAS1002/">
+      <i class="bi bi-github" role="img" aria-label="GitHub du cours FAS1002">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

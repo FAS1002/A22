@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/semaines/09.html",
       "/semaines/08.html",
       "/semaines/07.html",
       "/semaines/05.html",
@@ -15,6 +16,7 @@
   {
     "listing": "/semaines.html",
     "items": [
+      "/semaines/09.html",
       "/semaines/08.html",
       "/semaines/07.html",
       "/semaines/05.html",
