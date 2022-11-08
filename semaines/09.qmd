@@ -238,6 +238,8 @@ Vous pouvez télécharger les fichiers suivants:
 
 [Document principal](/assets/fichiers/_import-export.qmd)
 
+[data_weird.tsv](/assets/fichiers/data_weird.tsv)
+
 | CSV                                       | TSV                                       |
 |----------------------------------------|----------------------------------------|
 | [data_1.csv](/assets/fichiers/data_1.csv) | [data_1.tsv](/assets/fichiers/data_1.tsv) |
