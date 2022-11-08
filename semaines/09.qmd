@@ -230,4 +230,19 @@ cours!
 Figure par [\@allison_horst](https://twitter.com/allison_horst)
 ([CC-BY](https://creativecommons.org/licenses/by/4.0/))
 
+\-\--
+
+## Cours
+
+Vous pouvez télécharger les fichiers suivants:
+
+[Document principal](/assets/fichiers/_import-export.qmd)
+
+| CSV                                       | TSV                                       |
+|----------------------------------------|----------------------------------------|
+| [data_1.csv](/assets/fichiers/data_1.csv) | [data_1.tsv](/assets/fichiers/data_1.tsv) |
+| [data_2.csv](/assets/fichiers/data_2.csv) | [data_2.tsv](/assets/fichiers/data_2.tsv) |
+| [data_3.csv](/assets/fichiers/data_3.csv) | [data_3.tsv](/assets/fichiers/data_3.tsv) |
+| [data_4.csv](/assets/fichiers/data_4.csv) | [data_4.tsv](/assets/fichiers/data_4.tsv) |
+
 Bonne semaine! ✌️
