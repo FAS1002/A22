@@ -1,0 +1,26 @@
+"","name","genus","vore","order","conservation","sleep_total","sleep_rem","sleep_cycle","awake","brainwt","bodywt"
+"1","Patas monkey","Erythrocebus","omni","Primates","lc",10.9,1.1,NA,13.1,0.115,10
+"2","Western american chipmunk","Eutamias","herbi","Rodentia",NA,14.9,NA,NA,9.1,NA,0.071
+"3","Domestic cat","Felis","carni","Carnivora","domesticated",12.5,3.2,0.416666667,11.5,0.0256,3.3
+"4","Galago","Galago","omni","Primates",NA,9.8,1.1,0.55,14.2,0.005,0.2
+"5","Giraffe","Giraffa","herbi","Artiodactyla","cd",1.9,0.4,NA,22.1,NA,899.995
+"6","Pilot whale","Globicephalus","carni","Cetacea","cd",2.7,0.1,NA,21.35,NA,800
+"7","Gray seal","Haliochoerus","carni","Carnivora","lc",6.2,1.5,NA,17.8,0.325,85
+"8","Gray hyrax","Heterohyrax","herbi","Hyracoidea","lc",6.3,0.6,NA,17.7,0.01227,2.625
+"9","Human","Homo","omni","Primates",NA,8,1.9,1.5,16,1.32,62
+"10","Mongoose lemur","Lemur","herbi","Primates","vu",9.5,0.9,NA,14.5,NA,1.67
+"11","African elephant","Loxodonta","herbi","Proboscidea","vu",3.3,NA,NA,20.7,5.712,6654
+"12","Thick-tailed opposum","Lutreolina","carni","Didelphimorphia","lc",19.4,6.6,NA,4.6,NA,0.37
+"13","Macaque","Macaca","omni","Primates",NA,10.1,1.2,0.75,13.9,0.179,6.8
+"14","Mongolian gerbil","Meriones","herbi","Rodentia","lc",14.2,1.9,NA,9.8,NA,0.053
+"15","Golden hamster","Mesocricetus","herbi","Rodentia","en",14.3,3.1,0.2,9.7,0.001,0.12
+"16","Vole ","Microtus","herbi","Rodentia",NA,12.8,NA,NA,11.2,NA,0.035
+"17","House mouse","Mus","herbi","Rodentia","nt",12.5,1.4,0.183333333,11.5,4e-04,0.022
+"18","Little brown bat","Myotis","insecti","Chiroptera",NA,19.9,2,0.2,4.1,0.00025,0.01
+"19","Round-tailed muskrat","Neofiber","herbi","Rodentia","nt",14.6,NA,NA,9.4,NA,0.266
+"20","Slow loris","Nyctibeus","carni","Primates",NA,11,NA,NA,13,0.0125,1.4
+"21","Degu","Octodon","herbi","Rodentia","lc",7.7,0.9,NA,16.3,NA,0.21
+"22","Northern grasshopper mouse","Onychomys","carni","Rodentia","lc",14.5,NA,NA,9.5,NA,0.028
+"23","Rabbit","Oryctolagus","herbi","Lagomorpha","domesticated",8.4,0.9,0.416666667,15.6,0.0121,2.5
+"24","Sheep","Ovis","herbi","Artiodactyla","domesticated",3.8,0.6,NA,20.2,0.175,55.5
+"25","Chimpanzee","Pan","omni","Primates",NA,9.7,1.4,1.416666667,14.3,0.44,52.2

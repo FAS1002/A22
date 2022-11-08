@@ -1,0 +1,412 @@
+---
+title: Import, export et plus encore...
+Author: Samuel Guay
+date: 11-08-2022
+editor_options: 
+  chunk_output_type: inline
+df-print: kable
+---
+
+## [Tibble](https://tibble.tidyverse.org/articles/tibble.html)
+
+Les tibbles nous facilite la vie lorsque nous travaillons avec des dataframes.
+Ils ont été pensés afin d'enlever le maximum de friction lorsque nous devons
+travailler avec des données tabulaires. Pour voir les différences avec les
+dataframes, référez-vous à la [documentation
+officielle](https://tibble.tidyverse.org/articles/tibble.html).
+
+Il est plutôt rare que nous travaillons explicitement avec les fonctions du
+package `tibble`. Lorsque nous développons du code dans le tidyverse, il s'agit
+plutôt d'une utilisation implicite puisque tous les packages renvoient des
+tibbles. Par contre, si nous devons transformer un vecteur ou un dataframe, les
+principales fonctions que nous utilisons sont:
+
+-   `as_tibble()` pour convertir un objet (data.frame) en tibble. C'est
+    exactement le même principe que lorsque nous utilisons `as.character()`,
+    `as.numeric()`, etc.
+
+    ```{r}
+    library(tibble)
+    dat <- data.frame(French = "Bonjour", English = "Hello", Score = 100)
+    (dat <- as_tibble(dat))
+    ```
+
+-   `tibble()` pour créer un tibble à partir de rien:
+
+    ```{r}
+    tibble(x = 1:5, y = x ^ 2)
+    ```
+
+-   `tribble()` est pratique pour construire visuellement un tibble.
+
+    ```{r}
+    tribble(
+      ~colA, ~colB,
+      "a",   1,
+      "b",   2,
+      "c",   3
+    )
+    ```
+
+::: callout-tip
+La plupart des fonctions du Tidyverse remplacent le `.` par des `_` dans le nom
+des fonctions.
+
+Par exemple `read.csv()` vs `read_csv()`, etc. Anciennement, `as_tibble()`
+s'appelait `as_data_frame()`.
+
+On utilise couramment le terme dataframe même si on réfère à un tibble.
+:::
+
+Bref, lorsqu'on travaille avec des tibbles, nous sommes pratiquement toujours
+en confiance que nous travaillerons toujours avec des tibbles lors de
+procédures de *subsetting* ou autre!
+
+## Importation des données
+
+Pour importer des données tabulaires aux formats classiques (`.CSV`, `.TSV`,
+etc.), la procédure est toujours relativement standard et similaire avec le
+package d'importation de données officiel du Tidyverse
+[readr](https://readr.tidyverse.org).
+
+```{r}
+library(readr)
+```
+
+Pour les données qui proviennent d'Excel, un package spécialement fait pour ce
+programme a été développé - [readxl](https://readxl.tidyverse.org/).
+
+Pour les données qui proviennent de SPSS, Stata et SAS,
+[haven](https://haven.tidyverse.org) est le package qu'il vous fait.
+
+```{r, eval=FALSE}
+# Importation d'un data set "parfait"
+readcsv <- read_csv("https://open.canada.ca/data/dataset/4ed351cf-95d8-4c10-97ac-6b3511f359b7/resource/d0df95a8-31a9-46c9-853b-6952819ec7b4/download/inventory.csv")
+```
+
+Sans précision, `readr` (et compagnie) s'en sortent souvent très bien. Par
+contre, il est possible de faire beaucoup plus.
+
+::: callout-tip
+## À vous de jouer
+
+Que signifie les options utilisées ci-dessous?
+
+```{r, eval=FALSE}
+readcsv <- read_csv("https://open.canada.ca/data/dataset/4ed351cf-95d8-4c10-97ac-6b3511f359b7/resource/d0df95a8-31a9-46c9-853b-6952819ec7b4/download/inventory.csv",
+                    n_max = 50,
+                    col_select = contains("fr"),
+                    show_col_types = FALSE,
+                    skip_empty_rows = TRUE
+                    )
+```
+:::
+
+Pour lire plusieurs fichiers identiques en même temps:
+
+Vous pouvez télécharger les fichiers suivants:
+
+| CSV                                       | TSV                                       |
+|----------------------------------------|----------------------------------------|
+| [data_1.csv](/assets/fichiers/data_1.csv) | [data_1.tsv](/assets/fichiers/data_1.tsv) |
+| [data_2.csv](/assets/fichiers/data_2.csv) | [data_2.tsv](/assets/fichiers/data_2.tsv) |
+| [data_3.csv](/assets/fichiers/data_3.csv) | [data_3.tsv](/assets/fichiers/data_3.tsv) |
+| [data_4.csv](/assets/fichiers/data_4.csv) | [data_4.tsv](/assets/fichiers/data_4.tsv) |
+
+```{r}
+(list.files(pattern = "*.csv"))
+# fonction équivalente, mais plus portable avec le package fs
+(csv_files <- fs::dir_ls(glob = "*.csv"))
+
+read_csv(csv_files)
+
+read_tsv(file = "data_2.tsv")
+```
+
+### Nettoyage
+
+Un élément important que nous pouvons faire lorsque nous importons les données
+et un premier nettoyage. L'argument `name-repair` est ultra pertinent!
+
+::: callout-note
+## À vous de jouer
+
+Comment pourrions-nous nettoyer les noms de variable du dataset
+[data_weird.tsv](/assets/fichiers/data_weird.tsv) seulement lors de
+l'importation?
+:::
+
+```{r}
+read_tsv("data_weird.tsv", 
+         name_repair = )
+```
+
+ps: Connaissez-vous le package [janitor](https://sfirke.github.io/janitor/)?
+
+## Récolter des données directement sur Internet
+
+Le site qui servira d'exemple est [Hacker News](https://news.ycombinator.com/),
+surnommé [HN](https://news.ycombinator.com/) par la communauté.
+[HN](https://news.ycombinator.com/) est maintenu par Y Combinator (YC),
+probablement l'incubateur de startups le plus réputé au monde. Les succès
+monstres de [plusieurs centaines](https://www.ycombinator.com/companies) de
+compagnies, notamment AirBnB, DropBox, Stripe, Twitch et Reddit, ont
+certainement contribué à la notoriété de YC.
+
+[HN](https://news.ycombinator.com/) est un aggrégateur de nouvelles et de
+discussions qui couvre tous les sujets susceptible de satisfaire la curiosité
+intellectuelle de son lectorat. Les membres sont libres de soumettre leurs
+projets (*Show HN)*, des nouvelles, des questions (*Ask HN)*, de vieux
+articles, etc. De plus, la modération est très juste, ce qui empêche les
+commentaires négatifs gratuits tout en encourageant la critique.
+
+Ce qui fait de HN un aggrégateur intéressant sont les soumissions qui sont
+soumises aux lois d'un algorithme relativement simple. Dans leurs mots:
+
+> ***How are stories ranked?** The basic algorithm divides points by a power of
+> the time since a story was submitted. Comments in threads are ranked the same
+> way. Other factors affecting rank include user flags, anti-abuse software,
+> software which demotes overheated discussions, account or site weighting, and
+> moderator action.*
+
+Cela fait donc en sorte que ce soit un site intéressant à investiguer et
+récolter les données puisqu'elles changent toujours! Comme les nouvelles
+changent de position et de pointage presque toujours, chaque fois que nous
+récoltons des données de la première page, de nouvelles analyses sont
+possibles.
+
+Lorsque nous récoltons des données à partir d'un site web directement, il est
+important de vérifier le fichier `robots.txt` afin de s'assurer que nous avons
+le droit de procéder ainsi. Un fichier robots.txt est un ensemble
+d'instructions pour les robots principalement. Par exemple, dans le cas de HN,
+[https://news.ycombinator.com/robots.txt](https://news.ycombinator.com/robots.txthttps://news.ycombinator.com/robots.txt),
+il est possible de le faire sur les pages principales, mais pas celles qui
+contiennent `/threads?` dans leur URL par exemple.
+
+    User-Agent: *
+    Disallow: /x?
+    Disallow: /r?
+    Disallow: /vote?
+    Disallow: /reply?
+    Disallow: /submitted?
+    Disallow: /submitlink?
+    Disallow: /threads?
+    Crawl-delay: 30
+
+Ceci étant dit, procédons à notre première récolte qui se fera principalement
+avec [rvest](https://rvest.tidyverse.org), le package dédié à cette tâche dans
+le `Tidyverse`!
+
+```{r}
+# Importer le package nécessaire
+library(rvest)
+
+```
+
+### Spécifier le lien et lire la page
+
+```{r}
+url <- "https://news.ycombinator.com/"
+
+raw_html <- read_html(x = url)
+
+raw_html
+```
+
+Tout ce qu'on vient de faire est de lire littéralementle contenu de la page que
+nous voyons à `r url` de façon intégrale. Évidemment, nous la voyons avec plus
+de style dans un fureteur, mais il s'agit contenu même contenu!
+
+Cependant, ce que nous voyons dans un fureteur est contenu seulement dans la
+partie `<body>...</body>` du code que nous voyons. `<body>` représente un tag
+html. Les tags sont les éléments le plus importants à retenir ici, car tout se
+fera à partir des tags html.
+
+::: callout-tip
+Lorsque nous ne parviendrons pas à obtenir ce que nous voulons avec les tags,
+nous devrons nous rabattre sur les sélecteurs de CSS, souvent les classes. Il
+est possible d'utiliser des aides comme
+[SelectorGadget](https://chrome.google.com/webstore/detail/selectorgadget/mhjhnkcfbdhnjickkkdbjoemdmbfginb),
+mais nous verrons que nous pouvons utiliser directement notre fureteur pour
+arriver à nos fins!
+
+Enfin, lorsque les sélecteurs CSS ne fonctionnent pas, il est possible de
+sélectionner ce que nous voulons vraiment par différents moyens dont les
+expressions XPath et/ou les expressions régulières. Cela demande souvent
+beaucoup d'essais et d'erreurs avant d'y parvenir.
+:::
+
+Ceci étant dit, nous pouvons donc sélectionner seulement le `<body>` comme le
+contenu qui nous intéresse s'y trouve. Les fonctions `html_element()` ou
+`html_elements()` seront souvent les premières à être utiliser afin de
+spécifier ce que nous voulons, selon si nous voulons un seul élément ou
+plusieurs éléments identiques.
+
+```{r}
+raw_body <- html_element(x = raw_html,
+                         css = "body")
+
+raw_body
+```
+
+Maintenant que nous avons seulement le contenu, nous pouvons extraire le texte
+avec `html_text()` afin de vérifier si, par magie, nous avons un beau tableau
+avec des données.
+
+```{r}
+html_text(x = raw_body, trim = TRUE)
+```
+
+Oh misère, tout le texte vient en un seul morceau, il faut donc raffiner notre
+sélection en investiguant le code dans le fureteur afin d'extraire seulement ce
+que nous voulons avec les attributs comme nous avons fait pour `<body>`!
+
+Bien que `<table>` semble l'option facile, nous constatons vite qu'il a
+plusieurs tables, 4 au total dispersées dans toute la page, parfois une
+imbriquées dans l'autre. Nous aimons les `<table>`, car il y a une fonction
+`html_table()` dédiée puisque c'est très commun. Lorsqu'on scrute le code HTML,
+une table en particulier contient la classe CSS `.itemlist` et celle-ci semble
+unique aux items. On pourrait également être encore plus précis en ajoutant
+`table.itemlist`, mais dans ce cas, cela revient au même.
+
+Ce qu'on remarque ici, c'est que la table n'est par parfaite pour extraire
+directement tous les éléments facilement.
+
+html_table()
+
+```{r}
+items <- html_element(x = raw_body,
+                         css = ".itemlist")
+items
+```
+
+On semble avoir une table qui mérite l'utilisation de `html_table()`. Par
+contre, on remarquera rapidement qu'il y a quelque chose qui cloche.
+
+```{r}
+dim(html_table(x = items))
+html_table(x = items)
+
+```
+
+Alors qu'il n'y a que 30 items sur la page web, ici nous obtenons un tibble de
+`r nrow(html_table(x = items))` rangées et `r ncol(html_table(x = items))`
+colonnes. La troisième colonne semble être celle qui contient TOUTES les
+précieuses informations; la première seulement le rang des nouvelles alors que
+la deuxième est tout simplement vide...
+
+### Raffinons la stratégie de sélection
+
+En inspectant davantage, on se rend compte qu'en sélectionnant certaines
+classes CSS, on peut sélectionner tous les titres en même temps, et ce, pour
+tous les contenus. Investiguons cette piste:
+
+```{r}
+html_elements(x = items,
+                         css = ".title") %>% html_text()
+
+```
+
+On se rend vite compte qu'en utilisant seulement la classe `.title`, il y a
+d'autres éléments qui sont sélectionnés. Il faut donc raffiner davantage. Si
+vous êtes moins à l'aise avec le HTML et le CSS, veuillez utiliser
+SelectorGadget pour vous aider:
+
+```{r}
+html_elements(x = items,
+              css = ".titleline > a") %>% html_text()
+```
+
+Voilà qui semble faire exactement ce que nous voulons récolter.
+
+Maintenant que nous savons ce que ça prend pour récolter une partie de
+l'information, nous pouvons faire de même pour toutes les différentes
+informations et les assigner dans un tibble.
+
+Nous pourrions extraire plus d'information que le texte mais pour le moment,
+c'est seulement le texte qui nous intéresse.
+
+::: callout-important
+## À vous de jouer!
+
+Tous les endroits avec des `""` vides devraient être remplis!
+
+⏲️ 15 minutes devraient suffire.
+:::
+
+```{r, eval=FALSE}
+
+rank <- html_elements(x = items,
+              css = "") %>% html_text()
+
+title <- html_elements(x = items,
+              css = ".titleline > a") %>% html_text()
+
+score <- html_elements(x = items,
+              css = "") %>% html_text()
+
+author <- html_elements(x = items,
+              css = "") %>% html_text()
+
+time <- html_elements(x = items,
+              css = "") %>% html_text()
+
+comments <- html_elements(x = items,
+              css = ".subline a+ a") %>% html_text()
+
+# Bonus: pour obtenir l'URL la fonctionne html_attr() permet d'y arriver!
+link <- html_elements(x = items,
+              css = "") %>% html_attr("")
+
+dat <- tibble::tibble(rank,
+               title,
+               score,
+               author,
+               time,
+               comments,
+               link
+               )
+dat
+```
+
+### Optimisation du script
+
+Le code que nous venons d'utiliser a été préparé pour l'apprentissage. Dans la
+vie réel, nous aurions probablement fait une fonction et extrait l'information
+d'un seul coup.
+
+Vous pourrez tenter le coup dans vos temps libres 🤠.
+
+### Exercice libre
+
+::: callout-note
+Maintenant que nous avons expérimenté, trouvons un site ensemble et essayons
+d'extraire des données!
+:::
+
+```{r}
+
+```
+
+## Exporter ses données
+
+Il est tout aussi important de bien exporter ses données. Par chance, la
+majorité des packages d'importation offre au moins une fonction d'exportation
+et plusieurs options intéressantes.
+
+```{r, eval = FALSE}
+write_csv(
+  x,
+  file,
+  na = "NA",
+  append = FALSE,
+  col_names = !append,
+  quote = c("needed", "all", "none"),
+  escape = c("double", "backslash", "none"),
+  eol = "\n",
+  num_threads = readr_threads(),
+  progress = show_progress(),
+  path = deprecated(),
+  quote_escape = deprecated()
+)
+```

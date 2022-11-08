@@ -1,0 +1,26 @@
+"","name","genus","vore","order","conservation","sleep_total","sleep_rem","sleep_cycle","awake","brainwt","bodywt"
+"1","Tiger","Panthera","carni","Carnivora","en",15.8,NA,NA,8.2,NA,162.564
+"2","Jaguar","Panthera","carni","Carnivora","nt",10.4,NA,NA,13.6,0.157,100
+"3","Lion","Panthera","carni","Carnivora","vu",13.5,NA,NA,10.5,NA,161.499
+"4","Baboon","Papio","omni","Primates",NA,9.4,1,0.666666667,14.6,0.18,25.235
+"5","Desert hedgehog","Paraechinus",NA,"Erinaceomorpha","lc",10.3,2.7,NA,13.7,0.0024,0.55
+"6","Potto","Perodicticus","omni","Primates","lc",11,NA,NA,13,NA,1.1
+"7","Deer mouse","Peromyscus",NA,"Rodentia",NA,11.5,NA,NA,12.5,NA,0.021
+"8","Phalanger","Phalanger",NA,"Diprotodontia",NA,13.7,1.8,NA,10.3,0.0114,1.62
+"9","Caspian seal","Phoca","carni","Carnivora","vu",3.5,0.4,NA,20.5,NA,86
+"10","Common porpoise","Phocoena","carni","Cetacea","vu",5.6,NA,NA,18.45,NA,53.18
+"11","Potoroo","Potorous","herbi","Diprotodontia",NA,11.1,1.5,NA,12.9,NA,1.1
+"12","Giant armadillo","Priodontes","insecti","Cingulata","en",18.1,6.1,NA,5.9,0.081,60
+"13","Rock hyrax","Procavia",NA,"Hyracoidea","lc",5.4,0.5,NA,18.6,0.021,3.6
+"14","Laboratory rat","Rattus","herbi","Rodentia","lc",13,2.4,0.183333333,11,0.0019,0.32
+"15","African striped mouse","Rhabdomys","omni","Rodentia",NA,8.7,NA,NA,15.3,NA,0.044
+"16","Squirrel monkey","Saimiri","omni","Primates",NA,9.6,1.4,NA,14.4,0.02,0.743
+"17","Eastern american mole","Scalopus","insecti","Soricomorpha","lc",8.4,2.1,0.166666667,15.6,0.0012,0.075
+"18","Cotton rat","Sigmodon","herbi","Rodentia",NA,11.3,1.1,0.15,12.7,0.00118,0.148
+"19","Mole rat","Spalax",NA,"Rodentia",NA,10.6,2.4,NA,13.4,0.003,0.122
+"20","Arctic ground squirrel","Spermophilus","herbi","Rodentia","lc",16.6,NA,NA,7.4,0.0057,0.92
+"21","Thirteen-lined ground squirrel","Spermophilus","herbi","Rodentia","lc",13.8,3.4,0.216666667,10.2,0.004,0.101
+"22","Golden-mantled ground squirrel","Spermophilus","herbi","Rodentia","lc",15.9,3,NA,8.1,NA,0.205
+"23","Musk shrew","Suncus",NA,"Soricomorpha",NA,12.8,2,0.183333333,11.2,0.00033,0.048
+"24","Pig","Sus","omni","Artiodactyla","domesticated",9.1,2.4,0.5,14.9,0.18,86.25
+"25","Short-nosed echidna","Tachyglossus","insecti","Monotremata",NA,8.6,NA,NA,15.4,0.025,4.5
