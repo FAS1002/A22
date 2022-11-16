@@ -2,74 +2,82 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://FAS1002.github.io/A22/index.html</loc>
-    <lastmod>2022-11-08T21:57:37.035Z</lastmod>
+    <lastmod>2022-11-16T20:33:52.487Z</lastmod>
   </url>
   <url>
     <loc>https://FAS1002.github.io/A22/a-propos.html</loc>
-    <lastmod>2022-11-08T21:57:38.203Z</lastmod>
+    <lastmod>2022-11-16T20:33:53.639Z</lastmod>
   </url>
   <url>
     <loc>https://FAS1002.github.io/A22/syllabus.html</loc>
-    <lastmod>2022-11-08T21:57:38.999Z</lastmod>
+    <lastmod>2022-11-16T20:33:54.407Z</lastmod>
   </url>
   <url>
     <loc>https://FAS1002.github.io/A22/utilisation.html</loc>
-    <lastmod>2022-11-08T21:57:39.623Z</lastmod>
+    <lastmod>2022-11-16T20:33:55.027Z</lastmod>
   </url>
   <url>
     <loc>https://FAS1002.github.io/A22/semaines.html</loc>
-    <lastmod>2022-11-08T21:57:40.155Z</lastmod>
+    <lastmod>2022-11-16T20:33:55.551Z</lastmod>
   </url>
   <url>
     <loc>https://FAS1002.github.io/A22/installation.html</loc>
-    <lastmod>2022-11-08T21:57:40.575Z</lastmod>
+    <lastmod>2022-11-16T20:33:56.011Z</lastmod>
   </url>
   <url>
     <loc>https://FAS1002.github.io/A22/presentations/01.html</loc>
-    <lastmod>2022-11-08T21:57:41.007Z</lastmod>
+    <lastmod>2022-11-16T20:33:56.455Z</lastmod>
   </url>
   <url>
     <loc>https://FAS1002.github.io/A22/presentations/intro-tidy.html</loc>
-    <lastmod>2022-11-08T21:57:41.719Z</lastmod>
+    <lastmod>2022-11-16T20:33:57.143Z</lastmod>
   </url>
   <url>
     <loc>https://FAS1002.github.io/A22/presentations/intro-r.html</loc>
-    <lastmod>2022-11-08T21:57:42.095Z</lastmod>
+    <lastmod>2022-11-16T20:33:57.535Z</lastmod>
+  </url>
+  <url>
+    <loc>https://FAS1002.github.io/A22/assets/fichiers/regex.html</loc>
+    <lastmod>2022-11-16T20:33:58.903Z</lastmod>
+  </url>
+  <url>
+    <loc>https://FAS1002.github.io/A22/semaines/10.html</loc>
+    <lastmod>2022-11-16T20:33:59.279Z</lastmod>
   </url>
   <url>
     <loc>https://FAS1002.github.io/A22/semaines/00.html</loc>
-    <lastmod>2022-11-08T21:57:43.343Z</lastmod>
+    <lastmod>2022-11-16T20:33:59.863Z</lastmod>
   </url>
   <url>
     <loc>https://FAS1002.github.io/A22/semaines/03.html</loc>
-    <lastmod>2022-11-08T21:57:43.739Z</lastmod>
+    <lastmod>2022-11-16T20:34:00.271Z</lastmod>
   </url>
   <url>
     <loc>https://FAS1002.github.io/A22/semaines/05.html</loc>
-    <lastmod>2022-11-08T21:57:44.135Z</lastmod>
+    <lastmod>2022-11-16T20:34:00.675Z</lastmod>
   </url>
   <url>
     <loc>https://FAS1002.github.io/A22/semaines/01.html</loc>
-    <lastmod>2022-11-08T21:57:44.511Z</lastmod>
+    <lastmod>2022-11-16T20:34:01.031Z</lastmod>
   </url>
   <url>
     <loc>https://FAS1002.github.io/A22/semaines/07.html</loc>
-    <lastmod>2022-11-08T21:57:44.919Z</lastmod>
+    <lastmod>2022-11-16T20:34:01.451Z</lastmod>
   </url>
   <url>
     <loc>https://FAS1002.github.io/A22/semaines/02.html</loc>
-    <lastmod>2022-11-08T21:57:45.415Z</lastmod>
+    <lastmod>2022-11-16T20:34:01.967Z</lastmod>
   </url>
   <url>
     <loc>https://FAS1002.github.io/A22/semaines/08.html</loc>
-    <lastmod>2022-11-08T21:57:45.791Z</lastmod>
+    <lastmod>2022-11-16T20:34:02.347Z</lastmod>
   </url>
   <url>
     <loc>https://FAS1002.github.io/A22/semaines/09.html</loc>
-    <lastmod>2022-11-08T21:57:46.275Z</lastmod>
+    <lastmod>2022-11-16T20:34:02.859Z</lastmod>
   </url>
   <url>
     <loc>https://FAS1002.github.io/A22/semaines/04.html</loc>
-    <lastmod>2022-11-08T21:57:46.675Z</lastmod>
+    <lastmod>2022-11-16T20:34:03.299Z</lastmod>
   </url>
 </urlset>
