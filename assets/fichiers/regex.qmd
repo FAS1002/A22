@@ -1,6 +1,6 @@
-::: callout-important
-Pour télécharger le fichier: [regex.qmd](/assets/fichiers/_regex.qmd)
-:::
+---
+title: regex.qmd
+---
 
 ## À la découverte des expressions régulières avec R (et d'autres packages au passage...)
 
