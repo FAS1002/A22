@@ -47,7 +47,7 @@ website:
     background: "#FFA69E"
 
     left: |
-      [Propulsé par des logiciels libres 💖](/remerciements.qmd){.nav-link .text-decoration-none}
+      [Propulsé par des logiciels libres 💖](https://github.com/FAS1002/A22){.nav-link .text-decoration-none}
     center:
       - text: "À propos"
         href: a-propos.qmd
