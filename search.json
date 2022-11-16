@@ -438,14 +438,7 @@
     "href": "assets/fichiers/regex.html",
     "title": "regex.qmd",
     "section": "",
-    "text": "Important\n\n\n\nPour télécharger le fichier: regex.qmd"
-  },
-  {
-    "objectID": "assets/fichiers/regex.html#à-la-découverte-des-expressions-régulières-avec-r-et-dautres-packages-au-passage",
-    "href": "assets/fichiers/regex.html#à-la-découverte-des-expressions-régulières-avec-r-et-dautres-packages-au-passage",
-    "title": "regex.qmd",
-    "section": "À la découverte des expressions régulières avec R (et d’autres packages au passage…)",
-    "text": "À la découverte des expressions régulières avec R (et d’autres packages au passage…)\nLes expressions régulières sont communément appelées regex ou regexp pour regular expressions en anglais. Selon Wikipédia, une expression régulière est “une chaîne de caractères, qui décrit, selon une syntaxe précise, un ensemble de chaînes de caractères possibles”. Si vous n’avez jamais entendu parlé des regex, il se peut que cette définition ne vous aide pas à comprendre le concept. Nous tenterons de démystifier le tout au cours de ces exercices.\nÀ titre de rappel, cet aide-mémoire vous sera drôlement utile!\nEn résumé, ces expressions permettent de décrire des motifs (patterns) à l’aide de formules “relativement simples” pour trouver, valider, extraire ou modifier du texte ou des nombres."
+    "text": "Les expressions régulières sont communément appelées regex ou regexp pour regular expressions en anglais. Selon Wikipédia, une expression régulière est “une chaîne de caractères, qui décrit, selon une syntaxe précise, un ensemble de chaînes de caractères possibles”. Si vous n’avez jamais entendu parlé des regex, il se peut que cette définition ne vous aide pas à comprendre le concept. Nous tenterons de démystifier le tout au cours de ces exercices.\nÀ titre de rappel, cet aide-mémoire vous sera drôlement utile!\nEn résumé, ces expressions permettent de décrire des motifs (patterns) à l’aide de formules “relativement simples” pour trouver, valider, extraire ou modifier du texte ou des nombres."
   },
   {
     "objectID": "assets/fichiers/regex.html#mission-daujourdhui",
