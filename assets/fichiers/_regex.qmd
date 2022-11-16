@@ -1,7 +1,3 @@
-::: callout-important
-Pour télécharger le fichier: [regex.qmd](/assets/fichier/_regex.qmd)
-:::
-
 ## À la découverte des expressions régulières avec R (et d'autres packages au passage...)
 
 Les **expressions régulières** sont communément appelées **regex** ou

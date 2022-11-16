@@ -1,0 +1,48 @@
+---
+title: "Semaines 10 et 11"
+description: "Contenu pour la semaine, incluant les lectures et les modules"
+author: "Samuel Guay"
+date: "11/22/2022"
+categories:
+  - cours
+  - semaine
+---
+
+## **Objectif de cette semaine**:
+
+**Comprendre comment utiliser les principaux packages pour manipuler les
+données et les expressions régulières.**
+
+## 1. Lectures
+
+### 1.1 [Chapitre 3](https://jhudatascience.org/tidyversecourse/wrangle-data.html#about-this-course-2) de [**Introduction to the Tidyverse**](https://jhudatascience.org/tidyversecourse/wrangle-data.html#about-this-course-2)
+
+Veuillez lire à partir de la [section
+3.1](https://jhudatascience.org/tidyversecourse/wrangle-data.html#about-this-course-2).
+
+## 2. Module 6
+
+Le module 6 est relativement simple à compléter, veuillez tout simplement
+remplir [le quiz qui se trouve sur
+Ed](https://edstem.org/us/courses/6933/lessons/24564/slides/140249).
+
+-------------------------------------------------------------------------------
+
+![](/assets/img/str_squish.png){fig-alt="An illustration of four fuzzy monsters squishing together a string containing the words “a cat” with excess whitespace at the ends and between the words, showing those excess whitespaces being eject as they squish the ends together. Text read “stringr::str_squish(): remove leading, trailing & repeated interior whitespace from strings.”"}
+
+Figure par [\@allison_horst](https://twitter.com/allison_horst)
+([CC-BY](https://creativecommons.org/licenses/by/4.0/))
+
+\-\--
+
+## Cours
+
+Vous pouvez télécharger les fichiers suivants:
+
+[regex.qmd](/assets/fichiers/_regex.qmd) qui ne contient que la solution en
+base R et
+
+[regex.html](/assets/fichiers/regex.html) pour voir les solutions que nous
+avons développées ensemble.
+
+Bonne semaine! ✌️

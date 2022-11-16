@@ -47,7 +47,7 @@ base_tables <- html_table(x = base_html_table)
 # base_table <- rbind(base_tables[[1]], base_tables[[2]], base_tables[[3]])
 
 
-
+names(base_tables[[3]])
 ```
 
 ⚠️ Erreur! Une colonne n'est pas nommée de façon identique, donc ne fonctionne
@@ -73,4 +73,91 @@ rm(list=(ls(pattern = "base*")))
 
 ```{r}
 
+URL <- "https://tc.canada.ca/fr/aviation/exploitation-aeroports-aerodromes/liste-aeroports-appartenant-transports-canada"
+
+
+tables <- read_html(x = URL) %>%
+    html_elements(css = "table") %>%
+    html_table()
+
+table <- dplyr::bind_rows(tables[[1]],
+                          tables[[2]],
+                          tables[[3]],
+                          .id = "type")
+
+# ou solution alternative équivalente
+tables %>% purrr::map_dfr(bind_rows, .id = "type")
+
+
+
+
+
+
+```
+
+### Remplir les rangées de la colonne `Province/Territoire`
+
+```{r}
+
+
+table <- table %>% dplyr::rename(province_territoire = `Province/Territoire`,
+                        aeroport = Aéroport,
+                        exploited_by = `Exploité par`,
+                        territoire = Territoire)
+
+table$province_territoire <- dplyr::coalesce(table$province_territoire, 
+                                              table$territoire)
+
+
+
+table[table == ""] <- NA
+# equivalent en tidyverse
+table$province_territoire <- table$province_territoire %>% dplyr::na_if(y = "")
+table <- table %>% tidyr::fill(province_territoire, .direction = "down")
+```
+
+```{r}
+
+table <- table %>% dplyr::select(-territoire)
+
+```
+
+Extraction des codes d'aéroports
+
+```{r}
+
+# solution #1
+x <- table %>% mutate(new_col = str_extract(string = aeroport, pattern = "[A-Z]{3}"))
+
+table <- table %>% tidyr::extract(col = aeroport,
+                         into = "code_aeroport",
+                         regex = "(Y[A-Z][A-Z])", 
+                         remove = FALSE)
+
+table$aeroport <- table$aeroport %>%
+    stringr::str_remove_all(pattern = "\\(.*\\)") %>%
+    stringr::str_squish()
+
+
+```
+
+## Recodage des types d'aéroport
+
+```{r}
+
+x <- table %>% mutate(type_nouveau = recode(type,
+                                            "1" = "Petits aéroports",
+                                            "2" = "Aéroports nationaux", 
+                                            "3" = "Aéroports nationaux exploités par des administrations territoriales"))
+
+x <- x %>% mutate(type_nouveau_case = case_when(type == 1 ~ "Petits aéroports", 
+                                               type == 2 ~ "Aéroports nationaux",
+                                               type == 3 ~ "Aéroports nationaux exploités par des administrations territoriales"))
+
+```
+
+## Il ne reste plus qu'à extraire l'information qui se trouve dans `table$exploited_by`
+
+```{r}
+table$exploited_by
 ```
