@@ -1,10 +1,80 @@
 [
   {
-    "objectID": "index.html#accès-rapide-à-la-dernière-semaine",
-    "href": "index.html#accès-rapide-à-la-dernière-semaine",
-    "title": "Bienvenue au cours",
-    "section": "Accès rapide à la dernière semaine",
-    "text": "Accès rapide à la dernière semaine"
+    "objectID": "installation.html",
+    "href": "installation.html",
+    "title": "Installation des logiciels",
+    "section": "",
+    "text": "Important\n\n\n\nSi vous n’êtes pas en mesure d’installer ou de mettre à jour R et RStudio parce que votre machine est trop vieille ou que votre employeur doit approuver l’installation de nouveaux logiciels, vous pouvez utiliser tout simplement rstudio.cloud, qui offre R et RStudio dans votre navigateur préféré.\nLisez tout de même les instructions ci-dessous puisque certaines d’entre elles requièrent votre attention.\nBien installer et configurer tous les logiciels nécessaires est honnêtement la moitié de la bataille lorsque nous adoptons ces logiciels pour la première fois. Parfois l’installation se déroule sans problème, alors que d’autres fois c’est plus difficile en raison des particularités entre les différents ordinateurs (par exemple les systèmes d’exploitation Windows vs Mac vs Linux). La bonne nouvelle est qu’une fois que les logiciels sont installés, vous n’aurez plus à le faire sur cette machine. Lorsque vous aurez passé à travers l’installation, récompensez-vous, car vous aurez complété la partie du boulot la plus ennuyante!"
+  },
+  {
+    "objectID": "installation.html#installez-ou-mettez-à-jour-r-et-rstudio",
+    "href": "installation.html#installez-ou-mettez-à-jour-r-et-rstudio",
+    "title": "Installation des logiciels",
+    "section": "1. Installez ou mettez à jour R et RStudio",
+    "text": "1. Installez ou mettez à jour R et RStudio\n\nInstallez d’abord R pour votre système d’exploitation (Windows, Mac, Linux) en vous rendant au https://cloud.r-project.org/.\n\nSi vous tombez sur un site qui a l’air plus ou moins attrayant, vous êtes sur le bon site!\n\n\nSi vous installer R pour la première fois, lisez attentivement les instructions, car elles sont différentes selon le système d’exploitation (OS).\nVous voulez installer au minimum la version 4.1 de R, car les versions 3.X.X vous causeront probablement des problèmes dans le futur.\n\nInstallez ensuite RStudio pour votre système d’exploitation (Windows, Mac, Linux) en vous rendant au https://rstudio.com/products/rstudio/download/#download.\n\nVersion >= 2022.07.01\n\nOuvrez RStudio et installer les packages1 suivants en inscrivant la commande suivante dans la console2 ou en passant par l’onglet packages à droite puis en cliquant sur install pour ensuite inscrire le nom des packages à l’endroit dédié.\n\ninstall.packages(c(\"markdown\", \"swirl\", \"devtools\", \"usethis\", \"gitcreds\", \"tidyverse\"))"
+  },
+  {
+    "objectID": "installation.html#créez-un-compte-sur-github.",
+    "href": "installation.html#créez-un-compte-sur-github.",
+    "title": "Installation des logiciels",
+    "section": "2. Créez un compte sur GitHub.",
+    "text": "2. Créez un compte sur GitHub.\nC’est gratuit! Vous devez vous rendre au https://github.com et cliquer sur Sign up.\n\nVotre username (nom d’utilisateur) vous sera fort utile lorsque vous synchroniserez vos travaux sur GitHub et il est public. Il s’agit de votre identifiant avec le monde, votre futur employeur, etc., donc prenez soin de bien le choisir.\n\nPar exemple, le mien est simplement SamGuay\n\nPour plus de trucs et astuces sur le choix d’un nom d’utilisateur, consultez la section Username advice."
+  },
+  {
+    "objectID": "installation.html#installez-git",
+    "href": "installation.html#installez-git",
+    "title": "Installation des logiciels",
+    "section": "3. Installez Git",
+    "text": "3. Installez Git\n\nIl se peut que Git soit déjà installé sur votre machine, surtout si vous utilisez un système d’exploitation Mac ou Linux, car Git est souvent pré-installé. Vous pouvez vérifier s’il est déjà installé ou tentez de l’installer et attendre que votre machine vous dise qu’il est déjà installé.\n\nPour vérifier si Git est installé, ouvrez un terminal et tapez git --version. Si vous obtenez quelque chose similaire à git version 2.25.1, cela veut dire que git est bien installé et vous pouvez ignorez cette étape!\n\nSi vous ne vous souvenez plus comment ouvrir un terminal, suivez ces instructions puisqu’elles varient selon votre système d’exploitation.\nPour les gens sur Windows, veuillez suivre ces instructions pour vérifier que vous avez bel et bien installer Git for Windows/Git Bash."
+  },
+  {
+    "objectID": "installation.html#dites-à-git-qui-vous-êtes",
+    "href": "installation.html#dites-à-git-qui-vous-êtes",
+    "title": "Installation des logiciels",
+    "section": "4. Dites à Git qui vous êtes",
+    "text": "4. Dites à Git qui vous êtes\nOption A\nSi vous êtes à l’aise d’ouvrir un terminal (Appendix A), ouvrez un terminal et vous pouvez entrer ces lignes, une à la fois, avec les informations qui correspondent à celles que vous avez entrées sur GitHub.\n⚠️ Changez Prénom Nom par les vôtres. ⚠️\ngit config --global user.name 'Prénom Nom'\n⚠️ Changez votre@courriel.com par votre adresse. ⚠️\ngit config --global user.email 'votre@courriel.ca'\nPour vérifier les informations que vous venez d’entrer sont bonnes, entrez:\ngit config --global --list\n\n\n\n\n\n\nMise en garde\n\n\n\nPour les personnes qui utilisent Windows: Il se peut que vous rencontriez des obstacles que les gens sur Mac et Linux ne rencontrent pas. Si vous rencontrez des difficultés sous Windows, considérez qu’il existe différents types de shell/terminal et que vous vous trompez peut-être. Vous voulez être dans un shell «Git Bash» et non à Power Shell ou à la ligne de commande cmd.exe. Pour en savoir plus, consultez cette annexe.\n\n\nOption B\nSi vous n’est pas à l’aise avec RStudio ou un terminal. Nous ferons cette étape ensemble pendant le cours sur la gestion de version."
+  },
+  {
+    "objectID": "installation.html#est-ce-que-git-rstudio-et-github-sentendent",
+    "href": "installation.html#est-ce-que-git-rstudio-et-github-sentendent",
+    "title": "Installation des logiciels",
+    "section": "5. Est-ce que Git, RStudio et GitHub s’entendent?",
+    "text": "5. Est-ce que Git, RStudio et GitHub s’entendent?\nEnfin, si vous voulez vous assurez du bon fonctionnement, veuillez suivre ces instructions qui vous amèneront à créer les éléments nécessaires pour communiquer avec GitHub sans soucis.\nSi vous n’est pas à l’aise avec RStudio ou un terminal. Nous ferons cette étape ensemble pendant le cours sur la gestion de version."
+  },
+  {
+    "objectID": "installation.html#félicitations",
+    "href": "installation.html#félicitations",
+    "title": "Installation des logiciels",
+    "section": "Félicitations! 🎉",
+    "text": "Félicitations! 🎉\nFélicitations, vous avez survécu à l’installation, nous saurons dans quelques semaines si vous avez bien configuré le tout!"
+  },
+  {
+    "objectID": "semaines.html",
+    "href": "semaines.html",
+    "title": "Calendrier des séances",
+    "section": "",
+    "text": "À chaque semaine, les lectures, les tâches et les présentations apparaissant dans le plan de cours seront indiquées en plus d’y ajouter un compte-rendu de la séance au courant de la semaine qui suit.\n\n\n\n\n\n\n   \n     \n     \n       Trier par\n       Ordre par défaut\n         \n          Titre\n        \n         \n          Date - Le plus ancien\n        \n         \n          Date - Le plus récent\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nSemaines 10 et 11\n\n\n\n\n\n\n\ncours\n\n\nsemaine\n\n\n\n\nContenu pour la semaine, incluant les lectures et les modules\n\n\n\n\n\n\n22 nov. 2022\n\n\nSamuel Guay\n\n\n\n\n\n\n  \n\n\n\n\nSemaine 9\n\n\n\n\n\n\n\ncours\n\n\nsemaine\n\n\n\n\nContenu pour la semaine, incluant les lectures et les modules\n\n\n\n\n\n\n8 nov. 2022\n\n\nSamuel Guay\n\n\n\n\n\n\n  \n\n\n\n\nSemaine 8\n\n\n\n\n\n\n\ncours\n\n\nsemaine\n\n\n\n\nContenu pour la semaine, incluant les lectures et les modules\n\n\n\n\n\n\n1 nov. 2022\n\n\nSamuel Guay\n\n\n\n\n\n\n  \n\n\n\n\nSemaine 7\n\n\n\n\n\n\n\ncours\n\n\nsemaine\n\n\n\n\nContenu pour la semaine, incluant les lectures et les modules\n\n\n\n\n\n\n18 oct. 2022\n\n\nSamuel Guay\n\n\n\n\n\n\n  \n\n\n\n\nSemaine 5\n\n\n\n\n\n\n\ncours\n\n\nsemaine\n\n\n\n\nContenu pour la semaine, incluant les lectures et les modules\n\n\n\n\n\n\n4 oct. 2022\n\n\nSamuel Guay\n\n\n\n\n\n\n  \n\n\n\n\nSemaine 4\n\n\n\n\n\n\n\ncours\n\n\nsemaine\n\n\n\n\nContenu pour la semaine, incluant les lectures et les modules\n\n\n\n\n\n\n27 sept. 2022\n\n\nSamuel Guay\n\n\n\n\n\n\n  \n\n\n\n\nSemaine 3\n\n\n\n\n\n\n\ncours\n\n\nsemaine\n\n\n\n\nContenu pour la semaine, incluant les lectures et les modules\n\n\n\n\n\n\n20 sept. 2022\n\n\nSamuel Guay\n\n\n\n\n\n\n  \n\n\n\n\nSemaine 2\n\n\n\n\n\n\n\ncours\n\n\nsemaine\n\n\n\n\nContenu pour la semaine, incluant les lectures et les modules\n\n\n\n\n\n\n13 sept. 2022\n\n\nSamuel Guay\n\n\n\n\n\n\n  \n\n\n\n\nSemaine 1\n\n\n\n\n\n\n\ncours\n\n\nsemaine\n\n\n\n\nContenu pour la semaine, incluant les lectures et les modules\n\n\n\n\n\n\n6 sept. 2022\n\n\nSamuel Guay\n\n\n\n\n\n\n  \n\n\n\n\n📌 Semaine 0\n\n\n\n\n\n\n\ncours\n\n\nsemaine\n\n\n\n\nAttendons que le trimestre débute avant d’ajouter du contenu! Il n’y a absolument rien à voir ici… ou peut-être pas 🤔?\n\n\n\n\n\n\n5 sept. 2022\n\n\nSamuel Guay\n\n\n\n\n\n\nAucun article correspondant"
+  },
+  {
+    "objectID": "utilisation.html",
+    "href": "utilisation.html",
+    "title": "Utilisation de packages spécifiques",
+    "section": "",
+    "text": "Si vous n’avez pas installez R et RStudio sur votre ordinateur, veuillez vous référez à la page d’installation pour vous assurer que vos logiciels sont à jour.\n\n\n\n\n\n\nImportant\n\n\n\nSi vous n’êtes pas en mesure d’installer ou de mettre à jour R et RStudio parce que votre machine est trop vieille ou que votre employeur doit approuver l’installation de nouveaux logiciels, vous pouvez utiliser tout simplement rstudio.cloud, qui offre R et RStudio dans votre navigateur préféré.\nLisez tout de même les instructions de la page d’installation puisque certaines instructions requièrent tout de même votre attention."
+  },
+  {
+    "objectID": "utilisation.html#swirl",
+    "href": "utilisation.html#swirl",
+    "title": "Utilisation de packages spécifiques",
+    "section": "Swirl",
+    "text": "Swirl\nQu’est-ce que swirl?\nswirl est un package1 pour le langage de programmation R qui transforme la console R en un environnement d’apprentissage interactif. Les utilisateurs et les utilisatrices reçoivent une rétroaction immédiate tout au long des modules qui sont complétés à leur propre rythme. Plusieurs cours sont offerts et ils couvrent plusieurs aspects en lien avec la science des données et la programmation R.\n\n\n1Dans la terminologie de R, un package est un ensemble cohérent de fonctions, de jeux de données et de documentation. Les packages sont regroupés dans une bibliothèque (library).\n\nDéfinition adaptée de Programmer avec R.\n\n\n1. Installer swirl\nPour installer swirl, vous devez ouvrir RStudio (option recommandée) ou une console R tout simplement (option vous savez ce que vous faites). Ensuite, entrez la commande suivante dans la console`:\ninstall.packages(\"swirl\")\n\n\n\n\n\n\nNotez que le symbole > au début de la ligne est l’invite de commande de R pour que vous tapiez quelque chose dans la console. Vous ne devez pas à inclure vous-mêmes le > dans votre commande. Lorsque vous voyez le >, cela signifie que R est prêt à recevoir une commande.\n\nSi l’installation du package a été complétée avec succès, il devrait y avoir un message similaire en rouge dans la console ⬇️:\n* installing *binary* package ‘swirl’ ...\n* DONE (swirl)\n\nThe downloaded source packages are in\n    ‘/tmp/Rtmpp0JbwP/downloaded_packages’\n\n\n2. Activer swirl\nTout d’abord, vous devez charger ou importer le package swirl à l’aide de la fonction library(). Cette action rend disponibles les fonctionnalités du package en le chargeant dans l’environnement de la session de travail actuelle.\nlibrary(\"swirl\")\nPar chance, en chargeant swirl, un message apparaitra et vous indiquera comment activer l’environnement d’apprentissage:\n| Hi! Type swirl() when you are ready to begin.\nIl faut donc entrer la commande suivante puis appuyer sur ↵ (Entrée):\nswirl()\n\n\n3. Installer le cours The basics of programming in R\nSi c’est la première fois que vous utilisez swirl, vous serez amener à spécifier un nom qui permettra de vous reconnaitra à chaque fois que vous réactiverez swirl.\nPar la suite, il ne suffit que de suivre les instructions qui apparaitront à l’écran. Lorsque les instructions vous demanderont si vous voulez installer un cours, vous devrez choisir celui-ci pour le cours:\n1: R Programming: The basics of programming in R\nÉvidemment, rien ne vous empêche d’installer d’autres cours et de les compléter dans vos temps libres!\n\n\n4. Complétion des modules\nTel qu’indiqué dans le plan de cours, plusieurs modules doivent être complétés à différents moments dans la session. Lorsque vous compléter un module, le logiciel vous demandera si vous voulez obtenir des crédits pour Coursera.org. Vous ne voulez recevoir les crédits, mais il s’agit du meilleur moment pour prendre votre capture d’écran à ce moment comme preuve de complétion du module.\n\n\n\n\n\n\nSoumission des captures d’écran\n\n\n\nLorsque vous finissez les différents modules de swirl dans le cadre du cours, vous devez ouvrir un thread privé sur Ed et coller les images.\n\n\n\n\n\n\nImportant\n\n\n\nÀ chaque nouveau module complété, veuillez coller la capture d’écran dans le même thread.\n\n\n\n\nBon succès!"
+  },
+  {
+    "objectID": "utilisation.html#git",
+    "href": "utilisation.html#git",
+    "title": "Utilisation de packages spécifiques",
+    "section": "Git",
+    "text": "Git\nVoici deux vidéos qui mettent en lumière les fonctionnalités de Git et GitHub.\n\nAperçu général plus théorique de 12 minutes\n\n\n\nAperçu pratique de 5 minutes entre deux personnes qui collaborent dans R.\n\n\n\nVoici également une brève présentation de Git et GitHub à laquelle j’ai contribuée dans le cadre d’un cours offert sur EDUlib.\n\n\n\n\nIl y a également une vidéo de moi qui présente si vous vous inscrivez au cours 😁!"
   },
   {
     "objectID": "a-propos.html#quoi",
@@ -33,6 +103,13 @@
     "title": "Initiation à la programmation en sciences sociales",
     "section": "Chargé de cours",
     "text": "Chargé de cours\nCréé et enseigné par Samuel Guay, doctorant en psychologie - option neuroscience cognitive."
+  },
+  {
+    "objectID": "index.html#accès-rapide-à-la-dernière-semaine",
+    "href": "index.html#accès-rapide-à-la-dernière-semaine",
+    "title": "Bienvenue au cours",
+    "section": "Accès rapide à la dernière semaine",
+    "text": "Accès rapide à la dernière semaine"
   },
   {
     "objectID": "syllabus.html",
@@ -98,81 +175,67 @@
     "text": "Besoin d’écoute? Situation de détresse?\nComme étudiant·e, vous pouvez faire appel à plusieurs lignes d’écoute ou d’urgence. Tous les liens sont rassemblés sur la page Ça va aller.\nLes étudiant·e·s ont accès à un service 24 heures/7 jours offert par l’Alliance pour la santé étudiante au Québec. Le numéro est le suivant : 1-833-851-1363.\nVous pouvez aussi faire appel à une sentinelle. La sentinelle est un·e employé·e de l’UdeM, formé·e et disponible pour vous accueillir, vous écouter et vous orienter vers les bonnes ressources. Son accueil est spontané, respectueux et confidentiel. Voir le Bottin des sentinelles au besoin.\nÉvidemment, vous pouvez venir me parler en privé si vous en ressentez le besoin."
   },
   {
-    "objectID": "utilisation.html",
-    "href": "utilisation.html",
-    "title": "Utilisation de packages spécifiques",
-    "section": "",
-    "text": "Si vous n’avez pas installez R et RStudio sur votre ordinateur, veuillez vous référez à la page d’installation pour vous assurer que vos logiciels sont à jour.\n\n\n\n\n\n\nImportant\n\n\n\nSi vous n’êtes pas en mesure d’installer ou de mettre à jour R et RStudio parce que votre machine est trop vieille ou que votre employeur doit approuver l’installation de nouveaux logiciels, vous pouvez utiliser tout simplement rstudio.cloud, qui offre R et RStudio dans votre navigateur préféré.\nLisez tout de même les instructions de la page d’installation puisque certaines instructions requièrent tout de même votre attention."
+    "objectID": "presentations/intro-r.html#rappel-site-du-cours",
+    "href": "presentations/intro-r.html#rappel-site-du-cours",
+    "title": "Introduction à R[Studio]",
+    "section": "📢 Rappel | Site du cours",
+    "text": "📢 Rappel | Site du cours\nVous êtes perdu.e.s? Vous cherchez quelque chose?\nTout se retrouve sur le site:\n\n\nPlan de cours incluant calendrier détaillé de la session\nPage avec le contenu des semaines précédentes\n\nIncluant les liens vers Ed, les modules, les présentations (comme celle-ci), etc.\n\nInstructions détaillées pour l’installation des logiciels\n\n\n\n\n\nhttps://FAS1002.github.io/A22"
   },
   {
-    "objectID": "utilisation.html#swirl",
-    "href": "utilisation.html#swirl",
-    "title": "Utilisation de packages spécifiques",
-    "section": "Swirl",
-    "text": "Swirl\nQu’est-ce que swirl?\nswirl est un package1 pour le langage de programmation R qui transforme la console R en un environnement d’apprentissage interactif. Les utilisateurs et les utilisatrices reçoivent une rétroaction immédiate tout au long des modules qui sont complétés à leur propre rythme. Plusieurs cours sont offerts et ils couvrent plusieurs aspects en lien avec la science des données et la programmation R.\n\n\n1Dans la terminologie de R, un package est un ensemble cohérent de fonctions, de jeux de données et de documentation. Les packages sont regroupés dans une bibliothèque (library).\n\nDéfinition adaptée de Programmer avec R.\n\n\n1. Installer swirl\nPour installer swirl, vous devez ouvrir RStudio (option recommandée) ou une console R tout simplement (option vous savez ce que vous faites). Ensuite, entrez la commande suivante dans la console`:\ninstall.packages(\"swirl\")\n\n\n\n\n\n\nNotez que le symbole > au début de la ligne est l’invite de commande de R pour que vous tapiez quelque chose dans la console. Vous ne devez pas à inclure vous-mêmes le > dans votre commande. Lorsque vous voyez le >, cela signifie que R est prêt à recevoir une commande.\n\nSi l’installation du package a été complétée avec succès, il devrait y avoir un message similaire en rouge dans la console ⬇️:\n* installing *binary* package ‘swirl’ ...\n* DONE (swirl)\n\nThe downloaded source packages are in\n    ‘/tmp/Rtmpp0JbwP/downloaded_packages’\n\n\n2. Activer swirl\nTout d’abord, vous devez charger ou importer le package swirl à l’aide de la fonction library(). Cette action rend disponibles les fonctionnalités du package en le chargeant dans l’environnement de la session de travail actuelle.\nlibrary(\"swirl\")\nPar chance, en chargeant swirl, un message apparaitra et vous indiquera comment activer l’environnement d’apprentissage:\n| Hi! Type swirl() when you are ready to begin.\nIl faut donc entrer la commande suivante puis appuyer sur ↵ (Entrée):\nswirl()\n\n\n3. Installer le cours The basics of programming in R\nSi c’est la première fois que vous utilisez swirl, vous serez amener à spécifier un nom qui permettra de vous reconnaitra à chaque fois que vous réactiverez swirl.\nPar la suite, il ne suffit que de suivre les instructions qui apparaitront à l’écran. Lorsque les instructions vous demanderont si vous voulez installer un cours, vous devrez choisir celui-ci pour le cours:\n1: R Programming: The basics of programming in R\nÉvidemment, rien ne vous empêche d’installer d’autres cours et de les compléter dans vos temps libres!\n\n\n4. Complétion des modules\nTel qu’indiqué dans le plan de cours, plusieurs modules doivent être complétés à différents moments dans la session. Lorsque vous compléter un module, le logiciel vous demandera si vous voulez obtenir des crédits pour Coursera.org. Vous ne voulez recevoir les crédits, mais il s’agit du meilleur moment pour prendre votre capture d’écran à ce moment comme preuve de complétion du module.\n\n\n\n\n\n\nSoumission des captures d’écran\n\n\n\nLorsque vous finissez les différents modules de swirl dans le cadre du cours, vous devez ouvrir un thread privé sur Ed et coller les images.\n\n\n\n\n\n\nImportant\n\n\n\nÀ chaque nouveau module complété, veuillez coller la capture d’écran dans le même thread.\n\n\n\n\nBon succès!"
+    "objectID": "presentations/intro-r.html#installation-des-logiciels",
+    "href": "presentations/intro-r.html#installation-des-logiciels",
+    "title": "Introduction à R[Studio]",
+    "section": "Installation des logiciels",
+    "text": "Installation des logiciels\n\nR, RStudio et quelques packages:\n\nmarkdown, swirl, devtools, usethis, gitcreds, tidyverse\n\nGit et GitHub ➡️ https://happygitwithr.com/\n\n\n\n\n\n\n\nAstuce\n\n\nTout est détaillé sur la page d’installation et swirl"
   },
   {
-    "objectID": "utilisation.html#git",
-    "href": "utilisation.html#git",
-    "title": "Utilisation de packages spécifiques",
-    "section": "Git",
-    "text": "Git\nVoici deux vidéos qui mettent en lumière les fonctionnalités de Git et GitHub.\n\nAperçu général plus théorique de 12 minutes\n\n\n\nAperçu pratique de 5 minutes entre deux personnes qui collaborent dans R.\n\n\n\nVoici également une brève présentation de Git et GitHub à laquelle j’ai contribuée dans le cadre d’un cours offert sur EDUlib.\n\n\n\n\nIl y a également une vidéo de moi qui présente si vous vous inscrivez au cours 😁!"
+    "objectID": "presentations/intro-r.html#lectures-swirl-modules",
+    "href": "presentations/intro-r.html#lectures-swirl-modules",
+    "title": "Introduction à R[Studio]",
+    "section": "Lectures > Swirl > Modules",
+    "text": "Lectures > Swirl > Modules\nOrdre à privilégier pour les travaux de la semaine:\n\n\n\nLectures\nExemples dans les lectures\n\nà ouvrir et jouer avec dans RStudio\n\nSwirl*\nModules\n\n\n\n\n\n\n\n\nTip\n\n\n⚠️ Les modules ferment le vendredi qui suit le cours. ⚠️\n* 🙊 Merci d’acheminer les captures d’écran dans un seul et unique thread privé sur Ed et non par courriel."
   },
   {
-    "objectID": "semaines.html",
-    "href": "semaines.html",
-    "title": "Calendrier des séances",
-    "section": "",
-    "text": "À chaque semaine, les lectures, les tâches et les présentations apparaissant dans le plan de cours seront indiquées en plus d’y ajouter un compte-rendu de la séance au courant de la semaine qui suit.\n\n\n\n\n\n\n   \n     \n     \n       Trier par\n       Ordre par défaut\n         \n          Titre\n        \n         \n          Date - Le plus ancien\n        \n         \n          Date - Le plus récent\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nSemaines 10 et 11\n\n\n\n\n\n\n\ncours\n\n\nsemaine\n\n\n\n\nContenu pour la semaine, incluant les lectures et les modules\n\n\n\n\n\n\n22 nov. 2022\n\n\nSamuel Guay\n\n\n\n\n\n\n  \n\n\n\n\nSemaine 9\n\n\n\n\n\n\n\ncours\n\n\nsemaine\n\n\n\n\nContenu pour la semaine, incluant les lectures et les modules\n\n\n\n\n\n\n8 nov. 2022\n\n\nSamuel Guay\n\n\n\n\n\n\n  \n\n\n\n\nSemaine 8\n\n\n\n\n\n\n\ncours\n\n\nsemaine\n\n\n\n\nContenu pour la semaine, incluant les lectures et les modules\n\n\n\n\n\n\n1 nov. 2022\n\n\nSamuel Guay\n\n\n\n\n\n\n  \n\n\n\n\nSemaine 7\n\n\n\n\n\n\n\ncours\n\n\nsemaine\n\n\n\n\nContenu pour la semaine, incluant les lectures et les modules\n\n\n\n\n\n\n18 oct. 2022\n\n\nSamuel Guay\n\n\n\n\n\n\n  \n\n\n\n\nSemaine 5\n\n\n\n\n\n\n\ncours\n\n\nsemaine\n\n\n\n\nContenu pour la semaine, incluant les lectures et les modules\n\n\n\n\n\n\n4 oct. 2022\n\n\nSamuel Guay\n\n\n\n\n\n\n  \n\n\n\n\nSemaine 4\n\n\n\n\n\n\n\ncours\n\n\nsemaine\n\n\n\n\nContenu pour la semaine, incluant les lectures et les modules\n\n\n\n\n\n\n27 sept. 2022\n\n\nSamuel Guay\n\n\n\n\n\n\n  \n\n\n\n\nSemaine 3\n\n\n\n\n\n\n\ncours\n\n\nsemaine\n\n\n\n\nContenu pour la semaine, incluant les lectures et les modules\n\n\n\n\n\n\n20 sept. 2022\n\n\nSamuel Guay\n\n\n\n\n\n\n  \n\n\n\n\nSemaine 2\n\n\n\n\n\n\n\ncours\n\n\nsemaine\n\n\n\n\nContenu pour la semaine, incluant les lectures et les modules\n\n\n\n\n\n\n13 sept. 2022\n\n\nSamuel Guay\n\n\n\n\n\n\n  \n\n\n\n\nSemaine 1\n\n\n\n\n\n\n\ncours\n\n\nsemaine\n\n\n\n\nContenu pour la semaine, incluant les lectures et les modules\n\n\n\n\n\n\n6 sept. 2022\n\n\nSamuel Guay\n\n\n\n\n\n\n  \n\n\n\n\n📌 Semaine 0\n\n\n\n\n\n\n\ncours\n\n\nsemaine\n\n\n\n\nAttendons que le trimestre débute avant d’ajouter du contenu! Il n’y a absolument rien à voir ici… ou peut-être pas 🤔?\n\n\n\n\n\n\n5 sept. 2022\n\n\nSamuel Guay\n\n\n\n\n\n\nAucun article correspondant"
+    "objectID": "presentations/intro-r.html#besoin-dune-rencontre",
+    "href": "presentations/intro-r.html#besoin-dune-rencontre",
+    "title": "Introduction à R[Studio]",
+    "section": "Besoin d’une rencontre?",
+    "text": "Besoin d’une rencontre?\n\nPrise de rendez-vous au rencontre.samuelguay.ca"
   },
   {
-    "objectID": "installation.html",
-    "href": "installation.html",
-    "title": "Installation des logiciels",
-    "section": "",
-    "text": "Important\n\n\n\nSi vous n’êtes pas en mesure d’installer ou de mettre à jour R et RStudio parce que votre machine est trop vieille ou que votre employeur doit approuver l’installation de nouveaux logiciels, vous pouvez utiliser tout simplement rstudio.cloud, qui offre R et RStudio dans votre navigateur préféré.\nLisez tout de même les instructions ci-dessous puisque certaines d’entre elles requièrent votre attention.\nBien installer et configurer tous les logiciels nécessaires est honnêtement la moitié de la bataille lorsque nous adoptons ces logiciels pour la première fois. Parfois l’installation se déroule sans problème, alors que d’autres fois c’est plus difficile en raison des particularités entre les différents ordinateurs (par exemple les systèmes d’exploitation Windows vs Mac vs Linux). La bonne nouvelle est qu’une fois que les logiciels sont installés, vous n’aurez plus à le faire sur cette machine. Lorsque vous aurez passé à travers l’installation, récompensez-vous, car vous aurez complété la partie du boulot la plus ennuyante!"
+    "objectID": "presentations/intro-r.html#comment-naviguer-une-présentation",
+    "href": "presentations/intro-r.html#comment-naviguer-une-présentation",
+    "title": "Introduction à R[Studio]",
+    "section": "Comment naviguer une présentation?",
+    "text": "Comment naviguer une présentation?\n\n\n\n\n\n\n\n\nTip\n\n\n? pour accéder aux raccourcis clavier"
   },
   {
-    "objectID": "installation.html#installez-ou-mettez-à-jour-r-et-rstudio",
-    "href": "installation.html#installez-ou-mettez-à-jour-r-et-rstudio",
-    "title": "Installation des logiciels",
-    "section": "1. Installez ou mettez à jour R et RStudio",
-    "text": "1. Installez ou mettez à jour R et RStudio\n\nInstallez d’abord R pour votre système d’exploitation (Windows, Mac, Linux) en vous rendant au https://cloud.r-project.org/.\n\nSi vous tombez sur un site qui a l’air plus ou moins attrayant, vous êtes sur le bon site!\n\n\nSi vous installer R pour la première fois, lisez attentivement les instructions, car elles sont différentes selon le système d’exploitation (OS).\nVous voulez installer au minimum la version 4.1 de R, car les versions 3.X.X vous causeront probablement des problèmes dans le futur.\n\nInstallez ensuite RStudio pour votre système d’exploitation (Windows, Mac, Linux) en vous rendant au https://rstudio.com/products/rstudio/download/#download.\n\nVersion >= 2022.07.01\n\nOuvrez RStudio et installer les packages1 suivants en inscrivant la commande suivante dans la console2 ou en passant par l’onglet packages à droite puis en cliquant sur install pour ensuite inscrire le nom des packages à l’endroit dédié.\n\ninstall.packages(c(\"markdown\", \"swirl\", \"devtools\", \"usethis\", \"gitcreds\", \"tidyverse\"))"
+    "objectID": "presentations/intro-r.html#élections-provinciales",
+    "href": "presentations/intro-r.html#élections-provinciales",
+    "title": "Introduction à R[Studio]",
+    "section": "Élections provinciales",
+    "text": "Élections provinciales\n☑️ Toujours possible d’aller voter sur le campus ☑️"
   },
   {
-    "objectID": "installation.html#créez-un-compte-sur-github.",
-    "href": "installation.html#créez-un-compte-sur-github.",
-    "title": "Installation des logiciels",
-    "section": "2. Créez un compte sur GitHub.",
-    "text": "2. Créez un compte sur GitHub.\nC’est gratuit! Vous devez vous rendre au https://github.com et cliquer sur Sign up.\n\nVotre username (nom d’utilisateur) vous sera fort utile lorsque vous synchroniserez vos travaux sur GitHub et il est public. Il s’agit de votre identifiant avec le monde, votre futur employeur, etc., donc prenez soin de bien le choisir.\n\nPar exemple, le mien est simplement SamGuay\n\nPour plus de trucs et astuces sur le choix d’un nom d’utilisateur, consultez la section Username advice."
+    "objectID": "presentations/intro-r.html#un-des-objectifs-du-cours",
+    "href": "presentations/intro-r.html#un-des-objectifs-du-cours",
+    "title": "Introduction à R[Studio]",
+    "section": "Un des objectifs du cours",
+    "text": "Un des objectifs du cours\n\nApprendre à construire des suites d’expressions qui forment des programmes et qui permettent de réaliser une tâche donnée.\n\nPour y arriver, tout moyen est possible pour le moment:\n\nSwirl ➡️ code source\nChapitres du livre ➡️ surtout les exemples!\nVos collègues et/ou Ed\nLe web (Moteurs de recherche, SO, YT, etc.)\nAutres ressources?"
   },
   {
-    "objectID": "installation.html#installez-git",
-    "href": "installation.html#installez-git",
-    "title": "Installation des logiciels",
-    "section": "3. Installez Git",
-    "text": "3. Installez Git\n\nIl se peut que Git soit déjà installé sur votre machine, surtout si vous utilisez un système d’exploitation Mac ou Linux, car Git est souvent pré-installé. Vous pouvez vérifier s’il est déjà installé ou tentez de l’installer et attendre que votre machine vous dise qu’il est déjà installé.\n\nPour vérifier si Git est installé, ouvrez un terminal et tapez git --version. Si vous obtenez quelque chose similaire à git version 2.25.1, cela veut dire que git est bien installé et vous pouvez ignorez cette étape!\n\nSi vous ne vous souvenez plus comment ouvrir un terminal, suivez ces instructions puisqu’elles varient selon votre système d’exploitation.\nPour les gens sur Windows, veuillez suivre ces instructions pour vérifier que vous avez bel et bien installer Git for Windows/Git Bash."
+    "objectID": "presentations/intro-r.html#rstudio",
+    "href": "presentations/intro-r.html#rstudio",
+    "title": "Introduction à R[Studio]",
+    "section": "R[Studio]",
+    "text": "R[Studio]"
   },
   {
-    "objectID": "installation.html#dites-à-git-qui-vous-êtes",
-    "href": "installation.html#dites-à-git-qui-vous-êtes",
-    "title": "Installation des logiciels",
-    "section": "4. Dites à Git qui vous êtes",
-    "text": "4. Dites à Git qui vous êtes\nOption A\nSi vous êtes à l’aise d’ouvrir un terminal (Appendix A), ouvrez un terminal et vous pouvez entrer ces lignes, une à la fois, avec les informations qui correspondent à celles que vous avez entrées sur GitHub.\n⚠️ Changez Prénom Nom par les vôtres. ⚠️\ngit config --global user.name 'Prénom Nom'\n⚠️ Changez votre@courriel.com par votre adresse. ⚠️\ngit config --global user.email 'votre@courriel.ca'\nPour vérifier les informations que vous venez d’entrer sont bonnes, entrez:\ngit config --global --list\n\n\n\n\n\n\nMise en garde\n\n\n\nPour les personnes qui utilisent Windows: Il se peut que vous rencontriez des obstacles que les gens sur Mac et Linux ne rencontrent pas. Si vous rencontrez des difficultés sous Windows, considérez qu’il existe différents types de shell/terminal et que vous vous trompez peut-être. Vous voulez être dans un shell «Git Bash» et non à Power Shell ou à la ligne de commande cmd.exe. Pour en savoir plus, consultez cette annexe.\n\n\nOption B\nSi vous n’est pas à l’aise avec RStudio ou un terminal. Nous ferons cette étape ensemble pendant le cours sur la gestion de version."
-  },
-  {
-    "objectID": "installation.html#est-ce-que-git-rstudio-et-github-sentendent",
-    "href": "installation.html#est-ce-que-git-rstudio-et-github-sentendent",
-    "title": "Installation des logiciels",
-    "section": "5. Est-ce que Git, RStudio et GitHub s’entendent?",
-    "text": "5. Est-ce que Git, RStudio et GitHub s’entendent?\nEnfin, si vous voulez vous assurez du bon fonctionnement, veuillez suivre ces instructions qui vous amèneront à créer les éléments nécessaires pour communiquer avec GitHub sans soucis.\nSi vous n’est pas à l’aise avec RStudio ou un terminal. Nous ferons cette étape ensemble pendant le cours sur la gestion de version."
-  },
-  {
-    "objectID": "installation.html#félicitations",
-    "href": "installation.html#félicitations",
-    "title": "Installation des logiciels",
-    "section": "Félicitations! 🎉",
-    "text": "Félicitations! 🎉\nFélicitations, vous avez survécu à l’installation, nous saurons dans quelques semaines si vous avez bien configuré le tout!"
+    "objectID": "presentations/intro-r.html#rstudio-1",
+    "href": "presentations/intro-r.html#rstudio-1",
+    "title": "Introduction à R[Studio]",
+    "section": "R[Studio]",
+    "text": "R[Studio]"
   },
   {
     "objectID": "presentations/01.html#votre-chargé-de-cours",
@@ -371,102 +434,18 @@
     "text": "Démo + Questions:\n\n\n\n−+\n20:00\n\n\n\nhttps://r4ds.had.co.nz/tidy-data.html"
   },
   {
-    "objectID": "presentations/intro-r.html#rappel-site-du-cours",
-    "href": "presentations/intro-r.html#rappel-site-du-cours",
-    "title": "Introduction à R[Studio]",
-    "section": "📢 Rappel | Site du cours",
-    "text": "📢 Rappel | Site du cours\nVous êtes perdu.e.s? Vous cherchez quelque chose?\nTout se retrouve sur le site:\n\n\nPlan de cours incluant calendrier détaillé de la session\nPage avec le contenu des semaines précédentes\n\nIncluant les liens vers Ed, les modules, les présentations (comme celle-ci), etc.\n\nInstructions détaillées pour l’installation des logiciels\n\n\n\n\n\nhttps://FAS1002.github.io/A22"
-  },
-  {
-    "objectID": "presentations/intro-r.html#installation-des-logiciels",
-    "href": "presentations/intro-r.html#installation-des-logiciels",
-    "title": "Introduction à R[Studio]",
-    "section": "Installation des logiciels",
-    "text": "Installation des logiciels\n\nR, RStudio et quelques packages:\n\nmarkdown, swirl, devtools, usethis, gitcreds, tidyverse\n\nGit et GitHub ➡️ https://happygitwithr.com/\n\n\n\n\n\n\n\nAstuce\n\n\nTout est détaillé sur la page d’installation et swirl"
-  },
-  {
-    "objectID": "presentations/intro-r.html#lectures-swirl-modules",
-    "href": "presentations/intro-r.html#lectures-swirl-modules",
-    "title": "Introduction à R[Studio]",
-    "section": "Lectures > Swirl > Modules",
-    "text": "Lectures > Swirl > Modules\nOrdre à privilégier pour les travaux de la semaine:\n\n\n\nLectures\nExemples dans les lectures\n\nà ouvrir et jouer avec dans RStudio\n\nSwirl*\nModules\n\n\n\n\n\n\n\n\nTip\n\n\n⚠️ Les modules ferment le vendredi qui suit le cours. ⚠️\n* 🙊 Merci d’acheminer les captures d’écran dans un seul et unique thread privé sur Ed et non par courriel."
-  },
-  {
-    "objectID": "presentations/intro-r.html#besoin-dune-rencontre",
-    "href": "presentations/intro-r.html#besoin-dune-rencontre",
-    "title": "Introduction à R[Studio]",
-    "section": "Besoin d’une rencontre?",
-    "text": "Besoin d’une rencontre?\n\nPrise de rendez-vous au rencontre.samuelguay.ca"
-  },
-  {
-    "objectID": "presentations/intro-r.html#comment-naviguer-une-présentation",
-    "href": "presentations/intro-r.html#comment-naviguer-une-présentation",
-    "title": "Introduction à R[Studio]",
-    "section": "Comment naviguer une présentation?",
-    "text": "Comment naviguer une présentation?\n\n\n\n\n\n\n\n\nTip\n\n\n? pour accéder aux raccourcis clavier"
-  },
-  {
-    "objectID": "presentations/intro-r.html#élections-provinciales",
-    "href": "presentations/intro-r.html#élections-provinciales",
-    "title": "Introduction à R[Studio]",
-    "section": "Élections provinciales",
-    "text": "Élections provinciales\n☑️ Toujours possible d’aller voter sur le campus ☑️"
-  },
-  {
-    "objectID": "presentations/intro-r.html#un-des-objectifs-du-cours",
-    "href": "presentations/intro-r.html#un-des-objectifs-du-cours",
-    "title": "Introduction à R[Studio]",
-    "section": "Un des objectifs du cours",
-    "text": "Un des objectifs du cours\n\nApprendre à construire des suites d’expressions qui forment des programmes et qui permettent de réaliser une tâche donnée.\n\nPour y arriver, tout moyen est possible pour le moment:\n\nSwirl ➡️ code source\nChapitres du livre ➡️ surtout les exemples!\nVos collègues et/ou Ed\nLe web (Moteurs de recherche, SO, YT, etc.)\nAutres ressources?"
-  },
-  {
-    "objectID": "presentations/intro-r.html#rstudio",
-    "href": "presentations/intro-r.html#rstudio",
-    "title": "Introduction à R[Studio]",
-    "section": "R[Studio]",
-    "text": "R[Studio]"
-  },
-  {
-    "objectID": "presentations/intro-r.html#rstudio-1",
-    "href": "presentations/intro-r.html#rstudio-1",
-    "title": "Introduction à R[Studio]",
-    "section": "R[Studio]",
-    "text": "R[Studio]"
-  },
-  {
-    "objectID": "assets/fichiers/regex.html",
-    "href": "assets/fichiers/regex.html",
-    "title": "regex.qmd",
+    "objectID": "semaines/00.html",
+    "href": "semaines/00.html",
+    "title": "📌 Semaine 0",
     "section": "",
-    "text": "Les expressions régulières sont communément appelées regex ou regexp pour regular expressions en anglais. Selon Wikipédia, une expression régulière est “une chaîne de caractères, qui décrit, selon une syntaxe précise, un ensemble de chaînes de caractères possibles”. Si vous n’avez jamais entendu parlé des regex, il se peut que cette définition ne vous aide pas à comprendre le concept. Nous tenterons de démystifier le tout au cours de ces exercices.\nÀ titre de rappel, cet aide-mémoire vous sera drôlement utile!\nEn résumé, ces expressions permettent de décrire des motifs (patterns) à l’aide de formules “relativement simples” pour trouver, valider, extraire ou modifier du texte ou des nombres."
+    "text": "Cette page sert absolument à rien. L’objectif était simplement de servir d’exemple."
   },
   {
-    "objectID": "assets/fichiers/regex.html#mission-daujourdhui",
-    "href": "assets/fichiers/regex.html#mission-daujourdhui",
-    "title": "regex.qmd",
-    "section": "Mission d’aujourd’hui:",
-    "text": "Mission d’aujourd’hui:\nRécolter le plus d’information possible qui se trouve dans les tableaux de la page suivante: https://tc.canada.ca/fr/aviation/exploitation-aeroports-aerodromes/liste-aeroports-appartenant-transports-canada.\n\nlibrary(tidyverse)\n\n── Attaching packages ─────────────────────────────────────── tidyverse 1.3.2 ──\n✔ ggplot2 3.3.6      ✔ purrr   0.3.4 \n✔ tibble  3.1.8      ✔ dplyr   1.0.10\n✔ tidyr   1.2.0      ✔ stringr 1.4.0 \n✔ readr   2.1.3      ✔ forcats 0.5.2 \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\n\nlibrary(magrittr)\n\n\nAttaching package: 'magrittr'\n\nThe following object is masked from 'package:purrr':\n\n    set_names\n\nThe following object is masked from 'package:tidyr':\n\n    extract\n\nlibrary(rvest)\n\n\nAttaching package: 'rvest'\n\nThe following object is masked from 'package:readr':\n\n    guess_encoding\n\n\n\nURL <- \"https://tc.canada.ca/fr/aviation/exploitation-aeroports-aerodromes/liste-aeroports-appartenant-transports-canada\"\n\n\nDébut de solution en base R\n\nbase_raw_html <- read_html(x = URL)\nbase_html_table <- html_elements(x = base_raw_html, css = \"table\")\nbase_tables <- html_table(x = base_html_table)\n\n# base_table <- rbind(base_tables[[1]], base_tables[[2]], base_tables[[3]])\n\n\nnames(base_tables[[3]])\n\n[1] \"Territoire\"   \"Aéroport\"     \"Exploité par\"\n\n\n⚠️ Erreur! Une colonne n’est pas nommée de façon identique, donc ne fonctionne pas… Corrigeons la situation\n\nnames(base_tables[[3]])[1] <- \"Province/Territoire\"\n\nbase_table <- rbind(base_tables[[1]], base_tables[[2]], base_tables[[3]])\n\nbase_table\n\n# A tibble: 44 × 3\n   `Province/Territoire`  Aéroport                `Exploité par`                \n   <chr>                  <chr>                   <chr>                         \n 1 \"Colombie-Britannique\" Penticton               \"Transports Canada\\n\\t\\t\\t#10…\n 2 \"\"                     Port Hardy              \"Transports Canada\\n\\t\\t\\tC.P…\n 3 \"\"                     Sandspit                \"Transports Canada\\n\\t\\t\\tC.P…\n 4 \"\"                     Havre de Victoria       \"Transports Canada\\n\\t\\t\\t12,…\n 5 \"Manitoba\"             Churchill               \"Transports Canada\\n\\t\\t\\tC.P…\n 6 \"Québec\"               Chevery                 \"Municipalité de la Côte-Nord…\n 7 \"\"                     Lourdes-de-Blanc-Sablon \"Transports Canada\\n\\t\\t\\tAir…\n 8 \"\"                     Sept-Îles               \"Transports Canada\\n\\t\\t\\t100…\n 9 \"\"                     Natashquan              \"Municipalité de Natashquan\\n…\n10 \"\"                     Eastmain River          \"Transports Canada\\n\\t\\t\\ta/s…\n# … with 34 more rows\n\n# Solution en Base R\nbase_table$`Province/Territoire` <- ifelse(test = is.na(base_table$`Province/Territoire`),\n                                  yes = base_table$Territoire, no = base_table$`Province/Territoire`)\nbase_table$Territoire <- NULL\n\nrm(list=(ls(pattern = \"base*\")))"
-  },
-  {
-    "objectID": "assets/fichiers/regex.html#solution-à-la-tidyverse",
-    "href": "assets/fichiers/regex.html#solution-à-la-tidyverse",
-    "title": "regex.qmd",
-    "section": "Solution à la Tidyverse",
-    "text": "Solution à la Tidyverse\n\nURL <- \"https://tc.canada.ca/fr/aviation/exploitation-aeroports-aerodromes/liste-aeroports-appartenant-transports-canada\"\n\n\ntables <- read_html(x = URL) %>%\n    html_elements(css = \"table\") %>%\n    html_table()\n\ntable <- dplyr::bind_rows(tables[[1]],\n                          tables[[2]],\n                          tables[[3]],\n                          .id = \"type\")\n\n# ou solution alternative équivalente\ntables %>% purrr::map_dfr(bind_rows, .id = \"type\")\n\n# A tibble: 44 × 5\n   type  `Province/Territoire`  Aéroport                `Exploité par`   Terri…¹\n   <chr> <chr>                  <chr>                   <chr>            <chr>  \n 1 1     \"Colombie-Britannique\" Penticton               \"Transports Can… <NA>   \n 2 1     \"\"                     Port Hardy              \"Transports Can… <NA>   \n 3 1     \"\"                     Sandspit                \"Transports Can… <NA>   \n 4 1     \"\"                     Havre de Victoria       \"Transports Can… <NA>   \n 5 1     \"Manitoba\"             Churchill               \"Transports Can… <NA>   \n 6 1     \"Québec\"               Chevery                 \"Municipalité d… <NA>   \n 7 1     \"\"                     Lourdes-de-Blanc-Sablon \"Transports Can… <NA>   \n 8 1     \"\"                     Sept-Îles               \"Transports Can… <NA>   \n 9 1     \"\"                     Natashquan              \"Municipalité d… <NA>   \n10 1     \"\"                     Eastmain River          \"Transports Can… <NA>   \n# … with 34 more rows, and abbreviated variable name ¹​Territoire\n\n\n\nRemplir les rangées de la colonne Province/Territoire\n\ntable <- table %>% dplyr::rename(province_territoire = `Province/Territoire`,\n                        aeroport = Aéroport,\n                        exploited_by = `Exploité par`,\n                        territoire = Territoire)\n\ntable$province_territoire <- dplyr::coalesce(table$province_territoire, \n                                              table$territoire)\n\n\n\ntable[table == \"\"] <- NA\n# equivalent en tidyverse\ntable$province_territoire <- table$province_territoire %>% dplyr::na_if(y = \"\")\ntable <- table %>% tidyr::fill(province_territoire, .direction = \"down\")\n\n\ntable <- table %>% dplyr::select(-territoire)\n\nExtraction des codes d’aéroports\n\n# solution #1\nx <- table %>% mutate(new_col = str_extract(string = aeroport, pattern = \"[A-Z]{3}\"))\n\ntable <- table %>% tidyr::extract(col = aeroport,\n                         into = \"code_aeroport\",\n                         regex = \"(Y[A-Z][A-Z])\", \n                         remove = FALSE)\n\ntable$aeroport <- table$aeroport %>%\n    stringr::str_remove_all(pattern = \"\\\\(.*\\\\)\") %>%\n    stringr::str_squish()"
-  },
-  {
-    "objectID": "assets/fichiers/regex.html#recodage-des-types-daéroport",
-    "href": "assets/fichiers/regex.html#recodage-des-types-daéroport",
-    "title": "regex.qmd",
-    "section": "Recodage des types d’aéroport",
-    "text": "Recodage des types d’aéroport\n\nx <- table %>% mutate(type_nouveau = recode(type,\n                                            \"1\" = \"Petits aéroports\",\n                                            \"2\" = \"Aéroports nationaux\", \n                                            \"3\" = \"Aéroports nationaux exploités par des administrations territoriales\"))\n\nx <- x %>% mutate(type_nouveau_case = case_when(type == 1 ~ \"Petits aéroports\", \n                                               type == 2 ~ \"Aéroports nationaux\",\n                                               type == 3 ~ \"Aéroports nationaux exploités par des administrations territoriales\"))"
-  },
-  {
-    "objectID": "assets/fichiers/regex.html#il-ne-reste-plus-quà-extraire-linformation-qui-se-trouve-dans-tableexploited_by",
-    "href": "assets/fichiers/regex.html#il-ne-reste-plus-quà-extraire-linformation-qui-se-trouve-dans-tableexploited_by",
-    "title": "regex.qmd",
-    "section": "Il ne reste plus qu’à extraire l’information qui se trouve dans table$exploited_by",
-    "text": "Il ne reste plus qu’à extraire l’information qui se trouve dans table$exploited_by\n\ntable$exploited_by\n\n [1] \"Transports Canada\\n\\t\\t\\t#109-3000 Airport Road\\n\\t\\t\\tPenticton (Colombie-Britannique)  V2A 8X1\\n\\t\\t\\t250-770-4414\"         \n [2] \"Transports Canada\\n\\t\\t\\tC.P. 460\\n\\t\\t\\t3675 Byng Road\\n\\t\\t\\tPort Hardy (Colombie-Britannique)  V0N 2P0\\n\\t\\t\\t250-949-6424\"\n [3] \"Transports Canada\\n\\t\\t\\tC.P. 439\\n\\t\\t\\tSandspit (Colombie-Britannique)  V0T 1T0\\n\\t\\t\\t250-637-1149\"                        \n [4] \"Transports Canada\\n\\t\\t\\t12, rue Erie\\n\\t\\t\\tVictoria (Colombie-Britannique)  V8V 1Y4\\n\\t\\t\\t250-363-3578\"                    \n [5] \"Transports Canada\\n\\t\\t\\tC.P. 1059\\n\\t\\t\\tChurchill (Manitoba)  R0B 0E0\\n\\t\\t\\t204-675-8868\"                                  \n [6] \"Municipalité de la Côte-Nord-du Golfe-du Saint-Laurent\\n\\t\\t\\tChevery (Québec)  G0G 1G0\\n\\t\\t\\t418-787-2215\"                  \n [7] \"Transports Canada\\n\\t\\t\\tAirport Road\\n\\t\\t\\tLourdes-de-Blanc-Sablon (Québec)  G0G 1W0\\n\\t\\t\\t418-461-2514\"                   \n [8] \"Transports Canada\\n\\t\\t\\t1000, boul. Laure Est\\n\\t\\t\\tC.P. 2001\\n\\t\\t\\tSept-Îles (Québec)  G4R 4K2\\n\\t\\t\\t418-962-8211\"       \n [9] \"Municipalité de Natashquan\\n\\t\\t\\tAirport Road\\n\\t\\t\\tNatashquan (Québec)  G0G 2E0\\n\\t\\t\\t418-726-3273\"                       \n[10] \"Transports Canada\\n\\t\\t\\ta/s du conseil de bande\\n\\t\\t\\tEastmain (Québec)  J0M 1W0\\n\\t\\t\\t819-977-0333\"                       \n[11] \"Transports Canada\\n\\t\\t\\t1550 B, route de l'Aéroport\\n\\t\\t\\tHavre-Saint-Pierre (Québec)\\n\\t\\t\\tG0G 1P0\\n\\t\\t\\t418-538-0627\"   \n[12] \"Transports Canada\\n\\t\\t\\t1-210, chemin de l’Aéroport\\n\\t\\t\\tHavre-aux-Maisons (Québec)\\n\\t\\t\\tG4T 5L2\\n\\t\\t\\t418-969-2180\"    \n[13] \"Transports Canada\\n\\t\\t\\ta/s du conseil de bande\\n\\t\\t\\tWaskaganish (Québec)  J0M 1R0\\n\\t\\t\\t819-895-8925\"                    \n[14] \"Administration régionale Kativik\\n\\t\\t\\tC.P. 9\\n\\t\\t\\tKuujjuaq (Québec)  J0M 1C0\\n\\t\\t\\t819-964-2968\"                         \n[15] \"Société aéroportuaire de Schefferville\\n\\t\\t\\t78 Atlantic Road\\n\\t\\t\\tSchefferville (Québec)  G0G 2T0\\n\\t\\t\\t418-585-3544\"    \n[16] \"Transports Canada\\n\\t\\t\\ta/s du conseil de bande\\n\\t\\t\\tWemindji (Québec)  J0M 1L0\\n\\t\\t\\t819-978-3936\"                       \n[17] \"Transports Canada\\n\\t\\t\\t2 Airport Road\\n\\t\\t\\tWabush (Terre-Neuve)  A0R 1B0\\n\\t\\t\\t709-282-5412\"                             \n[18] \"Transports Canada\\n\\t\\t\\t1 Airport Road\\n\\t\\t\\tSt. Anthony (Terre-Neuve)  A0K 4S0\\n\\t\\t\\t709-454-3192\"                        \n[19] \"Administration aéroportuaire de Victoria\"                                                                                     \n[20] \"Administration de l’aéroport international de Vancouver\"                                                                      \n[21] \"Administration aéroportuaire de Prince George Inc. (en anglais seulement)\"                                                    \n[22] \"Ville de Kelowna (en anglais seulement)\"                                                                                      \n[23] \"Administration des aéroports régionaux d’Edmonton (en anglais seulement)\"                                                     \n[24] \"Administration aéroportuaire de Calgary (en anglais seulement)\"                                                               \n[25] \"Administration aéroportuaire de Saskatoon (en anglais seulement)\"                                                             \n[26] \"Administration aéroportuaire de Regina\"                                                                                       \n[27] \"Administration aéroportuaire de Winnipeg Inc.\"                                                                                \n[28] \"Administration de l’aéroport international de Thunder Bay Inc. (en anglais seulement)\"                                        \n[29] \"Administration de l’aéroport international du Grand London (en anglais seulement)\"                                            \n[30] \"Autorité aéroportuaire du Grand Toronto\"                                                                                      \n[31] \"Administration de l’aéroport international Macdonald-Cartier d'Ottawa\"                                                        \n[32] \"Aéroports de Montréal\"                                                                                                        \n[33] \"Aéroports de Montréal\"                                                                                                        \n[34] \"Aéroport de Québec Inc.\"                                                                                                      \n[35] \"Administration de l’aéroport international de Fredericton\"                                                                    \n[36] \"Administration de l’aéroport international du Grand Moncton Inc.\"                                                             \n[37] \"Aéroport de Saint John Inc.\"                                                                                                  \n[38] \"Administration de l’aéroport de Charlottetown Inc. (en anglais seulement)\"                                                    \n[39] \"Administration de l’aéroport international de Halifax\"                                                                        \n[40] \"Administration de l’aéroport international de Gander Inc. (en anglais seulement)\"                                             \n[41] \"Administration de l’aéroport international de St. John’s\"                                                                     \n[42] \"Gouvernement des Territoires du Nord-Ouest\"                                                                                   \n[43] \"Gouvernement du Nunavut\"                                                                                                      \n[44] \"Gouvernement du Yukon\"                                                                                                        \n\n\nÀ vous de jouer!"
+    "objectID": "semaines/00.html#mais..-voici-une-belle-tarte",
+    "href": "semaines/00.html#mais..-voici-une-belle-tarte",
+    "title": "📌 Semaine 0",
+    "section": "Mais.. voici une belle tarte!",
+    "text": "Mais.. voici une belle tarte!\n\n\nCode\npar(mar = c(0, 1, 0, 1))\npie(\n  c(280, 60, 20),\n  c('Ciel', 'Côté ensoleillé de la pyramide', 'Côté ombragé de la pyramide'),\n  col = c('#0292D8', '#F7EA39', '#C4B632'),\n  init.angle = -50, border = NA\n)\n\n\n\n\n\nSVP, évitez les tartes dans vos travaux!\n\n\n\n\n\nVous serez capables de faire beaucoup plus à la fin de la session!\n\nÀ la semaine prochaine ✌️"
   },
   {
     "objectID": "semaines/10.html",
@@ -497,41 +476,6 @@
     "text": "Cours\nVous pouvez télécharger les fichiers suivants:\nregex.qmd qui ne contient que la solution en base R et\nregex.html pour voir les solutions que nous avons développées ensemble.\nBonne semaine! ✌️"
   },
   {
-    "objectID": "semaines/00.html",
-    "href": "semaines/00.html",
-    "title": "📌 Semaine 0",
-    "section": "",
-    "text": "Cette page sert absolument à rien. L’objectif était simplement de servir d’exemple."
-  },
-  {
-    "objectID": "semaines/00.html#mais..-voici-une-belle-tarte",
-    "href": "semaines/00.html#mais..-voici-une-belle-tarte",
-    "title": "📌 Semaine 0",
-    "section": "Mais.. voici une belle tarte!",
-    "text": "Mais.. voici une belle tarte!\n\n\nCode\npar(mar = c(0, 1, 0, 1))\npie(\n  c(280, 60, 20),\n  c('Ciel', 'Côté ensoleillé de la pyramide', 'Côté ombragé de la pyramide'),\n  col = c('#0292D8', '#F7EA39', '#C4B632'),\n  init.angle = -50, border = NA\n)\n\n\n\n\n\nSVP, évitez les tartes dans vos travaux!\n\n\n\n\n\nVous serez capables de faire beaucoup plus à la fin de la session!\n\nÀ la semaine prochaine ✌️"
-  },
-  {
-    "objectID": "semaines/03.html",
-    "href": "semaines/03.html",
-    "title": "Semaine 3",
-    "section": "",
-    "text": "Objectif de cette semaine:\nSe familiariser avec l’environnement de R et R Studio.\nÀ la fin du cours, vous devriez être en mesure de répondre à ces questions:"
-  },
-  {
-    "objectID": "semaines/03.html#lectures",
-    "href": "semaines/03.html#lectures",
-    "title": "Semaine 3",
-    "section": "1. Lectures",
-    "text": "1. Lectures\n\nProgrammer avec R - Chapitre 1 et 2\n\n1.1 Lire le chapitre 3 (pages 45-61) du livre Programmer avec R.\n\n\n\n\n\n\nImportant\n\n\n\nVous pouvez télécharger le livre en cliquant sur le titre ci-haut ou en vous rendant sur la page des ressources. Pour télécharger le livre et tous les fichiers d’exercices et de code sur la page officielle.\n\n\nVous pouvez faire les exercices du chapitre sur votre ordinateur avec RStudio.\nVous pouvez également regarder la vidéo d’Introduction qui accompagne le chapitre 3 si vous l’avez pas déjà fait.\n\n\n\n\n🎉 Résumé du chapitre 🎉\nBonne nouvelle, l’auteur du livre a mis en ligne pas une, mais bien deux vidéos résumant le chapitre que vous pouvez visionner! La qualité de la vidéo est aussi excellente que celle du livre!\n\n\nBases de la programmation (partie 1)\n\n\n\nBases de la programmation (partie 2)"
-  },
-  {
-    "objectID": "semaines/03.html#exercices",
-    "href": "semaines/03.html#exercices",
-    "title": "Semaine 3",
-    "section": "2. Exercices",
-    "text": "2. Exercices\nSwirl 4 + 5 à compléter avant le cours.\nVous pouvez envoyer vos captures d’écran dans un thread privé sur Ed. Vous pouvez envoyer toutes vos captures d’écran de Swirl dans le même thread.\n\n\n\n\n\nFigure par @allison_horst (CC-BY)"
-  },
-  {
     "objectID": "semaines/05.html",
     "href": "semaines/05.html",
     "title": "Semaine 5",
@@ -546,25 +490,25 @@
     "text": "1. Lectures\n\nProgrammer avec R\n\n1.1 Lire le chapitre 5 (pages 117-165) du livre Programmer avec R.\n\n\n\n\n\n\nImportant\n\n\n\nVous pouvez télécharger le livre en cliquant sur le titre ci-haut ou en vous rendant sur la page des ressources. Pour télécharger le livre et tous les fichiers d’exercices et de code sur la page officielle.\n\n\nVidéo en lien avec le cours:\n\n\nMatrices et tableaux\n\n\n\nFonction apply\n\n\n\nChapitre 5 - Fichier\nDans le chapitre 5, l’auteur mentionne de vous pratiquer avec le fichier donnees.R. Au lieu de regarder les lignes dans le livre uniquement, vous pouvez télécharger le fichier et l’utiliser dans RStudio. Si vous voulez vous pratiquer sur votre ordinateur, vous devez ouvrir le fichier donnees.R directement avec RStudio ou le télécharger dans votre projet que vous avez créé pour le cours afin que le fichier soit répertorié dans l’interface.\ndonnees.R\nJe vous suggère fortement d’accompagner votre lecture en analysant et essayant de rouler le code de façon proactive au lieu de regarder passivement le code. Cela rendra le tout plus agréable et plus instinctif à force de répéter les commandes que nous utilisons plus souvent.\nIl est tout à fait normal que certaines notions vous apparaissent compliquées. Certaines notions sont plus avancées, donc ne vous attardez pas trop si jamais il y a certaines parties du document qui sont floues pour vous.\n\n\n\n🎉 Résumé du chapitre 🎉\nBonne nouvelle, l’auteur du livre a mis en ligne une vidéo résumant le chapitre que vous pouvez visionner! La qualité de la vidéo est aussi excellente que celle du livre!\n\nJe vous laisse sur la thématique de cette semaine:\n\n\n\n\n\nFigure par @allison_horst (CC-BY)\nBonne semaine!"
   },
   {
-    "objectID": "semaines/07.html",
-    "href": "semaines/07.html",
-    "title": "Semaine 7",
+    "objectID": "semaines/08.html",
+    "href": "semaines/08.html",
+    "title": "Semaine 8",
     "section": "",
-    "text": "Comprendre certains algorithmes de base déjà disponibles dans R.\nLors des lectures et des exercices, essayez de penser aux différentes fonctions qui pourraient être utiles et tenter de trouver leur nom."
+    "text": "Comprendre comment utiliser des packages et les principes de Tidy data"
   },
   {
-    "objectID": "semaines/07.html#lectures",
-    "href": "semaines/07.html#lectures",
-    "title": "Semaine 7",
+    "objectID": "semaines/08.html#lectures",
+    "href": "semaines/08.html#lectures",
+    "title": "Semaine 8",
     "section": "1. Lectures",
-    "text": "1. Lectures\n\nProgrammer avec R\n\n1.1 Lire le chapitre 7 (pages 117-165) du livre Programmer avec R.\n\n\n\n\n\n\nImportant\n\n\n\nVous pouvez télécharger le livre en cliquant sur le titre ci-haut ou en vous rendant sur la page des ressources. Pour télécharger le livre et tous les fichiers d’exercices et de code sur la page officielle.\n\n\n\n\nChapitre 7 - Fichiers\nDans le chapitre 7, l’auteur mentionne de vous pratiquer avec plusieurs fichiers. Au lieu de regarder les lignes dans le livre uniquement, vous pouvez télécharger le fichier et l’utiliser dans RStudio. Si vous voulez vous pratiquer sur votre ordinateur, vous devez ouvrir le fichier donnees.R directement avec RStudio ou le télécharger dans votre projet que vous avez créé pour le cours afin que le fichier soit répertorié dans l’interface.\ntri.R\nJe vous suggère fortement d’accompagner votre lecture en analysant et essayant de rouler le code de façon proactive au lieu de regarder passivement le code. Cela rendra le tout plus agréable et plus instinctif à force de répéter les commandes que nous utilisons plus souvent.\nIl est tout à fait normal que certaines notions vous apparaissent compliquées. Certaines notions sont plus avancées, donc ne vous attardez pas trop si jamais il y a certaines parties du document qui sont floues pour vous.\nLe jeu de données à utiliser pour les exercices:\n100metres.dat\n\n\n\n🎉 Résumé du chapitre 🎉\nBonne nouvelle, l’auteur du livre a mis en ligne une vidéo résumant le chapitre que vous pouvez visionner! La qualité de la vidéo est aussi excellente que celle du livre!\n\nJ’ajoute également le résumé du chapitre 2 à nouveau ici comme il portait sur les algorithmes et l’algorithmique\n\n\n\nEssential Algorithms par Rod Stephens (2019)\nLa nouvelle version du livre disponible gratuitement et téléchargeable se trouve juste ici.\n\n\n\n\n\n\nNote\n\n\n\nIVous devrez probablement configurer votre proxy afin d’accéder aux ressources électroniques hors-campus.\nCliquez sur ce lien pour obtenir les instruction de configuration du proxy.\n⚠️ Si jamais vous n’arrivez pas à y avoir accès, écrivez-moi sur Ed et nous nous arrangerons autrement.\n\n\n1.2.1 Lire le chapitre 6\nIl y a deux passages à lire:\n\nLes pages 167-171. Vous pouvez également lire la section qui suit sur l’algorithme Bubblesort.\nOptionnels sont les algorithmes \\(O(NlogN)\\) qui incluent les algorithmes Countingsort, Pigeonhole Sort et Bucketsort.\nLa section Summary à la page 197-198.\n\n1.2.2 Lire le chapitre 7\nVous pouvez lire seulement les pages 201–204 sur les algorithmes Linear Search, Binary Search et le début d’Interpolation Search.\n1.2.3 Lire le chapitre 9\nVous pouvez lire seulement les pages 227–232 qui introduisent les algorithmes récursifs."
+    "text": "1. Lectures\n\n\n\n\n\n\nNote\n\n\n\nProgrammer avec R est désormais livre du passé!\n\n\n1.1 Introduction to the Tidyverse\nVeuillez lire les sections 1.2 à 1.5 inclusivement, la section 1.5 étant la moins importante pour le cours de cette semaine si jamais vous devez prioriser.\n\n\n\n\n\n\nC’est tout! Le module 5 est reporté à la semaine prochaine!\n\n\n\n\n\n\nVoici ce qui s’en vient pour le restant de la session:\n\nFigure par @allison_horst (CC-BY)"
   },
   {
-    "objectID": "semaines/07.html#consulter-les-consignes-pour-le-travail-de-mi-session",
-    "href": "semaines/07.html#consulter-les-consignes-pour-le-travail-de-mi-session",
-    "title": "Semaine 7",
-    "section": "2. Consulter les consignes pour le travail de mi-session",
-    "text": "2. Consulter les consignes pour le travail de mi-session\nPrenez le temps de consulter les consignes avant la classe pour pouvoir les poser pendant le cours avant qu’on ne se quitte pour la semaine de lectures!\n\nThread pour le travail de mi-session\n\nPetit clin d’oeil pour le travail de session:\n\nFigure par @allison_horst (CC-BY)\nBonne semaine! ✌️"
+    "objectID": "semaines/08.html#présentation",
+    "href": "semaines/08.html#présentation",
+    "title": "Semaine 8",
+    "section": "3. Présentation",
+    "text": "3. Présentation\n\n\n\nBonne semaine! ✌️"
   },
   {
     "objectID": "semaines/02.html",
@@ -623,25 +567,46 @@
     "text": "4. Module #2\nLorsque vos lectures sont terminées, vous pouvez aller compléter le module #2 sur Ed cette fois-ci!\n\n\n\n\n\n\nImportant\n\n\n\nN’oubliez pas de compléter les 3 premiers cours dans Swirl > 1: R Programming > 1: Basic Building Blocks, puis 2: Workspace and Files et 3: Sequences of Numbers.\n\nDans la console R, swirl() puis suivez les étapes pour vous rendre dans R Programming.\n\n\nVous pouvez envoyer vos captures d’écran dans un thread privé sur Ed. Vous pouvez envoyer toutes vos captures d’écran de Swirl dans le même thread.\nBonne semaine :)\n\n\n\nPartie sur la ligne de commande adaptée de Shell Novice - The Carpentries (CC-BY)"
   },
   {
-    "objectID": "semaines/08.html",
-    "href": "semaines/08.html",
-    "title": "Semaine 8",
+    "objectID": "semaines/07.html",
+    "href": "semaines/07.html",
+    "title": "Semaine 7",
     "section": "",
-    "text": "Comprendre comment utiliser des packages et les principes de Tidy data"
+    "text": "Comprendre certains algorithmes de base déjà disponibles dans R.\nLors des lectures et des exercices, essayez de penser aux différentes fonctions qui pourraient être utiles et tenter de trouver leur nom."
   },
   {
-    "objectID": "semaines/08.html#lectures",
-    "href": "semaines/08.html#lectures",
-    "title": "Semaine 8",
+    "objectID": "semaines/07.html#lectures",
+    "href": "semaines/07.html#lectures",
+    "title": "Semaine 7",
     "section": "1. Lectures",
-    "text": "1. Lectures\n\n\n\n\n\n\nNote\n\n\n\nProgrammer avec R est désormais livre du passé!\n\n\n1.1 Introduction to the Tidyverse\nVeuillez lire les sections 1.2 à 1.5 inclusivement, la section 1.5 étant la moins importante pour le cours de cette semaine si jamais vous devez prioriser.\n\n\n\n\n\n\nC’est tout! Le module 5 est reporté à la semaine prochaine!\n\n\n\n\n\n\nVoici ce qui s’en vient pour le restant de la session:\n\nFigure par @allison_horst (CC-BY)"
+    "text": "1. Lectures\n\nProgrammer avec R\n\n1.1 Lire le chapitre 7 (pages 117-165) du livre Programmer avec R.\n\n\n\n\n\n\nImportant\n\n\n\nVous pouvez télécharger le livre en cliquant sur le titre ci-haut ou en vous rendant sur la page des ressources. Pour télécharger le livre et tous les fichiers d’exercices et de code sur la page officielle.\n\n\n\n\nChapitre 7 - Fichiers\nDans le chapitre 7, l’auteur mentionne de vous pratiquer avec plusieurs fichiers. Au lieu de regarder les lignes dans le livre uniquement, vous pouvez télécharger le fichier et l’utiliser dans RStudio. Si vous voulez vous pratiquer sur votre ordinateur, vous devez ouvrir le fichier donnees.R directement avec RStudio ou le télécharger dans votre projet que vous avez créé pour le cours afin que le fichier soit répertorié dans l’interface.\ntri.R\nJe vous suggère fortement d’accompagner votre lecture en analysant et essayant de rouler le code de façon proactive au lieu de regarder passivement le code. Cela rendra le tout plus agréable et plus instinctif à force de répéter les commandes que nous utilisons plus souvent.\nIl est tout à fait normal que certaines notions vous apparaissent compliquées. Certaines notions sont plus avancées, donc ne vous attardez pas trop si jamais il y a certaines parties du document qui sont floues pour vous.\nLe jeu de données à utiliser pour les exercices:\n100metres.dat\n\n\n\n🎉 Résumé du chapitre 🎉\nBonne nouvelle, l’auteur du livre a mis en ligne une vidéo résumant le chapitre que vous pouvez visionner! La qualité de la vidéo est aussi excellente que celle du livre!\n\nJ’ajoute également le résumé du chapitre 2 à nouveau ici comme il portait sur les algorithmes et l’algorithmique\n\n\n\nEssential Algorithms par Rod Stephens (2019)\nLa nouvelle version du livre disponible gratuitement et téléchargeable se trouve juste ici.\n\n\n\n\n\n\nNote\n\n\n\nIVous devrez probablement configurer votre proxy afin d’accéder aux ressources électroniques hors-campus.\nCliquez sur ce lien pour obtenir les instruction de configuration du proxy.\n⚠️ Si jamais vous n’arrivez pas à y avoir accès, écrivez-moi sur Ed et nous nous arrangerons autrement.\n\n\n1.2.1 Lire le chapitre 6\nIl y a deux passages à lire:\n\nLes pages 167-171. Vous pouvez également lire la section qui suit sur l’algorithme Bubblesort.\nOptionnels sont les algorithmes \\(O(NlogN)\\) qui incluent les algorithmes Countingsort, Pigeonhole Sort et Bucketsort.\nLa section Summary à la page 197-198.\n\n1.2.2 Lire le chapitre 7\nVous pouvez lire seulement les pages 201–204 sur les algorithmes Linear Search, Binary Search et le début d’Interpolation Search.\n1.2.3 Lire le chapitre 9\nVous pouvez lire seulement les pages 227–232 qui introduisent les algorithmes récursifs."
   },
   {
-    "objectID": "semaines/08.html#présentation",
-    "href": "semaines/08.html#présentation",
-    "title": "Semaine 8",
-    "section": "3. Présentation",
-    "text": "3. Présentation\n\n\n\nBonne semaine! ✌️"
+    "objectID": "semaines/07.html#consulter-les-consignes-pour-le-travail-de-mi-session",
+    "href": "semaines/07.html#consulter-les-consignes-pour-le-travail-de-mi-session",
+    "title": "Semaine 7",
+    "section": "2. Consulter les consignes pour le travail de mi-session",
+    "text": "2. Consulter les consignes pour le travail de mi-session\nPrenez le temps de consulter les consignes avant la classe pour pouvoir les poser pendant le cours avant qu’on ne se quitte pour la semaine de lectures!\n\nThread pour le travail de mi-session\n\nPetit clin d’oeil pour le travail de session:\n\nFigure par @allison_horst (CC-BY)\nBonne semaine! ✌️"
+  },
+  {
+    "objectID": "semaines/03.html",
+    "href": "semaines/03.html",
+    "title": "Semaine 3",
+    "section": "",
+    "text": "Objectif de cette semaine:\nSe familiariser avec l’environnement de R et R Studio.\nÀ la fin du cours, vous devriez être en mesure de répondre à ces questions:"
+  },
+  {
+    "objectID": "semaines/03.html#lectures",
+    "href": "semaines/03.html#lectures",
+    "title": "Semaine 3",
+    "section": "1. Lectures",
+    "text": "1. Lectures\n\nProgrammer avec R - Chapitre 1 et 2\n\n1.1 Lire le chapitre 3 (pages 45-61) du livre Programmer avec R.\n\n\n\n\n\n\nImportant\n\n\n\nVous pouvez télécharger le livre en cliquant sur le titre ci-haut ou en vous rendant sur la page des ressources. Pour télécharger le livre et tous les fichiers d’exercices et de code sur la page officielle.\n\n\nVous pouvez faire les exercices du chapitre sur votre ordinateur avec RStudio.\nVous pouvez également regarder la vidéo d’Introduction qui accompagne le chapitre 3 si vous l’avez pas déjà fait.\n\n\n\n\n🎉 Résumé du chapitre 🎉\nBonne nouvelle, l’auteur du livre a mis en ligne pas une, mais bien deux vidéos résumant le chapitre que vous pouvez visionner! La qualité de la vidéo est aussi excellente que celle du livre!\n\n\nBases de la programmation (partie 1)\n\n\n\nBases de la programmation (partie 2)"
+  },
+  {
+    "objectID": "semaines/03.html#exercices",
+    "href": "semaines/03.html#exercices",
+    "title": "Semaine 3",
+    "section": "2. Exercices",
+    "text": "2. Exercices\nSwirl 4 + 5 à compléter avant le cours.\nVous pouvez envoyer vos captures d’écran dans un thread privé sur Ed. Vous pouvez envoyer toutes vos captures d’écran de Swirl dans le même thread.\n\n\n\n\n\nFigure par @allison_horst (CC-BY)"
   },
   {
     "objectID": "semaines/09.html",
@@ -698,5 +663,40 @@
     "title": "Semaine 4",
     "section": "3. Présentation",
     "text": "3. Présentation\n\n\n\nBonne semaine!"
+  },
+  {
+    "objectID": "assets/fichiers/regex.html",
+    "href": "assets/fichiers/regex.html",
+    "title": "regex.qmd",
+    "section": "",
+    "text": "Les expressions régulières sont communément appelées regex ou regexp pour regular expressions en anglais. Selon Wikipédia, une expression régulière est “une chaîne de caractères, qui décrit, selon une syntaxe précise, un ensemble de chaînes de caractères possibles”. Si vous n’avez jamais entendu parlé des regex, il se peut que cette définition ne vous aide pas à comprendre le concept. Nous tenterons de démystifier le tout au cours de ces exercices.\nÀ titre de rappel, cet aide-mémoire vous sera drôlement utile!\nEn résumé, ces expressions permettent de décrire des motifs (patterns) à l’aide de formules “relativement simples” pour trouver, valider, extraire ou modifier du texte ou des nombres."
+  },
+  {
+    "objectID": "assets/fichiers/regex.html#mission-daujourdhui",
+    "href": "assets/fichiers/regex.html#mission-daujourdhui",
+    "title": "regex.qmd",
+    "section": "Mission d’aujourd’hui:",
+    "text": "Mission d’aujourd’hui:\nRécolter le plus d’information possible qui se trouve dans les tableaux de la page suivante: https://tc.canada.ca/fr/aviation/exploitation-aeroports-aerodromes/liste-aeroports-appartenant-transports-canada.\n\nlibrary(tidyverse)\n\n── Attaching packages ─────────────────────────────────────── tidyverse 1.3.2 ──\n✔ ggplot2 3.3.6      ✔ purrr   0.3.4 \n✔ tibble  3.1.8      ✔ dplyr   1.0.10\n✔ tidyr   1.2.0      ✔ stringr 1.4.0 \n✔ readr   2.1.3      ✔ forcats 0.5.2 \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\n\nlibrary(magrittr)\n\n\nAttaching package: 'magrittr'\n\nThe following object is masked from 'package:purrr':\n\n    set_names\n\nThe following object is masked from 'package:tidyr':\n\n    extract\n\nlibrary(rvest)\n\n\nAttaching package: 'rvest'\n\nThe following object is masked from 'package:readr':\n\n    guess_encoding\n\n\n\nURL <- \"https://tc.canada.ca/fr/aviation/exploitation-aeroports-aerodromes/liste-aeroports-appartenant-transports-canada\"\n\n\nDébut de solution en base R\n\nbase_raw_html <- read_html(x = URL)\nbase_html_table <- html_elements(x = base_raw_html, css = \"table\")\nbase_tables <- html_table(x = base_html_table)\n\n# base_table <- rbind(base_tables[[1]], base_tables[[2]], base_tables[[3]])\n\n\nnames(base_tables[[3]])\n\n[1] \"Territoire\"   \"Aéroport\"     \"Exploité par\"\n\n\n⚠️ Erreur! Une colonne n’est pas nommée de façon identique, donc ne fonctionne pas… Corrigeons la situation\n\nnames(base_tables[[3]])[1] <- \"Province/Territoire\"\n\nbase_table <- rbind(base_tables[[1]], base_tables[[2]], base_tables[[3]])\n\nbase_table\n\n# A tibble: 44 × 3\n   `Province/Territoire`  Aéroport                `Exploité par`                \n   <chr>                  <chr>                   <chr>                         \n 1 \"Colombie-Britannique\" Penticton               \"Transports Canada\\n\\t\\t\\t#10…\n 2 \"\"                     Port Hardy              \"Transports Canada\\n\\t\\t\\tC.P…\n 3 \"\"                     Sandspit                \"Transports Canada\\n\\t\\t\\tC.P…\n 4 \"\"                     Havre de Victoria       \"Transports Canada\\n\\t\\t\\t12,…\n 5 \"Manitoba\"             Churchill               \"Transports Canada\\n\\t\\t\\tC.P…\n 6 \"Québec\"               Chevery                 \"Municipalité de la Côte-Nord…\n 7 \"\"                     Lourdes-de-Blanc-Sablon \"Transports Canada\\n\\t\\t\\tAir…\n 8 \"\"                     Sept-Îles               \"Transports Canada\\n\\t\\t\\t100…\n 9 \"\"                     Natashquan              \"Municipalité de Natashquan\\n…\n10 \"\"                     Eastmain River          \"Transports Canada\\n\\t\\t\\ta/s…\n# … with 34 more rows\n\n# Solution en Base R\nbase_table$`Province/Territoire` <- ifelse(test = is.na(base_table$`Province/Territoire`),\n                                  yes = base_table$Territoire, no = base_table$`Province/Territoire`)\nbase_table$Territoire <- NULL\n\nrm(list=(ls(pattern = \"base*\")))"
+  },
+  {
+    "objectID": "assets/fichiers/regex.html#solution-à-la-tidyverse",
+    "href": "assets/fichiers/regex.html#solution-à-la-tidyverse",
+    "title": "regex.qmd",
+    "section": "Solution à la Tidyverse",
+    "text": "Solution à la Tidyverse\n\nURL <- \"https://tc.canada.ca/fr/aviation/exploitation-aeroports-aerodromes/liste-aeroports-appartenant-transports-canada\"\n\n\ntables <- read_html(x = URL) %>%\n    html_elements(css = \"table\") %>%\n    html_table()\n\ntable <- dplyr::bind_rows(tables[[1]],\n                          tables[[2]],\n                          tables[[3]],\n                          .id = \"type\")\n\n# ou solution alternative équivalente\ntables %>% purrr::map_dfr(bind_rows, .id = \"type\")\n\n# A tibble: 44 × 5\n   type  `Province/Territoire`  Aéroport                `Exploité par`   Terri…¹\n   <chr> <chr>                  <chr>                   <chr>            <chr>  \n 1 1     \"Colombie-Britannique\" Penticton               \"Transports Can… <NA>   \n 2 1     \"\"                     Port Hardy              \"Transports Can… <NA>   \n 3 1     \"\"                     Sandspit                \"Transports Can… <NA>   \n 4 1     \"\"                     Havre de Victoria       \"Transports Can… <NA>   \n 5 1     \"Manitoba\"             Churchill               \"Transports Can… <NA>   \n 6 1     \"Québec\"               Chevery                 \"Municipalité d… <NA>   \n 7 1     \"\"                     Lourdes-de-Blanc-Sablon \"Transports Can… <NA>   \n 8 1     \"\"                     Sept-Îles               \"Transports Can… <NA>   \n 9 1     \"\"                     Natashquan              \"Municipalité d… <NA>   \n10 1     \"\"                     Eastmain River          \"Transports Can… <NA>   \n# … with 34 more rows, and abbreviated variable name ¹​Territoire\n\n\n\nRemplir les rangées de la colonne Province/Territoire\n\ntable <- table %>% dplyr::rename(province_territoire = `Province/Territoire`,\n                        aeroport = Aéroport,\n                        exploited_by = `Exploité par`,\n                        territoire = Territoire)\n\ntable$province_territoire <- dplyr::coalesce(table$province_territoire, \n                                              table$territoire)\n\n\n\ntable[table == \"\"] <- NA\n# equivalent en tidyverse\ntable$province_territoire <- table$province_territoire %>% dplyr::na_if(y = \"\")\ntable <- table %>% tidyr::fill(province_territoire, .direction = \"down\")\n\n\ntable <- table %>% dplyr::select(-territoire)\n\nExtraction des codes d’aéroports\n\n# solution #1\nx <- table %>% mutate(new_col = str_extract(string = aeroport, pattern = \"[A-Z]{3}\"))\n\ntable <- table %>% tidyr::extract(col = aeroport,\n                         into = \"code_aeroport\",\n                         regex = \"(Y[A-Z][A-Z])\", \n                         remove = FALSE)\n\ntable$aeroport <- table$aeroport %>%\n    stringr::str_remove_all(pattern = \"\\\\(.*\\\\)\") %>%\n    stringr::str_squish()"
+  },
+  {
+    "objectID": "assets/fichiers/regex.html#recodage-des-types-daéroport",
+    "href": "assets/fichiers/regex.html#recodage-des-types-daéroport",
+    "title": "regex.qmd",
+    "section": "Recodage des types d’aéroport",
+    "text": "Recodage des types d’aéroport\n\nx <- table %>% mutate(type_nouveau = recode(type,\n                                            \"1\" = \"Petits aéroports\",\n                                            \"2\" = \"Aéroports nationaux\", \n                                            \"3\" = \"Aéroports nationaux exploités par des administrations territoriales\"))\n\nx <- x %>% mutate(type_nouveau_case = case_when(type == 1 ~ \"Petits aéroports\", \n                                               type == 2 ~ \"Aéroports nationaux\",\n                                               type == 3 ~ \"Aéroports nationaux exploités par des administrations territoriales\"))"
+  },
+  {
+    "objectID": "assets/fichiers/regex.html#il-ne-reste-plus-quà-extraire-linformation-qui-se-trouve-dans-tableexploited_by",
+    "href": "assets/fichiers/regex.html#il-ne-reste-plus-quà-extraire-linformation-qui-se-trouve-dans-tableexploited_by",
+    "title": "regex.qmd",
+    "section": "Il ne reste plus qu’à extraire l’information qui se trouve dans table$exploited_by",
+    "text": "Il ne reste plus qu’à extraire l’information qui se trouve dans table$exploited_by\n\ntable$exploited_by\n\n [1] \"Transports Canada\\n\\t\\t\\t#109-3000 Airport Road\\n\\t\\t\\tPenticton (Colombie-Britannique)  V2A 8X1\\n\\t\\t\\t250-770-4414\"         \n [2] \"Transports Canada\\n\\t\\t\\tC.P. 460\\n\\t\\t\\t3675 Byng Road\\n\\t\\t\\tPort Hardy (Colombie-Britannique)  V0N 2P0\\n\\t\\t\\t250-949-6424\"\n [3] \"Transports Canada\\n\\t\\t\\tC.P. 439\\n\\t\\t\\tSandspit (Colombie-Britannique)  V0T 1T0\\n\\t\\t\\t250-637-1149\"                        \n [4] \"Transports Canada\\n\\t\\t\\t12, rue Erie\\n\\t\\t\\tVictoria (Colombie-Britannique)  V8V 1Y4\\n\\t\\t\\t250-363-3578\"                    \n [5] \"Transports Canada\\n\\t\\t\\tC.P. 1059\\n\\t\\t\\tChurchill (Manitoba)  R0B 0E0\\n\\t\\t\\t204-675-8868\"                                  \n [6] \"Municipalité de la Côte-Nord-du Golfe-du Saint-Laurent\\n\\t\\t\\tChevery (Québec)  G0G 1G0\\n\\t\\t\\t418-787-2215\"                  \n [7] \"Transports Canada\\n\\t\\t\\tAirport Road\\n\\t\\t\\tLourdes-de-Blanc-Sablon (Québec)  G0G 1W0\\n\\t\\t\\t418-461-2514\"                   \n [8] \"Transports Canada\\n\\t\\t\\t1000, boul. Laure Est\\n\\t\\t\\tC.P. 2001\\n\\t\\t\\tSept-Îles (Québec)  G4R 4K2\\n\\t\\t\\t418-962-8211\"       \n [9] \"Municipalité de Natashquan\\n\\t\\t\\tAirport Road\\n\\t\\t\\tNatashquan (Québec)  G0G 2E0\\n\\t\\t\\t418-726-3273\"                       \n[10] \"Transports Canada\\n\\t\\t\\ta/s du conseil de bande\\n\\t\\t\\tEastmain (Québec)  J0M 1W0\\n\\t\\t\\t819-977-0333\"                       \n[11] \"Transports Canada\\n\\t\\t\\t1550 B, route de l'Aéroport\\n\\t\\t\\tHavre-Saint-Pierre (Québec)\\n\\t\\t\\tG0G 1P0\\n\\t\\t\\t418-538-0627\"   \n[12] \"Transports Canada\\n\\t\\t\\t1-210, chemin de l’Aéroport\\n\\t\\t\\tHavre-aux-Maisons (Québec)\\n\\t\\t\\tG4T 5L2\\n\\t\\t\\t418-969-2180\"    \n[13] \"Transports Canada\\n\\t\\t\\ta/s du conseil de bande\\n\\t\\t\\tWaskaganish (Québec)  J0M 1R0\\n\\t\\t\\t819-895-8925\"                    \n[14] \"Administration régionale Kativik\\n\\t\\t\\tC.P. 9\\n\\t\\t\\tKuujjuaq (Québec)  J0M 1C0\\n\\t\\t\\t819-964-2968\"                         \n[15] \"Société aéroportuaire de Schefferville\\n\\t\\t\\t78 Atlantic Road\\n\\t\\t\\tSchefferville (Québec)  G0G 2T0\\n\\t\\t\\t418-585-3544\"    \n[16] \"Transports Canada\\n\\t\\t\\ta/s du conseil de bande\\n\\t\\t\\tWemindji (Québec)  J0M 1L0\\n\\t\\t\\t819-978-3936\"                       \n[17] \"Transports Canada\\n\\t\\t\\t2 Airport Road\\n\\t\\t\\tWabush (Terre-Neuve)  A0R 1B0\\n\\t\\t\\t709-282-5412\"                             \n[18] \"Transports Canada\\n\\t\\t\\t1 Airport Road\\n\\t\\t\\tSt. Anthony (Terre-Neuve)  A0K 4S0\\n\\t\\t\\t709-454-3192\"                        \n[19] \"Administration aéroportuaire de Victoria\"                                                                                     \n[20] \"Administration de l’aéroport international de Vancouver\"                                                                      \n[21] \"Administration aéroportuaire de Prince George Inc. (en anglais seulement)\"                                                    \n[22] \"Ville de Kelowna (en anglais seulement)\"                                                                                      \n[23] \"Administration des aéroports régionaux d’Edmonton (en anglais seulement)\"                                                     \n[24] \"Administration aéroportuaire de Calgary (en anglais seulement)\"                                                               \n[25] \"Administration aéroportuaire de Saskatoon (en anglais seulement)\"                                                             \n[26] \"Administration aéroportuaire de Regina\"                                                                                       \n[27] \"Administration aéroportuaire de Winnipeg Inc.\"                                                                                \n[28] \"Administration de l’aéroport international de Thunder Bay Inc. (en anglais seulement)\"                                        \n[29] \"Administration de l’aéroport international du Grand London (en anglais seulement)\"                                            \n[30] \"Autorité aéroportuaire du Grand Toronto\"                                                                                      \n[31] \"Administration de l’aéroport international Macdonald-Cartier d'Ottawa\"                                                        \n[32] \"Aéroports de Montréal\"                                                                                                        \n[33] \"Aéroports de Montréal\"                                                                                                        \n[34] \"Aéroport de Québec Inc.\"                                                                                                      \n[35] \"Administration de l’aéroport international de Fredericton\"                                                                    \n[36] \"Administration de l’aéroport international du Grand Moncton Inc.\"                                                             \n[37] \"Aéroport de Saint John Inc.\"                                                                                                  \n[38] \"Administration de l’aéroport de Charlottetown Inc. (en anglais seulement)\"                                                    \n[39] \"Administration de l’aéroport international de Halifax\"                                                                        \n[40] \"Administration de l’aéroport international de Gander Inc. (en anglais seulement)\"                                             \n[41] \"Administration de l’aéroport international de St. John’s\"                                                                     \n[42] \"Gouvernement des Territoires du Nord-Ouest\"                                                                                   \n[43] \"Gouvernement du Nunavut\"                                                                                                      \n[44] \"Gouvernement du Yukon\"                                                                                                        \n\n\nÀ vous de jouer!"
   }
 ]
